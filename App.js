@@ -4,19 +4,24 @@ import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { NativeBaseProvider } from "native-base";
 
 import Navigation from "./src/navigation";
+//5/17
+import { Provider } from "react-redux";
+import store from "./src/redux/store";
 
 export default function App() {
   return (
-    <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1 }}>
-        <NativeBaseProvider>
-          <Navigation />
-        </NativeBaseProvider>
-      </SafeAreaView>
-    </SafeAreaProvider>
+    //5/17
+    <Provider store={store}>
+      <SafeAreaProvider>
+        <SafeAreaView style={{ flex: 1 }}>
+          <NativeBaseProvider>
+            <Navigation />
+          </NativeBaseProvider>
+        </SafeAreaView>
+      </SafeAreaProvider>
+    </Provider>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

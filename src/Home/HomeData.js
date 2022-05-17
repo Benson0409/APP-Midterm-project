@@ -17,7 +17,14 @@ import {
   Platform,
   elevation,
 } from "react-native";
+//5/17
+import { useDispatch } from "react-redux";
+import { increaseOne, decreaseOne } from "../redux/likeSlice";
+
 const HomeData = ({ Home, navigation }) => {
+  //5/17
+  // Define a dispatch to send actions
+  const dispatch = useDispatch();
   const [Like, setLike] = useState(false);
   return (
     <Box mx="auto" mb="8" mt={5} ml={8} mr={3}>
@@ -51,7 +58,13 @@ const HomeData = ({ Home, navigation }) => {
               marginLeft={220}
               marginTop={3}
             >
-              <TouchableOpacity onPress={() => setLike(!Like)}>
+              <TouchableOpacity
+                onPress={() => {
+                  setLike(!Like);
+                  //5/17
+                  dispatch(increaseOne());
+                }}
+              >
                 {Like ? (
                   <MaterialCommunityIcons
                     name="cards-heart"

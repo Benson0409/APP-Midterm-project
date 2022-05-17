@@ -14,11 +14,14 @@ import {
 } from "native-base";
 import foodData from "../json/food.json";
 import HomeList from "../Home/HomeList";
-
+//5/17
+import { useSelector } from "react-redux";
+import { selectLike } from "../redux/likeSlice";
 const HomeScreen = ({ navigation }) => {
+  //5/17
+  const likeValue = useSelector(selectLike);
   return (
     <ScrollView>
-
       <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "white" }}>
         <Box bg={"#A1917A"} w={"100%"} h={140} borderBottomRadius={20}>
           <Box ml={27} mt={5}>
@@ -27,7 +30,6 @@ const HomeScreen = ({ navigation }) => {
             </Text>
 
             <HStack>
-
               <Pressable
                 height={30}
                 w={100}
@@ -60,40 +62,47 @@ const HomeScreen = ({ navigation }) => {
                 mt={5}
                 mr={3}
               >
+                <Text color={"black"} fontSize="14" pt={1} alignSelf={"center"}>
+                  加入我們
+                </Text>
+              </Pressable>
+            </HStack>
+          </Box>
+        </Box>
+        <HStack ml={35} mt={5}>
+          <MaterialIcons name="fastfood" color={"#DF9879"} size={30} />
+          <Text fontSize={24} fontWeight={"bold"}>
+            {foodData.title1}
+          </Text>
+        </HStack>
+        <HomeList list={foodData.data1} navigation={navigation} />
 
-              <Text color={"black"} fontSize="14" pt={1} alignSelf={"center"}>加入我們</Text>
-          </Pressable>
-          </HStack>
-          
-            </Box>
+        <HStack ml={35} mt={5}>
+          <MaterialCommunityIcons name="noodles" color={"#DF9879"} size={30} />
+          <Text fontSize={24} fontWeight={"bold"}>
+            {foodData.title2}
+            {/* 5/17 */}
+            <Text>{likeValue}</Text>
+          </Text>
+        </HStack>
+        <HomeList list={foodData.data2} navigation={navigation} />
 
-            </Box>
-      <HStack ml={35} mt={5}>
-        <MaterialIcons name="fastfood" color={"#DF9879"} size={30}  />
-        <Text fontSize={24} fontWeight={"bold"}>{foodData.title1}</Text>
-      </HStack>
-      <HomeList list={foodData.data1} navigation={navigation} />
+        <HStack ml={35} mt={5}>
+          <Entypo name="cake" color={"#DF9879"} size={30} />
+          <Text fontSize={24} fontWeight={"bold"}>
+            {foodData.title3}
+          </Text>
+        </HStack>
+        <HomeList list={foodData.data3} navigation={navigation} />
 
-
-      <HStack ml={35} mt={5}>
-        <MaterialCommunityIcons name="noodles" color={"#DF9879"} size={30} />
-        <Text fontSize={24} fontWeight={"bold"}>{foodData.title2}</Text>
-      </HStack>
-      <HomeList list={foodData.data2} navigation={navigation} />
-
-      <HStack ml={35} mt={5}>
-        <Entypo name="cake" color={"#DF9879"} size={30} />
-        <Text fontSize={24} fontWeight={"bold"}>{foodData.title3}</Text>
-      </HStack>
-      <HomeList list={foodData.data3} navigation={navigation} />
-
-      <HStack ml={35} mt={5}>
-        <Entypo name="drink" color={"#DF9879"} size={30} />
-        <Text fontSize={24} fontWeight={"bold"}>{foodData.title4}</Text>
-      </HStack>
-      <HomeList list={foodData.data4} navigation={navigation} />
-    </Box>
-
+        <HStack ml={35} mt={5}>
+          <Entypo name="drink" color={"#DF9879"} size={30} />
+          <Text fontSize={24} fontWeight={"bold"}>
+            {foodData.title4}
+          </Text>
+        </HStack>
+        <HomeList list={foodData.data4} navigation={navigation} />
+      </Box>
     </ScrollView>
   );
 };
