@@ -10,7 +10,6 @@ import {
   Center,
   ScrollView,
   Box,
-  AspectRatio,
   Text,
   Heading,
   Image,
