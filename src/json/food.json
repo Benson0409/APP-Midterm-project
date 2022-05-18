@@ -16,16 +16,15 @@
       "menu": "菜單資訊",
       "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
       "title": "人氣推薦",
-      "food1": "香煎厚切豬排煎餅果子",
+      "food1": "厚切豬排煎餅果子",
       "food1des": "裡面有滿滿的『薄脆』，為整個捲餅增添不少口感，麵皮煎得很香，調味也很不錯。",
       "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
       "food2": "鮪魚洋蔥煎餅菓子",
       "food2des": "煎餅菓子就是軟可麗餅皮內包蛋、蔬菜和脆脆的油炸物。鮪魚洋蔥都有加熱過，吃起來還挺清爽的。",
       "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
       "food3": "打拋豬飯糰",
-      "food3des": "滿滿的豬肉量，熱騰騰的米飯包裹著一粒粒的豬肉，真的好扎實。調味不像泰式餐廳那種重口味跟辛辣，取而代之的是家常的味道。",
-      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg",
-      "comment": "留言評論區"
+      "food3des": "熱騰騰的米飯包裹著一粒粒的豬肉，調味不像泰式餐廳那種重口味跟辛辣是家常的味道。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "真芳炭烤土司",
@@ -33,7 +32,19 @@
       "phone": "0987-020-554",
       "time": "11:30 ~ 19:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/真芳.jpg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "真芳三明治",
+      "food1des": "吐司總共有三片，比較特別的是南瓜馬鈴薯吃起來超綿密的，細細品嚐會發現馬鈴薯泥裡面居然有南瓜的甜度。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "豬肉蛋吐司",
+      "food2des": "肉非常鮮嫩，完全沒有咬不動的問題 特別的蛋 裡面放一種白白的料 有甜甜的感覺 吃到後面也不會覺得油膩 吐司是有烤過的",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "起司起司蛋",
+      "food3des": "炭烤的吐司聞起來很香，結合切達起司+莫札瑞拉起司了兩種起司，身為重度起司控絕對不能錯過！",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "JOY.S LOVE就是愛",
@@ -41,7 +52,7 @@
       "phone": "0987-020-554",
       "time": "11:30 ~ 19:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/就是愛煎餅果子.jpeg?raw=true",
-      "star": 4,
+      "star": 3,
       "menu": "菜單資訊",
       "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
       "title": "人氣推薦",
@@ -53,8 +64,7 @@
       "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
       "food3": "打拋豬飯糰",
       "food3des": "滿滿的豬肉量，熱騰騰的米飯包裹著一粒粒的豬肉，真的好扎實。調味不像泰式餐廳那種重口味跟辛辣，取而代之的是家常的味道。",
-      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg",
-      "comment": "留言評論區"
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "好食",
@@ -62,7 +72,19 @@
       "phone": "0987-020-554",
       "time": "11:30 ~ 19:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/好食.png?raw=true",
-      "star": 4
+      "star": 5,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "薯餅塔",
+      "food1des": "兩片薯餅中間夾著會牽絲的起司，外面包著一層蛋，上面淋上番茄醬和芥末醬，兩片薯餅中間夾著會牽絲的起司，外面包著一層蛋，上面淋上番茄醬和芥末醬，吃過的朋友都讚不絕口。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "冰火菠蘿包",
+      "food2des": "菠蘿烤的香香酥酥的，加上份量適中的冰奶油，讓人還想再吃第二個。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "乳酪起司蛋餅",
+      "food3des": "入口外皮入口外皮乾爽微脆，內裡夾著溢出來乳酪絲，乳酪絲還可以牽絲",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "蘇草salvia",
@@ -70,7 +92,19 @@
       "phone": "0987-020-554",
       "time": "11:30 ~ 19:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/蘇草salvia.png.jpeg?raw=true",
-      "star": 4
+      "star": 3,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "瑪格麗特帕里尼",
+      "food1des": "這是一款蔬菜偏多的吐司，有青椒、起司、番茄等搭配青醬來製作，吃起來不會有很重的苦味，食材也都很新鮮。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "青醬雞肉帕尼尼",
+      "food2des": "餡料超級豐富，雞肉、青醬和蔬菜充滿整個吐司。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "番茄雞肉義大利麵",
+      "food3des": "番茄醬料很濃郁，麵條滿Ｑ的，副餐的濃湯是親自熬煮的南瓜湯，吃得到微微顆粒、有紮實感，喝下去很溫暖順口！",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "早安有喜",
@@ -78,7 +112,19 @@
       "phone": "0987-020-554",
       "time": "11:30 ~ 19:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/早安有喜.jpeg?raw=true",
-      "star": 4
+      "star": 3,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "大相撲拼盤",
+      "food1des": "這個拼盤份量非常的大，牛角可頌非常的好吃很酥脆，雞腿咬下去煙燻的味道都散發出來，cp值真的超高。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "菠蘿起司蔬菜拼盤",
+      "food2des": "菠蘿起司很好吃餅皮酥脆，玉米布丁酥吃起來也不會太過油膩，地瓜吃起來還是甜的 。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "鹿耳島兒童拼盤",
+      "food3des": "炸物都炸的剛剛好不會很油，蘋果優格是無糖的酸酸的優格配上蘋果醬很好吃。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "玖遛早吃",
@@ -86,7 +132,19 @@
       "phone": "0987-020-554",
       "time": "11:30 ~ 19:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/玖遛早吃.png?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "「打啵起司」厚燒蛋捲餅",
+      "food1des": "酥酥脆脆的餅皮，內餡起司超濃郁配上新鮮的蔬菜，還加上獨特的醬汁，吃完意猶未盡想再吃一個。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "「鹹豬肉肉」厚燒蛋捲餅",
+      "food2des": "豬肉非常的鮮嫩 ，不會有吃到肥肉的狀況 ，而且整個餐點的香氣非常足夠 ，讓人光聞到味道就受不了了。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "金沙薯條",
+      "food3des": "鹹香夠味，罪惡感滿分，通常罪惡感滿分的食物，美味可口是成正比的。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "三隻貓頭鷹",
@@ -94,7 +152,19 @@
       "phone": "0987-020-554",
       "time": "11:30 ~ 19:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/三隻貓頭鷹.jpg?raw=true",
-      "star": 4
+      "star": 3,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "福源花生起司和牛堡",
+      "food1des": "兩片漢堡麵包是用健康的全麥麵包，花生醬和肉味很重的牛肉排超級搭，一些生菜和蕃茄讓整體更清爽，整個份量很大。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "黃金炸豬排帕尼尼",
+      "food2des": "外面的那層奶油和蔬菜融合得很不錯，豬肉吃起來也很有嚼勁，而且吃起來爽口又不油膩。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "蒙頓檸檬塔",
+      "food3des": "中間一層鬆軟的海綿體搭上檸檬，海綿體不會因為放久乾掉很濕潤，整體不會太甜也不會太酸，味道剛剛好。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "Stoppage 補時",
@@ -102,7 +172,19 @@
       "phone": "0987-020-554",
       "time": "11:30 ~ 19:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/補時.png?raw=true",
-      "star": 4
+      "star": 3,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "鮭魚蔬菜烤蛋",
+      "food1des": "味道特別，份量足夠，起司雞蛋和蔬菜的組合，建議搭配兩片麵包一起吃才不會太膩。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "提拉米蘇",
+      "food2des": "提拉米蘇整體的口感非常好，入口即化，蛋糕本身非常好切，適合在悠閒的午後和朋友聊著天吃著",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "厚火腿炒蛋吐司",
+      "food3des": "烤過的吐司搭配上花生醬，搭配厚火腿以及歐姆滑蛋，喜歡歐姆蛋的朋友必點。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "Goee coffee ",
@@ -110,7 +192,19 @@
       "phone": "0987-020-554",
       "time": "11:30 ~ 19:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/Goee%20coffee.jpg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "火腿起司熱壓吐司",
+      "food1des": "整體吃起來不會太油膩 起司不只濃郁還會牽絲。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "芋泥肉鬆熱壓吐司",
+      "food2des": "當芋泥遇上肉鬆，簡單不失真的熱壓吐司小點，再配上一杯好咖啡，滿足您的味蕾。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "厚火腿炒蛋吐司",
+      "food3des": "環境優美明亮，咖啡也採用優質咖啡豆，香氣十足。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     }
   ],
   "data2": [
@@ -163,7 +257,7 @@
       "phone": "0972-468-890",
       "time": "11:00 ~ 14:00 / 17:00 ~ 20:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/梧貳WUERFOODS.jpeg?raw=true",
-      "star": 3,
+      "star": 4,
       "menu": "菜單資訊",
       "url": "https://pic.pimg.tw/joyaijia/1603024202-3261619329-g_wn.jpg",
       "title": "人氣推薦",
@@ -226,7 +320,19 @@
       "phone": "02 8732-6080",
       "time": "11:00 ~ 14:00 / 17:00 ~ 20:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/厚宅-Curry-U-Home.jpg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "厚宅豬排",
+      "food1des": "豬排分量大，炸得酥脆多汁好好吃，咖哩有一點微辣，蔬菜的部分很特別是用新鮮生菜",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "啾西炸雞",
+      "food2des": "多汁酥脆的炸雞真的炸得好好吃調味也好好吃，而且一份咖哩附四塊炸雞真的吃得太過癮。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "厚宅咖哩",
+      "food3des": "這道厚宅咖哩沒有任何肉類，只有生菜和咖哩，想嘗試咖哩卻不想吃炸肉的人可以點。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "高和食堂",
@@ -234,7 +340,19 @@
       "phone": "02 7709-8815",
       "time": "11:30 ~ 20:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/高和食堂.jpg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "豚骨拉麵",
+      "food1des": "麵的份量還可以，加麵後剛剛好，湯不會太濃不容易膩蠻順口的，肉只有一片是厚的不會太薄。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "炸雞排咖喱飯",
+      "food2des": "飯的份量很足，加飯的份量很夠，吃完會很有滿足感，然後還有附一碗味噌湯。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "日式炒麵",
+      "food3des": "是晚上限定的餐點，味道很不錯，應該算蠻道地的。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "李記水餃",
@@ -242,7 +360,19 @@
       "phone": "02 2736-7202",
       "time": "11:00 ~ 14:00 / 17:00 ~ 20:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/李記水餃.jpg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "牛肉湯麵",
+      "food1des": "牛肉的味道是很足夠可惜的是份量對於食量大的人可能不太夠，如果是食量較大的推薦你加麵喔。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "韭菜豬肉水餃",
+      "food2des": "水餃是蠻大顆的，而且再配上店內的醬料，真的是絕配，重點是價格也比連鎖的還低。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "牛肉水餃",
+      "food3des": "份量和價格的比不錯，牛肉的餡料很飽滿，水餃皮是屬於厚的那種。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "人从众厚切牛排",
@@ -250,7 +380,19 @@
       "phone": "02 2706-0688",
       "time": "11:00 ~ 13:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/人从众厚切牛排.png?raw=true",
-      "star": 4
+      "star": 5,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "黃金雞腿排",
+      "food1des": "雞腿排鮮嫩多汁，份量又大，肥肉和骨頭極少，醬汁入味可以依照個人喜好做調整。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "厚切里肌豬排",
+      "food2des": "肉質厚實份量足夠，肉質吃起來很有滿足感，每一塊都能輕易的咀嚼。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "沙朗牛排",
+      "food3des": "肉排吃起來沒有到很厚實，但是它的嚼勁彌補了這個缺點，咬起來也不會很柴，七分熟剛剛好。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "鬼匠拉麵2",
@@ -258,7 +400,19 @@
       "phone": "02 2736-6998",
       "time": "11:00 ~ 20:00（週六公休）",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/鬼匠拉麵2.jpg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "豚骨拉麵",
+      "food1des": "除了豬肉片之外還有木耳、海帶等蔬菜 搭上不會太鹹不會太膩的豚骨湯，吃起來是蠻清爽的拉麵。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "豬排丼飯",
+      "food2des": "豬排肉質很嫩，不會讓人咬不下去或是太柴，整體吃起來的感覺很順口。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "黑糖鮮奶豆腐花",
+      "food3des": "是晚上限定的餐點，味道很不錯，應該算蠻道地的。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "五九麵館",
@@ -266,7 +420,19 @@
       "phone": "02 2736-6759",
       "time": "11:00 ~ 15:00 / 16:30 ~ 20:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/五九麵館.jpg?raw=true",
-      "star": 4
+      "star": 3,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "招牌麵配雪花牛鴨血",
+      "food1des": "鴨血很入味，牛肉也調味的好好吃，搭上有一點微辣的麵真的令人愛不釋手。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "麻辣雪花牛肉麵",
+      "food2des": "覺得湯的油味大於辣味，整體來說湯的味道不錯。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "乾麵配煙燻鴨",
+      "food3des": "鴨肉調味的很好吃，這家店的麵都還不錯吃。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "邦食堂",
@@ -274,7 +440,19 @@
       "phone": "02 2736-1316",
       "time": "11:30 ~ 14:00 / 17:30 ~ 20:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/邦食堂.jpg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "日式炸豬排丼",
+      "food1des": "豬排的份量很多，每一塊的厚度都很厚！咬起來非常的紮實再加上洋蔥一起吃可以稍微解膩，兩者非常的搭！。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "炸雞排咖喱飯",
+      "food2des": "飯的份量很足，加飯的份量很夠，吃完會很有滿足感，然後還有附一碗味噌湯。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "日式炒麵",
+      "food3des": "是晚上限定的餐點，味道很不錯，應該算蠻道地的。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "樂和牛排",
@@ -282,7 +460,19 @@
       "phone": "02 2737-0600",
       "time": "11:30 ~ 23:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/樂和牛排.jpeg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "豚骨拉麵",
+      "food1des": "麵的份量還可以，加麵後剛剛好，湯不會太濃不容易膩蠻順口的，肉只有一片是厚的不會太薄。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "炸雞排咖喱飯",
+      "food2des": "飯的份量很足，加飯的份量很夠，吃完會很有滿足感，然後還有附一碗味噌湯。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "日式炒麵",
+      "food3des": "是晚上限定的餐點，味道很不錯，應該算蠻道地的。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "能量小姐",
@@ -290,7 +480,19 @@
       "phone": "02 2708-6728",
       "time": "11:00 ~ 14:00 / 16:00 ~ 20:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/能量小姐.jpeg?raw=true",
-      "star": 4
+      "star": 5,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "豚骨拉麵",
+      "food1des": "麵的份量還可以，加麵後剛剛好，湯不會太濃不容易膩蠻順口的，肉只有一片是厚的不會太薄。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "炸雞排咖喱飯",
+      "food2des": "飯的份量很足，加飯的份量很夠，吃完會很有滿足感，然後還有附一碗味噌湯。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "日式炒麵",
+      "food3des": "是晚上限定的餐點，味道很不錯，應該算蠻道地的。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     }
   ],
   "data3":[
@@ -300,7 +502,7 @@
       "phone": "02 2703-6563",
       "time": "13:00 ~ 22:00(週一公休）",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/雪人兄弟.jpeg?raw=true",
-      "star": 4,
+      "star": 5,
       "menu": "菜單資訊",
       "url": "https://donna.tw/wp-content/uploads/20200417215802_16-scaled.jpg",
       "title": "人氣推薦",
@@ -321,7 +523,19 @@
       "phone": "02 2736-6881",
       "time": "11:00 ~ 18:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/Rufous%20coffee.jpeg?raw=true",
-      "star": 4
+      "star": 3,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "豚骨拉麵",
+      "food1des": "麵的份量還可以，加麵後剛剛好，湯不會太濃不容易膩蠻順口的，肉只有一片是厚的不會太薄。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "炸雞排咖喱飯",
+      "food2des": "飯的份量很足，加飯的份量很夠，吃完會很有滿足感，然後還有附一碗味噌湯。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "日式炒麵",
+      "food3des": "是晚上限定的餐點，味道很不錯，應該算蠻道地的。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "提拉米蘇",
@@ -329,7 +543,19 @@
       "phone": "02 2325-6578",
       "time": "10:00 ~ 20:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/提拉米蘇.jpg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "豚骨拉麵",
+      "food1des": "麵的份量還可以，加麵後剛剛好，湯不會太濃不容易膩蠻順口的，肉只有一片是厚的不會太薄。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "炸雞排咖喱飯",
+      "food2des": "飯的份量很足，加飯的份量很夠，吃完會很有滿足感，然後還有附一碗味噌湯。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "日式炒麵",
+      "food3des": "是晚上限定的餐點，味道很不錯，應該算蠻道地的。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     }
 
 
@@ -341,7 +567,19 @@
       "phone": "02 2738-9238",
       "time": "10:00 ~ 19:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/米提銀行.png?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "豚骨拉麵",
+      "food1des": "麵的份量還可以，加麵後剛剛好，湯不會太濃不容易膩蠻順口的，肉只有一片是厚的不會太薄。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "炸雞排咖喱飯",
+      "food2des": "飯的份量很足，加飯的份量很夠，吃完會很有滿足感，然後還有附一碗味噌湯。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "日式炒麵",
+      "food3des": "是晚上限定的餐點，味道很不錯，應該算蠻道地的。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     },
     {
       "name": "空杯",
@@ -349,7 +587,19 @@
       "phone": "02 2738-8358",
       "time": "11:00 ~ 21:30",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/空杯.jpg?raw=true",
-      "star": 4
+      "star": 4,
+      "menu": "菜單資訊",
+      "url": "https://ireneslife.com/wp-content/uploads/2020/09/1598777015-284c73d8c53b04618ab1a7729e8d9714.jpg",
+      "title": "人氣推薦",
+      "food1": "豚骨拉麵",
+      "food1des": "麵的份量還可以，加麵後剛剛好，湯不會太濃不容易膩蠻順口的，肉只有一片是厚的不會太薄。",
+      "food1img": "https://s.yimg.com/ny/api/res/1.2/BLxx78b5tcmpUIhIp_GBNQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2020-10/4fc02920-07e9-11eb-bf7d-0055f23b049d",
+      "food2": "炸雞排咖喱飯",
+      "food2des": "飯的份量很足，加飯的份量很夠，吃完會很有滿足感，然後還有附一碗味噌湯。",
+      "food2img": "https://lh3.googleusercontent.com/y4g6V3c8Aw6v6iMTFHQJgaSN6QpVLPTHlbKP4QKAKuT6ApkYIsGaXmRjkm8eFm7VqpenZ593eapwX7D2XzHnrI8dUhTd2eUS-2APamE3A9Mtnw=s600",
+      "food3": "日式炒麵",
+      "food3des": "是晚上限定的餐點，味道很不錯，應該算蠻道地的。",
+      "food3img": "https://picdn.gomaji.com/stores/210/122210/122210_2_r.jpg"
     }
 
   ]

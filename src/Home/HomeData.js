@@ -32,12 +32,12 @@ const HomeData = ({ Home, navigation }) => {
         shadowColor={"#000"}
         shadowOpacity={0.25}
         shadowRadius={3.84}
-        {...(Platform.OS == "ios"
-          ? (shadowOffset = {
-              width: 6,
-              height: 6,
-            })
-          : null)}
+        // {...(Platform.OS == "ios"
+        //   ? (shadowOffset = {
+        //       width: 6,
+        //       height: 6,
+        //     })
+        //   : null)}
         elevation={6}
         _dark={{ bg: "#3F382E", borderRadius: 25 }}
         _light={{ bg: "#FFFAE1", borderRadius: 25 }}

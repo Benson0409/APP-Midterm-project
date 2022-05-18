@@ -62,45 +62,53 @@ const DetailScreen = ({ route }) => {
     } else {
       return (
         <ScrollView flex={1}>
-          <Center>
-            <Box
-              // w={354}
-              // h={156}
-              m={5}
-              _dark={{ bg: "#5E5A54" }}
-              _light={{ bg: "#F6FFF1" }}
-            >
-              <HStack>
-                <Box bg={"#FFFAE1"} w={"62%"}>
-                  <VStack m={1}>
-                    <Box>
-                      <Text fontSize={20} fontWeight={700}>
-                        {food1}
-                      </Text>
-                    </Box>
-                    <Box>
-                      <Text fontSize={16} fontWeight={400}>
-                        {food1des}
-                      </Text>
-                    </Box>
-                  </VStack>
-                </Box>
-                <Box w={"38%"}>
-                  {/* <Text>{food1des}</Text> */}
-                  <Image
-                    source={{ uri: food1img }}
-                    alt="food"
-                    w="142"
-                    h="142"
-                    resizeMode="cover"
-                    // borderBottomRightRadius={20}
-                    // borderTopRightRadius={20}
-                  />
-                </Box>
-              </HStack>
+          <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5} >
+            <HStack>
+            <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}  
+            shadowColor={"#000"}
+            shadowOpacity={0.25}
+            shadowRadius={3.84}>
+              <Text fontSize={20} fontWeight={"bold"}>{food1}</Text>
+              <Text fontSize={16}>{food1des}</Text>
             </Box>
-            {/* <Text>This is a General Account Setting Page</Text> */}
-          </Center>
+            <Image source={{ uri: food1img }}
+                    alt="food"
+                    w="140"
+                    h="140"
+                    borderRightRadius={20}
+             />
+             </HStack>
+             <HStack mt={5}>
+            <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}  
+            shadowColor={"#000"}
+            shadowOpacity={0.25}
+            shadowRadius={3.84}>
+              <Text fontSize={20} fontWeight={"bold"}>{food2}</Text>
+              <Text fontSize={16}>{food2des}</Text>
+            </Box>
+            <Image source={{ uri: food2img }}
+                    alt="food"
+                    w="140"
+                    h="140"
+                    borderRightRadius={20}
+             />
+             </HStack>
+             <HStack mt={5} mb={10}>
+            <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}  
+            shadowColor={"#000"}
+            shadowOpacity={0.25}
+            shadowRadius={3.84}>
+              <Text fontSize={20} fontWeight={"bold"}>{food3}</Text>
+              <Text fontSize={16}>{food3des}</Text>
+            </Box>
+            <Image source={{ uri: food3img }}
+                    alt="food"
+                    w="140"
+                    h="140"
+                    borderRightRadius={20}
+             />
+             </HStack>
+          </Box>
         </ScrollView>
       );
     }
@@ -120,12 +128,12 @@ const DetailScreen = ({ route }) => {
             shadowColor={"#000"}
             shadowOpacity={0.25}
             shadowRadius={3.84}
-            {...(Platform.OS == "ios"
-              ? (shadowOffset = {
-                  width: 6,
-                  height: 6,
-                })
-              : null)}
+            // {...(Platform.OS == "ios"
+            //   ? (shadowOffset = {
+            //       width: 6,
+            //       height: 6,
+            //     })
+            //   : null)}
             elevation={6}
           >
             <HStack mt={30} justifyContent="center">
@@ -207,19 +215,19 @@ const DetailScreen = ({ route }) => {
             marginTop: 10,
             borderColor: "gray",
             borderWidth: 1,
-            backgroundColor: "#3F382E",
+            backgroundColor: "#FFFAE1",
           }}
           firstTabStyle={{ marginLeft: 40 }}
           lastTabStyle={{ marginRight: 40 }}
           tabTextStyle={{
             fontSize: 16,
             padding: 1,
-            color: "#fff",
+            color: "black",
           }}
           activeTabStyle={{
-            backgroundColor: "#FFFAE1",
+            backgroundColor: "#3F382E",
           }}
-          activeTabTextStyle={{ color: "#151520" }}
+          activeTabTextStyle={{ color: "white" }}
           selectedIndex={selectedIndex}
           onTabPress={(index) => setSelectedIndex(index)}
         />

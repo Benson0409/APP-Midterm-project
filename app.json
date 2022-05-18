@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/newbear.jpg",
+      "image": "./assets/bear2.0.png",
       "resizeMode": "contain",
       "backgroundColor": "#FFFAE1"
     },
