@@ -53,7 +53,7 @@ const DetailScreen = ({ route }) => {
     if (selectedIndex == 1) {
       return (
         <Center
-          flex={1}
+          flex={2}
           _dark={{ bg: "blueGray.900" }}
           _light={{ bg: "blueGray.50" }}
         >
