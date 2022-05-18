@@ -20,6 +20,7 @@ import {
   TextArea,
   Toast,
   Divider,
+  Column,
 } from "native-base";
 import { opacity } from "react-native-reanimated/src/reanimated2/Colors";
 import { useDispatch, useSelector } from "react-redux";
@@ -61,52 +62,83 @@ const DetailScreen = ({ route }) => {
     } else {
       return (
         <ScrollView flex={1}>
-          <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5} >
-            <HStack>
-            <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}  
-            shadowColor={"#000"}
-            shadowOpacity={0.25}
-            shadowRadius={3.84}>
-              <Text fontSize={20} fontWeight={"bold"}>{food1}</Text>
-              <Text fontSize={16}>{food1des}</Text>
+          <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5}>
+            <Box
+              borderLeftRadius={20}
+              borderRightRadius={20}
+              shadowColor={"#000"}
+              shadowOpacity={0.25}
+              shadowRadius={3.84}
+              elevation={5}
+              mb={5}
+            >
+              <HStack>
+                <Box bg={"#FFFAE1"} w={200} p={2}>
+                  <Text fontSize={20} fontWeight={"bold"}>
+                    {food1}
+                  </Text>
+                  <Text fontSize={16}>{food1des}</Text>
+                </Box>
+                <Image
+                  source={{ uri: food1img }}
+                  alt="food"
+                  w="146"
+                  h="146"
+                  borderRightRadius={20}
+                />
+              </HStack>
             </Box>
-            <Image source={{ uri: food1img }}
-                    alt="food"
-                    w="140"
-                    h="140"
-                    borderRightRadius={20}
-             />
-             </HStack>
-             <HStack mt={5}>
-            <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}  
-            shadowColor={"#000"}
-            shadowOpacity={0.25}
-            shadowRadius={3.84}>
-              <Text fontSize={20} fontWeight={"bold"}>{food2}</Text>
-              <Text fontSize={16}>{food2des}</Text>
+            <Box
+              borderLeftRadius={20}
+              borderRightRadius={20}
+              shadowColor={"#000"}
+              shadowOpacity={0.25}
+              shadowRadius={3.84}
+              elevation={5}
+              mb={5}
+            >
+              <HStack>
+                <Box bg={"#FFFAE1"} w={200} p={2}>
+                  <Text fontSize={20} fontWeight={"bold"}>
+                    {food2}
+                  </Text>
+                  <Text fontSize={16}>{food2des}</Text>
+                </Box>
+                <Image
+                  source={{ uri: food2img }}
+                  alt="food"
+                  w="146"
+                  h="146"
+                  borderRightRadius={20}
+                />
+              </HStack>
             </Box>
-            <Image source={{ uri: food2img }}
-                    alt="food"
-                    w="140"
-                    h="140"
-                    borderRightRadius={20}
-             />
-             </HStack>
-             <HStack mt={5} mb={10}>
-            <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}  
-            shadowColor={"#000"}
-            shadowOpacity={0.25}
-            shadowRadius={3.84}>
-              <Text fontSize={20} fontWeight={"bold"}>{food3}</Text>
-              <Text fontSize={16}>{food3des}</Text>
+
+            <Box
+              borderLeftRadius={20}
+              borderRightRadius={20}
+              shadowColor={"#000"}
+              shadowOpacity={0.25}
+              shadowRadius={3.84}
+              elevation={5}
+              mb={5}
+            >
+              <HStack>
+                <Box bg={"#FFFAE1"} w={200} p={2}>
+                  <Text fontSize={20} fontWeight={"bold"}>
+                    {food3}
+                  </Text>
+                  <Text fontSize={16}>{food3des}</Text>
+                </Box>
+                <Image
+                  source={{ uri: food3img }}
+                  alt="food"
+                  w="146"
+                  h="146"
+                  borderRightRadius={20}
+                />
+              </HStack>
             </Box>
-            <Image source={{ uri: food3img }}
-                    alt="food"
-                    w="140"
-                    h="140"
-                    borderRightRadius={20}
-             />
-             </HStack>
           </Box>
         </ScrollView>
       );
