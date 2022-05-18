@@ -16,6 +16,7 @@ import {
   Image,
   Button,
   HStack,
+  VStack,
   Pressable,
   TextArea,
   Toast,
@@ -60,13 +61,47 @@ const DetailScreen = ({ route }) => {
       );
     } else {
       return (
-        <Center
-          flex={1}
-          _dark={{ bg: "blueGray.900" }}
-          _light={{ bg: "blueGray.50" }}
-        >
-          <Text>This is a General Account Setting Page</Text>
-        </Center>
+        <ScrollView flex={1}>
+          <Center>
+            <Box
+              // w={354}
+              // h={156}
+              m={5}
+              _dark={{ bg: "#5E5A54" }}
+              _light={{ bg: "#F6FFF1" }}
+            >
+              <HStack>
+                <Box bg={"#FFFAE1"} w={"62%"}>
+                  <VStack m={1}>
+                    <Box>
+                      <Text fontSize={20} fontWeight={700}>
+                        {food1}
+                      </Text>
+                    </Box>
+                    <Box>
+                      <Text fontSize={16} fontWeight={400}>
+                        {food1des}
+                      </Text>
+                    </Box>
+                  </VStack>
+                </Box>
+                <Box w={"38%"}>
+                  {/* <Text>{food1des}</Text> */}
+                  <Image
+                    source={{ uri: food1img }}
+                    alt="food"
+                    w="142"
+                    h="142"
+                    resizeMode="cover"
+                    // borderBottomRightRadius={20}
+                    // borderTopRightRadius={20}
+                  />
+                </Box>
+              </HStack>
+            </Box>
+            {/* <Text>This is a General Account Setting Page</Text> */}
+          </Center>
+        </ScrollView>
       );
     }
   };
@@ -172,19 +207,19 @@ const DetailScreen = ({ route }) => {
             marginTop: 10,
             borderColor: "gray",
             borderWidth: 1,
-            backgroundColor: "white",
+            backgroundColor: "#3F382E",
           }}
-          firstTabStyle={{ marginLeft: 20 }}
-          lastTabStyle={{ marginRight: 20 }}
+          firstTabStyle={{ marginLeft: 40 }}
+          lastTabStyle={{ marginRight: 40 }}
           tabTextStyle={{
             fontSize: 16,
-            padding: 5,
-            color: "gray",
+            padding: 1,
+            color: "#fff",
           }}
           activeTabStyle={{
-            backgroundColor: "gray",
+            backgroundColor: "#FFFAE1",
           }}
-          activeTabTextStyle={{ color: "white" }}
+          activeTabTextStyle={{ color: "#151520" }}
           selectedIndex={selectedIndex}
           onTabPress={(index) => setSelectedIndex(index)}
         />
