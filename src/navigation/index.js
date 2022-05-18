@@ -14,7 +14,8 @@ import {
 } from "native-base";
 import { TouchableOpacity, activeOpacity, Platform } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
-
+import { useDispatch, useSelector } from "react-redux";
+import { selectLike, detect } from "../redux/likeSlice";
 // import {
 //   AnimatedTabBarNavigator,
 //   DotSize, // optional
@@ -36,6 +37,9 @@ import FavoriteScreen from "../screen/FavoriteScreen";
 import { lightTheme, darkTheme } from "../Theme";
 
 import foodData from "../json/food.json";
+
+// const likeValue = useSelector(selectLike);
+// const dispatch = useDispatch();
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();

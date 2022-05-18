@@ -19,7 +19,7 @@ import { useSelector } from "react-redux";
 import { selectLike } from "../redux/likeSlice";
 const HomeScreen = ({ navigation }) => {
   //5/17
-  const likeValue = useSelector(selectLike);
+  // const likeValue = useSelector(selectLike);
   return (
     <ScrollView>
       <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "white" }}>
@@ -82,7 +82,7 @@ const HomeScreen = ({ navigation }) => {
           <Text fontSize={24} fontWeight={"bold"}>
             {foodData.title2}
             {/* 5/17 */}
-            <Text>{likeValue}</Text>
+            {/* <Text>{likeValue}</Text> */}
           </Text>
         </HStack>
         <HomeList list={foodData.data2} navigation={navigation} />

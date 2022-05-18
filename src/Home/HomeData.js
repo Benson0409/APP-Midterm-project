@@ -24,7 +24,7 @@ import { increaseOne, decreaseOne } from "../redux/likeSlice";
 const HomeData = ({ Home, navigation }) => {
   //5/17
   // Define a dispatch to send actions
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const [Like, setLike] = useState(false);
   return (
     <Box mx="auto" mb="8" mt={5} ml={8} mr={3}>
@@ -62,7 +62,7 @@ const HomeData = ({ Home, navigation }) => {
                 onPress={() => {
                   setLike(!Like);
                   //5/17
-                  dispatch(increaseOne());
+                  // dispatch(increaseOne());
                 }}
               >
                 {Like ? (

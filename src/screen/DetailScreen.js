@@ -5,7 +5,7 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Entypo from "react-native-vector-icons/Entypo";
 import AntDesign from "react-native-vector-icons/AntDesign";
-
+import SegmentedControlTab from "react-native-segmented-control-tab";
 import {
   Center,
   ScrollView,
@@ -46,6 +46,30 @@ const DetailScreen = ({ route }) => {
     comment,
     url,
   } = route.params;
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const SegmentedContent = () => {
+    if (selectedIndex == 1) {
+      return (
+        <Center
+          flex={1}
+          _dark={{ bg: "blueGray.900" }}
+          _light={{ bg: "blueGray.50" }}
+        >
+          <Text>This is an Advanced Account Setting Page</Text>
+        </Center>
+      );
+    } else {
+      return (
+        <Center
+          flex={1}
+          _dark={{ bg: "blueGray.900" }}
+          _light={{ bg: "blueGray.50" }}
+        >
+          <Text>This is a General Account Setting Page</Text>
+        </Center>
+      );
+    }
+  };
 
   return (
     <ScrollView>
@@ -142,6 +166,30 @@ const DetailScreen = ({ route }) => {
             bg={"#A1917A"}
           ></Divider>
         </Box>
+        <SegmentedControlTab
+          values={["人氣推薦", "評論區"]}
+          tabStyle={{
+            marginTop: 10,
+            borderColor: "gray",
+            borderWidth: 1,
+            backgroundColor: "white",
+          }}
+          firstTabStyle={{ marginLeft: 20 }}
+          lastTabStyle={{ marginRight: 20 }}
+          tabTextStyle={{
+            fontSize: 16,
+            padding: 5,
+            color: "gray",
+          }}
+          activeTabStyle={{
+            backgroundColor: "gray",
+          }}
+          activeTabTextStyle={{ color: "white" }}
+          selectedIndex={selectedIndex}
+          onTabPress={(index) => setSelectedIndex(index)}
+        />
+
+        <SegmentedContent />
       </Box>
     </ScrollView>
   );
