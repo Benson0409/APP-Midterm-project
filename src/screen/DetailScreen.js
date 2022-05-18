@@ -21,6 +21,7 @@ import {
   TextArea,
   Toast,
   Divider,
+  SimpleGrid,
 } from "native-base";
 import { opacity } from "react-native-reanimated/src/reanimated2/Colors";
 import { useDispatch, useSelector } from "react-redux";
@@ -69,6 +70,8 @@ const DetailScreen = ({ route }) => {
               m={5}
               _dark={{ bg: "#5E5A54" }}
               _light={{ bg: "#F6FFF1" }}
+              elevation={5}
+              flex={1}
             >
               <HStack>
                 <Box bg={"#FFFAE1"} w={"62%"}>
@@ -99,7 +102,6 @@ const DetailScreen = ({ route }) => {
                 </Box>
               </HStack>
             </Box>
-            {/* <Text>This is a General Account Setting Page</Text> */}
           </Center>
         </ScrollView>
       );
