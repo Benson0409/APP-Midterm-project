@@ -4,7 +4,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import AntDesign from "react-native-vector-icons/AntDesign";
+import Feather from "react-native-vector-icons/Feather";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import {
   StatusBar,
   extendTheme,
@@ -42,8 +44,9 @@ import foodData from "../json/food.json";
 // const dispatch = useDispatch();
 
 const Stack = createNativeStackNavigator();
-const Tab = createBottomTabNavigator();
-//const Tab = AnimatedTabBarNavigator();
+// const Tab = createBottomTabNavigator();
+// const Tab = AnimatedTabBarNavigator();
+const Tab = createMaterialBottomTabNavigator();
 
 const Navigation = () => {
   const { colorMode } = useColorMode();
@@ -66,6 +69,9 @@ const MyTabs = () => {
   return (
     <Tab.Navigator
       initialRouteName="HomeStack"
+      activeColor="#463C2E"
+      inactiveColor="white"
+      barStyle={{ backgroundColor: '#A1917A' }}
       screenOptions={{
         tabBarInactiveTintColor: colorMode == "light" ? "white" : "#A1917A",
         tabBarActiveTintColor: colorMode == "light" ? "#463C2E" : "white",
@@ -74,7 +80,7 @@ const MyTabs = () => {
         },
         tabBarLabelStyle: {
           fontWeight: "bold",
-          fontSize: 12,
+          fontSize: 15,
           bottom: 4,
         },
       }}
@@ -88,7 +94,7 @@ const MyTabs = () => {
 
           fontWeight: "bold",
           tabBarIcon: ({ color, focused, size }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <AntDesign name="home" color={color} size={26} />
           ),
         }}
       />
@@ -100,7 +106,7 @@ const MyTabs = () => {
           title: "搜尋",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
-              name="feature-search-outline"
+              name="map-search-outline"
               color={color}
               size={26}
             />
@@ -115,9 +121,9 @@ const MyTabs = () => {
           title: "最愛",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
-              name="cards-heart"
+              name="heart-multiple"
               color={color}
-              size={26}
+              size={25}
             />
           ),
         }}
@@ -129,7 +135,7 @@ const MyTabs = () => {
           headerShown: false,
           title: "設定",
           tabBarIcon: ({ color }) => (
-            <SimpleLineIcons name="settings" color={color} size={26} />
+            <Feather name="settings" color={color} size={24} />
           ),
         }}
       />

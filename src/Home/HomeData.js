@@ -50,7 +50,7 @@ const HomeData = ({ Home, navigation }) => {
               borderTopRadius={25}
               w="260"
               h="192"
-              opacity={80}
+              opacity={85}
             />
             <Center
               position="absolute"
