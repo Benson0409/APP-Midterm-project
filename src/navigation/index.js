@@ -6,7 +6,7 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Feather from "react-native-vector-icons/Feather";
 import { FontAwesome5 } from "@expo/vector-icons";
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
+import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import {
   StatusBar,
   extendTheme,
@@ -44,9 +44,9 @@ import foodData from "../json/food.json";
 // const dispatch = useDispatch();
 
 const Stack = createNativeStackNavigator();
-// const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 // const Tab = AnimatedTabBarNavigator();
-const Tab = createMaterialBottomTabNavigator();
+// const Tab = createMaterialBottomTabNavigator();
 
 const Navigation = () => {
   const { colorMode } = useColorMode();
@@ -71,7 +71,7 @@ const MyTabs = () => {
       initialRouteName="HomeStack"
       activeColor="#463C2E"
       inactiveColor="white"
-      barStyle={{ backgroundColor: '#A1917A' }}
+      barStyle={{ backgroundColor: "#A1917A" }}
       screenOptions={{
         tabBarInactiveTintColor: colorMode == "light" ? "white" : "#A1917A",
         tabBarActiveTintColor: colorMode == "light" ? "#463C2E" : "white",

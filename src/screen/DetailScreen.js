@@ -55,7 +55,78 @@ const DetailScreen = ({ route }) => {
       return (
         <ScrollView>
           <Center flex={1} _dark={{ bg: "#5E5A54" }} _light={{ bg: "#F6FFF1" }}>
-            <Text mt={5}>快來留下評論吧</Text>
+            {/* <Text mt={5}>快來留下評論吧</Text> */}
+
+            <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5}>
+              <Box
+                borderLeftRadius={20}
+                borderRightRadius={20}
+                shadowColor={"#000"}
+                shadowOpacity={0.25}
+                shadowRadius={3.84}
+                elevation={8}
+                mb={5}
+              >
+                <HStack>
+                  <Box bg={"#FFFAE1"} borderLeftRadius={20}>
+                    <Image
+                      source={{
+                        uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture1.png?raw=true",
+                      }}
+                      alt="food"
+                      w="100"
+                      h="100"
+                      borderLeftRadius={20}
+                      // mt={2}
+                      // ml={2}
+                      m={2}
+                    />
+                  </Box>
+                  <Box bg={"#FFFAE1"} w={200} p={2} borderRightRadius={20}>
+                    <Text fontSize={20} fontWeight={"bold"}>
+                      簡柏松
+                    </Text>
+                    <Text fontSize={16}>
+                      水餃很Q彈而且肉汁味很香，飽滿又大顆，食材味道可以很清楚的表現。
+                    </Text>
+                  </Box>
+                </HStack>
+              </Box>
+            </Box>
+            <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5}>
+              <Box
+                borderLeftRadius={20}
+                borderRightRadius={20}
+                shadowColor={"#000"}
+                shadowOpacity={0.25}
+                shadowRadius={3.84}
+                elevation={8}
+                mb={5}
+              >
+                <HStack>
+                  <Box bg={"#FFFAE1"} borderLeftRadius={20}>
+                    <Image
+                      source={{
+                        uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture2.png?raw=true",
+                      }}
+                      alt="food"
+                      w="100"
+                      h="100"
+                      borderLeftRadius={20}
+                      // mt={2}
+                      // ml={2}
+                      m={2}
+                    />
+                  </Box>
+                  <Box bg={"#FFFAE1"} w={200} p={2} borderRightRadius={20}>
+                    <Text fontSize={20} fontWeight={"bold"}>
+                      林毓庭
+                    </Text>
+                    <Text fontSize={16}>我覺得她很好吃!!!!</Text>
+                  </Box>
+                </HStack>
+              </Box>
+            </Box>
             <Box w={354}>
               <HStack>
                 <Box>
@@ -91,7 +162,7 @@ const DetailScreen = ({ route }) => {
     } else {
       return (
         <ScrollView flex={1}>
-          <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5} >
+          <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5}>
             <Box
               borderLeftRadius={20}
               borderRightRadius={20}
@@ -102,7 +173,7 @@ const DetailScreen = ({ route }) => {
               mb={5}
             >
               <HStack>
-                <Box bg={"#FFFAE1"} w={200} p={2}>
+                <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}>
                   <Text fontSize={20} fontWeight={"bold"}>
                     {food1}
                   </Text>
@@ -127,7 +198,7 @@ const DetailScreen = ({ route }) => {
               mb={5}
             >
               <HStack>
-                <Box bg={"#FFFAE1"} w={200} p={2}>
+                <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}>
                   <Text fontSize={20} fontWeight={"bold"}>
                     {food2}
                   </Text>
@@ -153,7 +224,7 @@ const DetailScreen = ({ route }) => {
               mb={5}
             >
               <HStack>
-                <Box bg={"#FFFAE1"} w={200} p={2}>
+                <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}>
                   <Text fontSize={20} fontWeight={"bold"}>
                     {food3}
                   </Text>

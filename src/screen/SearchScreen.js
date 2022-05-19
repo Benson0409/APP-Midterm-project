@@ -20,11 +20,11 @@ const SearchScreen = ({ navigation }) => {
       <Box alignSelf={"center"} mt={8}>
         <Input
           placeholder="搜尋國北附近美食"
-          width="80%"
+          width="300"
           borderRadius="20"
           py="3"
           px="1"
-          // bg={"white"}
+          bg={"white"}
           fontSize="14"
           InputLeftElement={
             <Icon
