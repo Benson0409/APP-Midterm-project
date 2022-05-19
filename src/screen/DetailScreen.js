@@ -74,7 +74,7 @@ const DetailScreen = ({ route }) => {
                   />
                 </Box>
 
-                <Box position="absolute" pt={7} pl={300}>
+                <Box position="absolute" pt={6} pl={310}>
                   <TouchableOpacity>
                     <MaterialCommunityIcons
                       name="send"
@@ -272,7 +272,7 @@ const DetailScreen = ({ route }) => {
         <SegmentedControlTab
           values={["人氣推薦", "評論區"]}
           tabStyle={{
-            marginTop: 10,
+            marginTop: 30,
             borderColor: "gray",
             borderWidth: 1,
             backgroundColor: "#FFFAE1",
