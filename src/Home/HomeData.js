@@ -27,7 +27,7 @@ const HomeData = ({ Home, navigation }) => {
   // const dispatch = useDispatch();
   const [Like, setLike] = useState(false);
   return (
-    <Box mx="auto" mb="8" mt={5} ml={8} mr={3}>
+    <Box mx="auto" mb="8" mt={5} ml={8} mr={3} >
       <VStack
         shadowColor={"#000"}
         shadowOpacity={0.25}
@@ -50,7 +50,7 @@ const HomeData = ({ Home, navigation }) => {
               borderTopRadius={25}
               w="260"
               h="192"
-              opacity={80}
+              opacity={85}
             />
             <Center
               position="absolute"

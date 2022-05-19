@@ -8,7 +8,8 @@ import {
   useColorMode,
   Switch,
 } from "native-base";
-import AntDesign from "react-native-vector-icons/AntDesign";
+import Entypo from "react-native-vector-icons/Entypo";
+import FontAwesome from "react-native-vector-icons/FontAwesome";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
@@ -23,7 +24,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       >
         <HStack _dark={{}} _light={{}} py="5">
           <Box ml={5} mr={15} mt={0.5}>
-            <FontAwesome5 name="user-circle" color="#FCAA87" size={30} />
+            <FontAwesome name="user-circle-o" color="#FCAA87" size={30} />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -88,8 +89,8 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       // >
       <HStack _dark={{}} _light={{}} py="5" mt={5}>
         <Box ml={5} mr={15} pt={0.5}>
-          <MaterialCommunityIcons
-            name="alarm-light"
+          <Entypo
+            name="light-up"
             color="#FCAA87"
             size={30}
           />

@@ -1,11 +1,14 @@
 import React from "react";
-import { Box, Divider } from "native-base";
+import { Box, Divider,Text } from "native-base";
 import ListItem from "../Settings/ListItem";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 const SettingsScreen = ({ navigation }) => {
   return (
     <Box  _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }} h="100%">
+      <Box bg={"#A1917A"} w={"100%"} borderRadius={500}>
+        <Text>hi</Text>
+      </Box>
       <ListItem
         title="登入/註冊"
         navigation={navigation}

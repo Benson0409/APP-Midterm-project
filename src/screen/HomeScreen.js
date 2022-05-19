@@ -22,7 +22,7 @@ const HomeScreen = ({ navigation }) => {
   // const likeValue = useSelector(selectLike);
   return (
     <ScrollView>
-      <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "white" }}>
+      <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#F6FFF1" }}>
         <Box bg={"#A1917A"} w={"100%"} h={140} borderBottomRadius={20}>
           <Box ml={27} mt={5}>
             <Text color={"white"} fontSize={24} fontWeight={"bold"}>

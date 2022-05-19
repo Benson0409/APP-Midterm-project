@@ -91,7 +91,7 @@ const DetailScreen = ({ route }) => {
     } else {
       return (
         <ScrollView flex={1}>
-          <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5}>
+          <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5} >
             <Box
               borderLeftRadius={20}
               borderRightRadius={20}
