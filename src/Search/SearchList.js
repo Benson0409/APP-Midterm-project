@@ -25,7 +25,7 @@ const SearchList = ({ list, navigation }) => {
               borderRadius={10}
               borderWidth={2}
               fontSize={"13"}
-              bg={"white"}
+              // bg={"white"}
             ></Input>
           </HStack>
         </>
