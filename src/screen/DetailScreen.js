@@ -6,6 +6,7 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Entypo from "react-native-vector-icons/Entypo";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import SegmentedControlTab from "react-native-segmented-control-tab";
+
 import {
   Center,
   ScrollView,
@@ -21,8 +22,9 @@ import {
   Toast,
   Divider,
   Column,
+  Input,
 } from "native-base";
-import { opacity } from "react-native-reanimated/src/reanimated2/Colors";
+import { opacity, red } from "react-native-reanimated/src/reanimated2/Colors";
 import { useDispatch, useSelector } from "react-redux";
 
 const DetailScreen = ({ route }) => {
@@ -51,13 +53,40 @@ const DetailScreen = ({ route }) => {
   const SegmentedContent = () => {
     if (selectedIndex == 1) {
       return (
-        <Center
-          flex={1}
-          _dark={{ bg: "blueGray.900" }}
-          _light={{ bg: "blueGray.50" }}
-        >
-          <Text>This is an Advanced Account Setting Page</Text>
-        </Center>
+        <ScrollView>
+          <Center flex={1} _dark={{ bg: "#5E5A54" }} _light={{ bg: "#F6FFF1" }}>
+            <Text mt={5}>快來留下評論吧</Text>
+            <Box w={354}>
+              <HStack>
+                <Box>
+                  <Input
+                    variant="filled"
+                    placeholder="留下您的評論:"
+                    fontSize={15}
+                    borderRadius={20}
+                    mt={5}
+                    mb={5}
+                    bg={"#FFFAE1"}
+                    borderColor={"black"}
+                    w={354}
+                    letterSpacing={5}
+                    // elevation={5}
+                  />
+                </Box>
+
+                <Box position="absolute" pt={7} pl={300}>
+                  <TouchableOpacity>
+                    <MaterialCommunityIcons
+                      name="send"
+                      color={"#A1917A"}
+                      size={30}
+                    />
+                  </TouchableOpacity>
+                </Box>
+              </HStack>
+            </Box>
+          </Center>
+        </ScrollView>
       );
     } else {
       return (
@@ -69,7 +98,7 @@ const DetailScreen = ({ route }) => {
               shadowColor={"#000"}
               shadowOpacity={0.25}
               shadowRadius={3.84}
-              elevation={5}
+              elevation={8}
               mb={5}
             >
               <HStack>

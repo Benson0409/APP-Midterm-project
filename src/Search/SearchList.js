@@ -18,14 +18,14 @@ const SearchList = ({ list, navigation }) => {
             <Box mr={2} mt={0.5}>
               <MaterialIcons name="search" color={"#FCAA87"} size={32} />
             </Box>
-            
+
             <Input
               placeholder="搜尋國北附近美食"
               w={280}
               borderRadius={10}
               borderWidth={2}
-              bg={"white"}
               fontSize={"13"}
+              bg={"white"}
             ></Input>
           </HStack>
         </>
