@@ -29,6 +29,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import lightMap from "../mapStyle/standardMap.json";
 import darkMap from "../mapStyle/AubergineMap.json";
 import ActionButton from "../ActionSheet/ActionButton";
+import mapJson from "../json/map.json";
 const SearchScreen = ({ navigation }) => {
   const [msg, setMsg] = useState("Waiting...");
 
@@ -49,23 +50,12 @@ const SearchScreen = ({ navigation }) => {
     address: "台北市和平東路二段134號",
   });
 
-  const [restaurant, Setresurant] = useState();
+  const [restaurant, Setresurant] = useState(mapJson); //要加json檔
+  const [zoomRatio, setZoomRatio] = useState(1);
 
   const onRegionChangeComplete = (rgn) => {
-    if (
-      Math.abs(rgn.latitude - region.latitude) > 0.0002 ||
-      Math.abs(rgn.longitude - region.longitude) > 0.0002
-    ) {
-      setRegion(rgn);
-      setMarker({
-        ...marker,
-        coord: {
-          longitude: rgn.longitude,
-          latitude: rgn.latitude,
-        },
-      });
-      setOnCurrentLocation(false);
-    }
+    if (rgn.longitudeDelta > 0.02) setZoomRatio(0.02 / rgn.longitudeDelta);
+    else setZoomRatio(1);
   };
 
   const setRegionAndMarker = (location) => {
@@ -116,7 +106,7 @@ const SearchScreen = ({ navigation }) => {
         }}
         // showsTraffic
         provider="google"
-        // onRegionChangeComplete={onRegionChangeComplete}
+        onRegionChangeComplete={onRegionChangeComplete}
         customMapStyle={lightMap}
       >
         <Marker
@@ -126,8 +116,21 @@ const SearchScreen = ({ navigation }) => {
         >
           <FontAwesome name={"map-marker"} size={60} color="#B12A5B" />
         </Marker>
+        {zoomRatio > 0.14 &&
+          restaurant.map((site) => (
+            <Marker
+              coordinate={{
+                latitude: site.latitude,
+                longitude: site.longitude,
+              }}
+              title={site.name}
+              description={site.address}
+            >
+              <ActionButton zoomRatio={zoomRatio} site={site} />
+            </Marker>
+          ))}
       </MapView>
-      {/* {!onCurrentLocation && (
+      {!onCurrentLocation && (
         <Box
           bg="white"
           borderRadius={60}
@@ -144,7 +147,7 @@ const SearchScreen = ({ navigation }) => {
             onPress={getLocation}
           />
         </Box>
-      )} */}
+      )}
     </Box>
     // <Box _light={{ bg: "#A1917A" }} h={100} borderBottomRadius={20}>
     //   <Box alignSelf={"center"} mt={8}>
