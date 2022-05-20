@@ -10,7 +10,7 @@ import {
   Image,
   Center,
 } from "native-base";
-import Starbar from "../star/starabr";
+import Starbar from "../components/starbar";
 import {
   TouchableOpacity,
   activeOpacity,

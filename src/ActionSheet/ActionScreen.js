@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, VStack, Center, Text, Pressable, HStack } from "native-base";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 const ActionScreen = ({ onClose, site }) => {
   const {
@@ -78,3 +79,4 @@ const ActionScreen = ({ onClose, site }) => {
     </VStack>
   );
 };
+export default ActionScreen;

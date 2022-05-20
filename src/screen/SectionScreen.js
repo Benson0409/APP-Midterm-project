@@ -1,6 +1,6 @@
 import React from "react";
 import foodData from "../json/food.json";
-import Starbar from "../star/starabr";
+import Starbar from "../components/starbar";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import {

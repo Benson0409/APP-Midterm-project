@@ -50,7 +50,7 @@ const SearchScreen = ({ navigation }) => {
     address: "台北市和平東路二段134號",
   });
 
-  const [restaurant, Setresurant] = useState(mapJson); //要加json檔
+  const [restaurant,setresurant] = useState(mapJson); //要加json檔
   const [zoomRatio, setZoomRatio] = useState(1);
 
   const onRegionChangeComplete = (rgn) => {
@@ -98,14 +98,17 @@ const SearchScreen = ({ navigation }) => {
     <Box>
       <MapView
         region={region}
+        
         style={{
           // width: SCREEN_WIDTH | SomeValue,
           // height: SCREEN_HEIGHT | SomeValue,
           flex: 1,
-          minHeight: 680,
+          minHeight: 800,
         }}
         // showsTraffic
         provider="google"
+        
+        
         onRegionChangeComplete={onRegionChangeComplete}
         customMapStyle={lightMap}
       >
@@ -116,8 +119,7 @@ const SearchScreen = ({ navigation }) => {
         >
           <FontAwesome name={"map-marker"} size={60} color="#B12A5B" />
         </Marker>
-        {zoomRatio > 0.14 &&
-          restaurant.map((site) => (
+        {zoomRatio > 0.14 && restaurant.map((site) => (
             <Marker
               coordinate={{
                 latitude: site.latitude,

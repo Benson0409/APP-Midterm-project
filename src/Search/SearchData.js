@@ -12,7 +12,7 @@ import {
 } from "native-base";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
-import Starbar from "../star/starabr";
+import Starbar from "../components/starbar";
 const SearchData = ({ Search, navigation }) => {
   return (
     <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }}>

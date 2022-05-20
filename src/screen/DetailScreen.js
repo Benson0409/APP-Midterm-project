@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Linking, TouchableOpacity } from "react-native";
-import Starbar from "../star/starabr";
+import Starbar from "../components/starbar";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Entypo from "react-native-vector-icons/Entypo";
