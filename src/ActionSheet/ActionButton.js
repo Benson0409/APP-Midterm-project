@@ -1,7 +1,7 @@
 import React from "react";
 import { Center, Pressable, Actionsheet, useDisclose } from "native-base";
 import Icon from "react-native-vector-icons/FontAwesome";
-import ActionScreen from "./ActionScreen";
+import ActionScreen from "../ActionSheet/ActionScreen";
 
 export default (props) => {
   const { isOpen, onOpen, onClose } = useDisclose();
@@ -12,12 +12,12 @@ export default (props) => {
       <Pressable onPress={onOpen}>
         <Center
           bg="white"
-          borderRadius={60}
-          p={3 * zoomRatio}
-          borderWidth={2 * zoomRatio}
+          borderRadius={80}
+          p={2 * zoomRatio}
+          borderWidth={1 * zoomRatio}
           borderColor="black"
         >
-          <Icon name={"bicycle"} size={30 * zoomRatio} color="black" />
+          <Icon name={"cutlery"} size={20 * zoomRatio} color="black" />
         </Center>
       </Pressable>
       <Actionsheet isOpen={isOpen} onClose={onClose}>
