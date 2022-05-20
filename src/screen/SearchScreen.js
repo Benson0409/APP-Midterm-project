@@ -29,6 +29,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import lightMap from "../mapStyle/standardMap.json";
 import darkMap from "../mapStyle/AubergineMap.json";
 import ActionButton from "../ActionSheet/ActionButton";
+import mapJson from "../json/map.json";
 const SearchScreen = ({ navigation }) => {
   const [msg, setMsg] = useState("Waiting...");
 
@@ -49,7 +50,7 @@ const SearchScreen = ({ navigation }) => {
     address: "台北市和平東路二段134號",
   });
 
-  const [restaurant, Setresurant] = useState(); //要加json檔
+  const [restaurant, Setresurant] = useState(mapJson); //要加json檔
   const [zoomRatio, setZoomRatio] = useState(1);
 
   const onRegionChangeComplete = (rgn) => {
@@ -125,19 +126,11 @@ const SearchScreen = ({ navigation }) => {
               title={site.name}
               description={site.address}
             >
-              <Center
-                bg="white"
-                borderRadius={60}
-                p={3 * zoomRatio}
-                borderWidth={2 * zoomRatio}
-                borderColor="black"
-              >
-                <Icon name={"bus"} size={30 * zoomRatio} color="black" />
-              </Center>
+              <ActionButton zoomRatio={zoomRatio} site={site} />
             </Marker>
           ))}
       </MapView>
-      {/* {!onCurrentLocation && (
+      {!onCurrentLocation && (
         <Box
           bg="white"
           borderRadius={60}
@@ -154,7 +147,7 @@ const SearchScreen = ({ navigation }) => {
             onPress={getLocation}
           />
         </Box>
-      )} */}
+      )}
     </Box>
     // <Box _light={{ bg: "#A1917A" }} h={100} borderBottomRadius={20}>
     //   <Box alignSelf={"center"} mt={8}>
