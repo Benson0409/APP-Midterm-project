@@ -17,7 +17,7 @@ import { Image } from "react-native-svg";
 const SearchScreen = ({ navigation }) => {
   return (
     <Box _light={{ bg: "#A1917A" }} h={100} borderBottomRadius={20}>
-      <Box alignSelf={"center"} mt={8}>
+      {/* <Box alignSelf={"center"} mt={8}>
         <Input
           placeholder="搜尋國北附近美食"
           width="300"
@@ -45,7 +45,7 @@ const SearchScreen = ({ navigation }) => {
             />
           }
         />
-      </Box>
+      </Box> */}
     </Box>
   );
 };
