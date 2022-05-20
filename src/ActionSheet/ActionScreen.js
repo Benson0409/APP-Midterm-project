@@ -78,3 +78,4 @@ const ActionScreen = ({ onClose, site }) => {
     </VStack>
   );
 };
+export default ActionScreen;
