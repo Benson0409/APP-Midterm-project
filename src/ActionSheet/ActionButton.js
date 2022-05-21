@@ -1,6 +1,6 @@
 import React from "react";
 import { Center, Pressable, Actionsheet, useDisclose } from "native-base";
-import Icon from "react-native-vector-icons/FontAwesome";
+import Ionicons from "react-native-vector-icons/Ionicons";
 import ActionScreen from "./ActionScreen";
 import { Marker } from "react-native-maps";
 const ActionButton = (props) => {
@@ -11,13 +11,13 @@ const ActionButton = (props) => {
     <>
       <Pressable onPress={onOpen}>
         <Center
-          bg="white"
+          bg="#155C7A"
           borderRadius={80}
           p={2 * zoomRatio}
           borderWidth={1 * zoomRatio}
           borderColor="black"
         >
-          <Icon name={"cutlery"} size={20 * zoomRatio} color="black" />
+          <Ionicons name={"restaurant"} size={20 * zoomRatio} color="white" />
         </Center>
       </Pressable>
       {/* <Marker

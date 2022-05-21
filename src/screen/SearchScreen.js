@@ -106,7 +106,7 @@ const SearchScreen = ({ navigation }) => {
           // minHeight: 800,
         }}
         // showsTraffic
-        provider="google"
+        // provider="google"
         onRegionChangeComplete={onRegionChangeComplete}
         customMapStyle={lightMap}
       >
