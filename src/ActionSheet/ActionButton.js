@@ -1,9 +1,9 @@
 import React from "react";
 import { Center, Pressable, Actionsheet, useDisclose } from "native-base";
 import Icon from "react-native-vector-icons/FontAwesome";
-import ActionScreen from "../ActionSheet/ActionScreen";
+import ActionScreen from "./ActionScreen";
 
-export default (props) => {
+const ActionButton = (props) => {
   const { isOpen, onOpen, onClose } = useDisclose();
   const { zoomRatio, site } = props;
 
@@ -26,3 +26,4 @@ export default (props) => {
     </>
   );
 };
+export default ActionButton;
