@@ -124,7 +124,7 @@ const SearchScreen = ({ navigation }) => {
                 latitude: Number(site.latitude),
                 longitude: Number(site.longitude),
               }}
-              title={`${site.name}`}
+              title={site.name}
               description={site.address}
               key={site.latitude}
             >
