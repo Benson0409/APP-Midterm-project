@@ -75,7 +75,11 @@ const HomeScreen = ({ navigation }) => {
             {foodData.title1}
           </Text>
         </HStack>
-        <HomeList list={foodData.data1} navigation={navigation} />
+        <HomeList
+          key={foodData.title1}
+          list={foodData.data1}
+          navigation={navigation}
+        />
 
         <HStack ml={35} mt={5}>
           <MaterialCommunityIcons name="noodles" color={"#DF9879"} size={30} />
@@ -85,7 +89,11 @@ const HomeScreen = ({ navigation }) => {
             {/* <Text>{likeValue}</Text> */}
           </Text>
         </HStack>
-        <HomeList list={foodData.data2} navigation={navigation} />
+        <HomeList
+          key={foodData.title2}
+          list={foodData.data2}
+          navigation={navigation}
+        />
 
         <HStack ml={35} mt={5}>
           <Entypo name="cake" color={"#DF9879"} size={30} />
@@ -93,7 +101,11 @@ const HomeScreen = ({ navigation }) => {
             {foodData.title3}
           </Text>
         </HStack>
-        <HomeList list={foodData.data3} navigation={navigation} />
+        <HomeList
+          key={foodData.title3}
+          list={foodData.data3}
+          navigation={navigation}
+        />
 
         <HStack ml={35} mt={5}>
           <Entypo name="drink" color={"#DF9879"} size={30} />
@@ -101,7 +113,11 @@ const HomeScreen = ({ navigation }) => {
             {foodData.title4}
           </Text>
         </HStack>
-        <HomeList list={foodData.data4} navigation={navigation} />
+        <HomeList
+          key={foodData.title4}
+          list={foodData.data4}
+          navigation={navigation}
+        />
       </Box>
     </ScrollView>
   );
