@@ -310,6 +310,7 @@ const HomeStack = () => {
   );
 };
 const SearchStack = () => {
+  const [Like, setLike] = useState(false);
   const { colorMode } = useColorMode();
   return (
     <Stack.Navigator>
@@ -401,7 +402,7 @@ const SearchStack = () => {
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            color: "white",
+            color: "#A1917A",
           },
           headerLeft: () => (
             <TouchableOpacity>
@@ -414,6 +415,23 @@ const SearchStack = () => {
               />
             </TouchableOpacity>
           ),
+          headerRight: () => (
+            <TouchableOpacity onPress={() => setLike(!Like)}>
+              {Like ? (
+                <MaterialCommunityIcons
+                  name="cards-heart"
+                  color={"red"}
+                  size={25}
+                />
+              ) : (
+                <MaterialCommunityIcons
+                  name="heart-outline"
+                  color={"white"}
+                  size={25}
+                />
+              )}
+            </TouchableOpacity>
+          )
         })}
       />
     </Stack.Navigator>

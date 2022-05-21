@@ -19,7 +19,7 @@ const ActionScreen = ({ navigation, onClose, site }) => {
     name,
     type,
     value,
-    address,
+    adr,
     phone,
     time,
     distance,
@@ -64,18 +64,18 @@ const ActionScreen = ({ navigation, onClose, site }) => {
       <Box>
         <HStack ml={5} mt={5}>
           <MaterialCommunityIcons name="map-marker" color={"red"} size={28} />
-          <Text fontSize={18}>{address}</Text>
+          <Text fontSize={18}>{adr}</Text>
         </HStack>
         <Divider mt={3} h={0.5} w="100%" bg={"#A1917A"}></Divider>
         <HStack ml={5} mt={5}>
-          <Entypo name="old-phone" color={"gray"} size={28} />
+          <Entypo name="old-phone" color={"#5B5449"} size={28} />
           <Text fontSize={20} ml={1}>
             {phone}
           </Text>
         </HStack>
         <Divider mt={3} h={0.5} w="100%" bg={"#A1917A"}></Divider>
         <HStack ml={5} mt={5}>
-          <AntDesign name="rest" color={"gray"} size={28} />
+          <AntDesign name="rest" color={"#5B5449"} size={28} />
           <Text fontSize={20} ml={1}>
             {time}
           </Text>

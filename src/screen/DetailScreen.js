@@ -290,7 +290,9 @@ const DetailScreen = ({ route }) => {
         </Center>
         <Box>
           <HStack ml={8} mb={3} mt={20}>
-            <MaterialCommunityIcons name="map-marker" color={"red"} size={25} />
+            <Box >
+            <MaterialCommunityIcons name="map-marker" color={"red"} size={25}/>
+            </Box>
             <Text ml={2} fontSize={20}>
               {address}
             </Text>
@@ -302,7 +304,7 @@ const DetailScreen = ({ route }) => {
             bg={"#A1917A"}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <Entypo name="old-phone" color={"#1CDA3A"} size={25} />
+            <Entypo name="old-phone" color={"#463C2E"} size={25} />
             <Text ml={3} fontSize={20}>
               {phone}
             </Text>
@@ -314,7 +316,7 @@ const DetailScreen = ({ route }) => {
             bg={"#A1917A"}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <AntDesign name="rest" color={"#DAA51C"} size={25} />
+            <AntDesign name="rest" color={"#463C2E"} size={25} />
             <Text ml={3} fontSize={20}>
               {time}
             </Text>
@@ -326,7 +328,7 @@ const DetailScreen = ({ route }) => {
             bg={"#A1917A"}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <MaterialIcons name="restaurant-menu" color={"#A447C5"} size={25} />
+            <MaterialIcons name="restaurant-menu" color={"#463C2E"} size={25} />
             <Pressable onPress={() => Linking.openURL(url)}>
               <Text ml={3} fontSize={20}>
                 {menu}
