@@ -128,7 +128,11 @@ const SearchScreen = ({ navigation }) => {
               description={site.address}
               key={site.latitude}
             >
-              <ActionButton zoomRatio={zoomRatio} site={site} />
+              <ActionButton
+                navigation={navigation}
+                zoomRatio={zoomRatio}
+                site={site}
+              />
             </Marker>
           ))}
       </MapView>

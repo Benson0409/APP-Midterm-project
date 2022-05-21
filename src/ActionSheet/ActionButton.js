@@ -5,7 +5,7 @@ import ActionScreen from "./ActionScreen";
 import { Marker } from "react-native-maps";
 const ActionButton = (props) => {
   const { isOpen, onOpen, onClose } = useDisclose();
-  const { zoomRatio, site } = props;
+  const { navigation, zoomRatio, site } = props;
 
   return (
     <>
@@ -20,27 +20,9 @@ const ActionButton = (props) => {
           <Ionicons name={"restaurant"} size={20 * zoomRatio} color="white" />
         </Center>
       </Pressable>
-      {/* <Marker
-        coordinate={{
-          latitude: Number(site.latitude),
-          longitude: Number(site.longitude),
-        }}
-        title={site.name}
-        // description={site.address}
-        // tracksViewChanges={false}
-        onPress={onOpen}
-      >
-        <Center
-          bg="white"
-          borderRadius={80}
-          p={2 * zoomRatio}
-          borderWidth={1 * zoomRatio}
-          borderColor="black"
-        >
-          <Icon name={"cutlery"} size={20 * zoomRatio} color="black" />
-        </Center> */}
+
       <Actionsheet isOpen={isOpen} onClose={onClose}>
-        <ActionScreen onClose={onClose} site={site} />
+        <ActionScreen onClose={onClose} site={site} navigation={navigation} />
       </Actionsheet>
       {/* </Marker> */}
     </>
