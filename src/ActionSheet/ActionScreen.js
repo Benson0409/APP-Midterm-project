@@ -41,7 +41,7 @@ const ActionScreen = ({ navigation, onClose, site }) => {
           h={60}
         >
           <Box alignSelf={"center"} mt={2}>
-            <FontAwesome5 name="walking" color="gray" size={40} />
+            <FontAwesome5 name="walking" color="#5B5449" size={40} />
           </Box>
         </Pressable>
         <VStack ml={5}>
@@ -55,7 +55,7 @@ const ActionScreen = ({ navigation, onClose, site }) => {
             <Text fontSize={20} color={"#B8B8B8"} mr={140}>
               {type}{" "}
             </Text>
-            <Text fontSize={20} color={"white"}>
+            <Text fontSize={20} color={"#FFFAE1"}>
               {distance}
             </Text>
           </HStack>

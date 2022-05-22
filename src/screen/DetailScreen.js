@@ -103,7 +103,7 @@ const DetailScreen = ({ route }) => {
                 elevation={8}
                 mb={5}
               >
-                <HStack>
+                <HStack mb={5}>
                   <Box bg={"#FFFAE1"} borderLeftRadius={20}>
                     <Image
                       source={{
@@ -122,39 +122,62 @@ const DetailScreen = ({ route }) => {
                     <Text fontSize={20} fontWeight={"bold"}>
                       林毓庭
                     </Text>
-                    <Text fontSize={16}>我覺得她很好吃!!!!</Text>
+                    <Text fontSize={16}>水餃很Q彈而且肉汁味很香，飽滿又大顆，食材味道可以很清楚的表現。</Text>
                   </Box>
                 </HStack>
               </Box>
             </Box>
-            <Box w={354}>
+            <Box w={"100%"} h={20} 
+             shadowColor={"#000"}
+             shadowOpacity={0.25}
+             shadowRadius={3.84}
+             elevation={8}>
+            
+            <Box >
               <HStack>
-                <Box>
+              <Box  pt={6} ml={5}>
+                    <AntDesign
+                      name="message1"
+                      color={"#5B5449"}
+                      size={30}
+                    />
+                </Box>
+                <Box ml={2}>
                   <Input
                     variant="filled"
-                    placeholder="留下您的評論:"
+                    placeholder="留下您的評論"
                     fontSize={15}
-                    borderRadius={20}
+                    borderRadius={15}
                     mt={5}
                     mb={5}
                     bg={"#FFFAE1"}
                     borderColor={"black"}
-                    w={354}
-                    letterSpacing={5}
+                    w={280}
+                    letterSpacing={4}
                     // elevation={5}
+                    
+                    // InputRightElement={<TouchableOpacity><MaterialCommunityIcons
+                    //   name="send"
+                    //   color={"#A1917A"}
+                    //   size={30}
+                      
+                    // /></TouchableOpacity>}
+                    
                   />
                 </Box>
-
-                <Box position="absolute" pt={6} pl={310}>
+                <Box  pt={6} ml={2}>
                   <TouchableOpacity>
                     <MaterialCommunityIcons
                       name="send"
-                      color={"#A1917A"}
+                      color={"#5B5449"}
                       size={30}
                     />
                   </TouchableOpacity>
                 </Box>
               </HStack>
+            </Box>
+
+                    
             </Box>
           </Center>
         </ScrollView>
