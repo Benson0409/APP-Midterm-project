@@ -27,12 +27,12 @@ const SignUpScreen = () => {
   const { colorMode } = useColorMode();
   const formLabelStyle = {
     color: colorMode == "light" ? "muted.700" : "white",
-    fontSize: "16",
+    fontSize: "20",
     fontWeight: 600,
   };
   const focusInputStyle = {
     borderColor: colorMode == "light" ? "muted.700" : "white",
-    fontSize: "14",
+    fontSize: "16",
   };
 
   const nameRegex = /^[a-zA-Z0-9_\-]+$/;
@@ -43,12 +43,18 @@ const SignUpScreen = () => {
     behavior={Platform.OS === "ios" ? "padding" : "height"}>
     <ScrollView>
     
-      <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }} h="100%">
-        <VStack space={2} mt={10} width="80%" alignSelf="center">
+      <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }} h="100%">
+        <VStack space={2} mt={10} width="300" alignSelf="center" shadow={5}>
           <FormControl mb={5} isRequired isInvalid={nameIsError}>
             <FormControl.Label _text={formLabelStyle}>姓名</FormControl.Label>
             <Input
-              variant="underlined"
+              placeholder="請填寫真實姓名"
+              fontSize={16}
+              variant="filled"
+              borderRadius={20}
+              borderColor={"#51483C"}
+              _dark={{ bg: "#485860" }}
+              _light={{ bg: "#FFFAE1" }}
               _focus={focusInputStyle}
               value={name}
               onChangeText={(text) => {
@@ -60,7 +66,7 @@ const SignUpScreen = () => {
             <FormControl.ErrorMessage
               leftIcon={<WarningOutlineIcon size="xs" />}
             >
-              必須填寫有效名稱
+              必填
             </FormControl.ErrorMessage>
           </FormControl>
           <FormControl mb={5} isRequired isInvalid={emailIsError}>
@@ -68,7 +74,13 @@ const SignUpScreen = () => {
               電子郵件
             </FormControl.Label>
             <Input
-              variant="underlined"
+              fontSize={16}
+              placeholder="請填有效電子信箱"
+              variant="filled"
+              borderRadius={20}
+              borderColor={"#51483C"}
+              _dark={{ bg: "#485860" }}
+              _light={{ bg: "#FFFAE1" }}
               _focus={focusInputStyle}
               value={email}
               onChangeText={(text) => {
@@ -80,13 +92,19 @@ const SignUpScreen = () => {
             <FormControl.ErrorMessage
               leftIcon={<WarningOutlineIcon size="xs" />}
             >
-              必須填寫有效電子郵件
+              必填
             </FormControl.ErrorMessage>
           </FormControl>
           <FormControl mb={5} isRequired isInvalid={passwordIsError}>
             <FormControl.Label _text={formLabelStyle}>密碼</FormControl.Label>
             <Input
-              variant="underlined"
+              fontSize={16}
+              placeholder="開頭必須大寫"
+              variant="filled"
+              borderRadius={20}
+              borderColor={"#51483C"}
+              _dark={{ bg: "#485860" }}
+              _light={{ bg: "#FFFAE1" }}
               _focus={focusInputStyle}
               value={password}
               onChangeText={(text) => {
@@ -98,13 +116,19 @@ const SignUpScreen = () => {
             <FormControl.ErrorMessage
               leftIcon={<WarningOutlineIcon size="xs" />}
             >
-              必須填寫有效密碼
+              必填
             </FormControl.ErrorMessage>
           </FormControl>
           <FormControl mb={5} isRequired>
             <FormControl.Label _text={formLabelStyle}>住址</FormControl.Label>
             <Input
-              variant="underlined"
+              fontSize={16}
+              placeholder="開頭必須大寫"
+              variant="filled"
+              borderRadius={20}
+              _dark={{ bg: "#485860" }}
+              _light={{ bg: "#FFFAE1" }}
+              borderColor={"#51483C"}
               _focus={focusInputStyle}
               value={adrs}
               onChangeText={(text) => setAdrs(text)}
@@ -115,7 +139,13 @@ const SignUpScreen = () => {
               電話號碼
             </FormControl.Label>
             <Input
-              variant="underlined"
+              fontSize={16}
+              placeholder="請填手機號碼"
+              variant="filled"
+              borderRadius={20}
+              _dark={{ bg: "#485860" }}
+              _light={{ bg: "#FFFAE1" }}
+              borderColor={"#51483C"}
               _focus={focusInputStyle}
               value={tel}
               onChangeText={(text) => setTel(text)}
@@ -124,14 +154,18 @@ const SignUpScreen = () => {
           <Button 
             onPress={() => Toast.show({ description: "已提交" })}
             mt="2"
-            _dark={{ bg: "#FFFAE1" } }
-            _light={{ bg: "#A1917A" }}
-            width="60%"
+            width="150"
             alignSelf="center"
-            mb={20}
+            _dark={{ bg: "#1C3851" } }
+            _light={{ bg: "#A1917A" }}
+            borderRadius={20}
+            shadow={5}
+            colorScheme={"yellow"}
+            mb={10}
           >
-            <Text _dark={{ color: "black" }}
-            _light={{ color: "white" }} fontSize="14" fontWeight="600" >
+            <Text  fontSize="16" fontWeight="600"
+            _dark={{ color: "white" }}
+            _light={{ color: "white" }}>
               確認提交
             </Text>
           </Button>

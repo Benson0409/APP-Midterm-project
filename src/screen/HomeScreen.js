@@ -11,6 +11,7 @@ import {
   Image,
   HStack,
   ScrollView,
+  Linking,
 } from "native-base";
 import foodData from "../json/food.json";
 import HomeList from "../Home/HomeList";
@@ -22,8 +23,8 @@ const HomeScreen = ({ navigation }) => {
   // const likeValue = useSelector(selectLike);
   return (
     <ScrollView>
-      <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#F6FFF1" }}>
-        <Box bg={"#A1917A"} w={"100%"} h={140} borderBottomRadius={20}>
+      <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
+        <Box  _dark={{ bg: "#1C3851" }} _light={{ bg:"#A1917A"}} w={"100%"} h={140} borderBottomRadius={20} shadow={5}>
           <Box ml={27} mt={5}>
             <Text color={"white"} fontSize={24} fontWeight={"bold"}>
               歡迎來到國北生活圈
@@ -33,36 +34,46 @@ const HomeScreen = ({ navigation }) => {
               <Pressable
                 height={30}
                 w={100}
-                bg="#FFFAE1"
+                _dark={{bg:"#7888A0"}}
+                _light={{bg:"#FFFAE1"}}
                 borderRadius={50}
                 mt={5}
                 mr={3}
+                shadow={5}
+                
               >
-                <Text color={"black"} fontSize="14" pt={1} alignSelf={"center"}>
+                <Text _dark={{ color: "white" }}
+              _light={{ color: "black" }} fontSize="14" pt={1} alignSelf={"center"}>
                   Instagram
                 </Text>
               </Pressable>
               <Pressable
                 height={30}
                 w={100}
-                bg="#FFFAE1"
+                _dark={{bg:"#7888A0"}}
+                _light={{bg:"#FFFAE1"}}
                 borderRadius={50}
                 mt={5}
                 mr={3}
+                shadow={5}
               >
-                <Text color={"black"} fontSize="14" pt={1} alignSelf={"center"}>
+                <Text _dark={{ color: "white" }}
+              _light={{ color: "black" }} fontSize="14" pt={1} alignSelf={"center"}>
                   抽獎活動
                 </Text>
               </Pressable>
               <Pressable
                 height={30}
                 w={100}
-                bg="#FFFAE1"
+                _dark={{bg:"#7888A0"}}
+                _light={{bg:"#FFFAE1"}}
                 borderRadius={50}
                 mt={5}
                 mr={3}
+                shadow={5}
               >
-                <Text color={"black"} fontSize="14" pt={1} alignSelf={"center"}>
+                <Text _dark={{ color: "white" }}
+              _light={{ color: "black" }} fontSize="14" pt={1} alignSelf={"center"}>
                   加入我們
                 </Text>
               </Pressable>
@@ -70,7 +81,7 @@ const HomeScreen = ({ navigation }) => {
           </Box>
         </Box>
         <HStack ml={35} mt={5}>
-          <MaterialIcons name="fastfood" color={"#DF9879"} size={30} />
+          <MaterialIcons name="fastfood" color={"#DF9879"}  size={30} />
           <Text fontSize={24} fontWeight={"bold"}>
             {foodData.title1}
           </Text>

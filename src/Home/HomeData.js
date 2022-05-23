@@ -9,6 +9,7 @@ import {
   Pressable,
   Image,
   Center,
+  Toast,
 } from "native-base";
 import Starbar from "../components/starbar";
 import {
@@ -38,8 +39,9 @@ const HomeData = ({ Home, navigation }) => {
         //       height: 6,
         //     })
         //   : null)}
+        shadow={5}
         elevation={6}
-        _dark={{ bg: "#3F382E", borderRadius: 25 }}
+        _dark={{ bg: "#485860", borderRadius: 25 }}
         _light={{ bg: "#FFFAE1", borderRadius: 25 }}
       >
         <Box w={260} h={350} mb={3}>
@@ -82,11 +84,12 @@ const HomeData = ({ Home, navigation }) => {
             </Center>
           </Box>
           <Box ml={3} mt={3} mr={2}>
-            <Text fontWeight="bold" fontSize="20">
+            <Text fontWeight={"bold"} fontSize="20">
               {Home.name}
             </Text>
             <Text
               fontSize="15"
+              fontWeight={"bold"}
               _dark={{ color: "white" }}
               _light={{ color: "#3D3D3D" }}
             >
@@ -94,10 +97,11 @@ const HomeData = ({ Home, navigation }) => {
             </Text>
             <HStack>
               <Starbar star={Home.star} />
-              <Text>
+              <Text mt={0.5}>
                 {Home.star != null ? (
-                  <Text fontSize={18}>
-                    {Home.star}.0 <Text color={"#808080"}>/ 5.0</Text>
+                  <Text fontSize={15} >
+                    {Home.star}.0 <Text _dark={{ color: "white" }}
+              _light={{ color: "#3D3D3D" }}>/ 5.0</Text>
                   </Text>
                 ) : null}
               </Text>
@@ -107,11 +111,13 @@ const HomeData = ({ Home, navigation }) => {
             onPress={() => navigation.navigate("DetailScreen", Home)}
             height={30}
             w={100}
-            bg="#5B5449"
+            _dark={{bg:"#7888A0"}}
+            _light={{bg:"#5B5449"}}
             borderRadius={25}
             mt={5}
             mr={3}
             alignSelf={"flex-end"}
+            shadow={5}
           >
             <Text color={"white"} fontSize="14" pt={1} alignSelf={"center"}>
               詳細資訊

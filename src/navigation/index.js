@@ -73,10 +73,10 @@ const MyTabs = () => {
       inactiveColor="white"
       barStyle={{ backgroundColor: "#A1917A" }}
       screenOptions={{
-        tabBarInactiveTintColor: colorMode == "light" ? "white" : "#A1917A",
+        tabBarInactiveTintColor: colorMode == "light" ? "white" : "#7888A0",
         tabBarActiveTintColor: colorMode == "light" ? "#463C2E" : "white",
         tabBarStyle: {
-          backgroundColor: colorMode == "light" ? "#A1917A" : "#463C2E",
+          backgroundColor: colorMode == "light" ? "#A1917A" : "#1C3851",
         },
         tabBarLabelStyle: {
           fontWeight: "bold",
@@ -181,7 +181,7 @@ const SettingsStack = () => {
           title: "登錄",
           headerShadowVisible: false,
           headerStyle: {
-            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+            backgroundColor: colorMode == "light" ? "#A1917A" : "#1C3851",
           },
           headerTintColor: colorMode == "light" ? "white" : "white",
           headerTitleStyle: {
@@ -216,7 +216,7 @@ const SettingsStack = () => {
           title: "註冊",
           headerShadowVisible: false,
           headerStyle: {
-            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+            backgroundColor: colorMode == "light" ? "#A1917A" : "#1C3851",
           },
           headerTintColor: colorMode == "light" ? "white" : "white",
           headerTitleStyle: {
@@ -269,12 +269,12 @@ const HomeStack = () => {
           // headerShown: false,
           // sheaderTintColor: colorMode == "light" ? "black" : "white",
           headerStyle: {
-            backgroundColor: colorMode == "light" ? "#A1917A" : "#463C2E",
+            backgroundColor: colorMode == "light" ? "#A1917A" : "#1C3851",
           },
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            color: colorMode == "light" ? "#A1917A" : "#463C2E",
+            color: colorMode == "light" ? "#A1917A" : "#1C3851",
           },
           headerRight: () => (
             <TouchableOpacity onPress={() => setLike(!Like)}>
@@ -397,12 +397,12 @@ const SearchStack = () => {
           headerShadowVisible: false,
           headerTintColor: colorMode == "light" ? "white" : "white",
           headerStyle: {
-            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+            backgroundColor: colorMode == "light" ? "#A1917A" : "#1C3851",
           },
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            color: "#A1917A",
+            color: "#1C3851",
           },
           headerLeft: () => (
             <TouchableOpacity>

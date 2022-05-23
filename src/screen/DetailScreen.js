@@ -54,21 +54,23 @@ const DetailScreen = ({ route }) => {
     if (selectedIndex == 1) {
       return (
         <ScrollView>
-          <Center flex={1} _dark={{ bg: "#5E5A54" }} _light={{ bg: "#F6FFF1" }}>
+          <Center flex={1} _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
             {/* <Text mt={5}>快來留下評論吧</Text> */}
 
-            <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5}>
+            <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }} alignSelf={"center"} mt={5}>
               <Box
                 borderLeftRadius={20}
                 borderRightRadius={20}
                 shadowColor={"#000"}
                 shadowOpacity={0.25}
                 shadowRadius={3.84}
+                shadow={5}
                 elevation={8}
                 mb={5}
+                
               >
                 <HStack>
-                  <Box bg={"#FFFAE1"} borderLeftRadius={20}>
+                  <Box _dark={{ bg: "#485860" }} _light={{ bg: "#FFFAE1" }} borderLeftRadius={20}>
                     <Image
                       source={{
                         uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture1.png?raw=true",
@@ -82,7 +84,7 @@ const DetailScreen = ({ route }) => {
                       m={2}
                     />
                   </Box>
-                  <Box bg={"#FFFAE1"} w={200} p={2} borderRightRadius={20}>
+                  <Box _dark={{ bg: "#485860" }} _light={{ bg: "#FFFAE1" }} w={200} p={2} borderRightRadius={20}>
                     <Text fontSize={20} fontWeight={"bold"}>
                       簡柏松
                     </Text>
@@ -93,18 +95,19 @@ const DetailScreen = ({ route }) => {
                 </HStack>
               </Box>
             </Box>
-            <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5}>
+            <Box  _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }} alignSelf={"center"} mt={5}>
               <Box
                 borderLeftRadius={20}
                 borderRightRadius={20}
                 shadowColor={"#000"}
                 shadowOpacity={0.25}
                 shadowRadius={3.84}
+                shadow={5}
                 elevation={8}
                 mb={5}
               >
                 <HStack mb={5}>
-                  <Box bg={"#FFFAE1"} borderLeftRadius={20}>
+                  <Box _dark={{ bg: "#485860" }} _light={{ bg: "#FFFAE1" }} borderLeftRadius={20}>
                     <Image
                       source={{
                         uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture2.png?raw=true",
@@ -118,7 +121,7 @@ const DetailScreen = ({ route }) => {
                       m={2}
                     />
                   </Box>
-                  <Box bg={"#FFFAE1"} w={200} p={2} borderRightRadius={20}>
+                  <Box _dark={{ bg: "#485860" }} _light={{ bg: "#FFFAE1" }} w={200} p={2} borderRightRadius={20}>
                     <Text fontSize={20} fontWeight={"bold"}>
                       林毓庭
                     </Text>
@@ -131,6 +134,7 @@ const DetailScreen = ({ route }) => {
              shadowColor={"#000"}
              shadowOpacity={0.25}
              shadowRadius={3.84}
+             shadow={5}
              elevation={8}>
             
             <Box >
@@ -150,10 +154,19 @@ const DetailScreen = ({ route }) => {
                     borderRadius={15}
                     mt={5}
                     mb={5}
-                    bg={"#FFFAE1"}
-                    borderColor={"black"}
+                    _dark={{
+                      bg: "#485860",
+                      borderColor: "white",
+                      borderWidth: 2,
+                    }}
+                    _light={{
+                      bg: "#FFFAE1",
+                      borderColor: "black",
+                      borderWidth: 0.6,
+                    }}
                     w={280}
                     letterSpacing={4}
+                    shadow={5}
                     // elevation={5}
                     
                     // InputRightElement={<TouchableOpacity><MaterialCommunityIcons
@@ -166,7 +179,8 @@ const DetailScreen = ({ route }) => {
                   />
                 </Box>
                 <Box  pt={6} ml={2}>
-                  <TouchableOpacity>
+                  <TouchableOpacity
+                      onPress={() => Toast.show({ description: "已送出" })}>
                     <MaterialCommunityIcons
                       name="send"
                       color={"#5B5449"}
@@ -185,18 +199,21 @@ const DetailScreen = ({ route }) => {
     } else {
       return (
         <ScrollView flex={1}>
-          <Box bg={"#F6FFF1"} alignSelf={"center"} mt={5}>
+          <Box _dark={{ bg: "#7888A0" }} 
+            _light={{ bg: "#FFFCF4" }}  alignSelf={"center"} mt={5}>
             <Box
               borderLeftRadius={20}
               borderRightRadius={20}
               shadowColor={"#000"}
               shadowOpacity={0.25}
               shadowRadius={3.84}
+              shadow={5}
               elevation={8}
               mb={5}
             >
-              <HStack>
-                <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}>
+              <HStack shadow={5}>
+                <Box _dark={{ bg: "#485860" }} 
+            _light={{ bg: "#FFFAE1" }}  w={200} p={2} borderLeftRadius={20} >
                   <Text fontSize={20} fontWeight={"bold"}>
                     {food1}
                   </Text>
@@ -208,6 +225,7 @@ const DetailScreen = ({ route }) => {
                   w="146"
                   h="146"
                   borderRightRadius={20}
+                  
                 />
               </HStack>
             </Box>
@@ -220,8 +238,9 @@ const DetailScreen = ({ route }) => {
               elevation={5}
               mb={5}
             >
-              <HStack>
-                <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}>
+              <HStack shadow={5}>
+                <Box _dark={{ bg: "#485860" }} 
+            _light={{ bg: "#FFFAE1" }} w={200} p={2} borderLeftRadius={20}>
                   <Text fontSize={20} fontWeight={"bold"}>
                     {food2}
                   </Text>
@@ -246,8 +265,9 @@ const DetailScreen = ({ route }) => {
               elevation={5}
               mb={5}
             >
-              <HStack>
-                <Box bg={"#FFFAE1"} w={200} p={2} borderLeftRadius={20}>
+              <HStack shadow={5}>
+                <Box _dark={{ bg: "#485860" }} 
+            _light={{ bg: "#FFFAE1" }} w={200} p={2} borderLeftRadius={20}>
                   <Text fontSize={20} fontWeight={"bold"}>
                     {food3}
                   </Text>
@@ -270,11 +290,13 @@ const DetailScreen = ({ route }) => {
 
   return (
     <ScrollView>
-      <Box _dark={{ bg: "#5E5A54" }} _light={{ bg: "#F6FFF1" }}>
+      <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
         <Image source={{ uri: photo }} alt="store" w="100%" h="300" />
         <Center position="absolute" alignSelf={"center"} mt={250}>
           <Box
-            bg={"#FFFAE1"}
+            _dark={{ bg: "#485860" }} 
+            _light={{ bg: "#FFFAE1" }}
+            shadow={5}
             w={300}
             h={100}
             borderRadius={20}
@@ -292,7 +314,11 @@ const DetailScreen = ({ route }) => {
           >
             <HStack mt={30} justifyContent="center">
               <Box>
-                <Text fontSize={24} color={"black"}>
+                <Text fontSize={24} 
+                fontWeight={"bold"}
+                _dark={{ color: "white" }} 
+                _light={{ color: "black" }}
+                >
                   {name}
                 </Text>
               </Box>
@@ -300,10 +326,12 @@ const DetailScreen = ({ route }) => {
             <Box pb={1} alignSelf={"center"}>
               <HStack mb={5}>
                 <Starbar star={star} />
-                <Text>
+                <Text mt={0.5}>
                   {star != null ? (
-                    <Text color={"black"}>
-                      {star}.0 <Text color={"#808080"}>/ 5.0</Text>
+                    <Text  _dark={{ color: "white" }}
+                    _light={{ color: "black" }}>
+                      {star}.0 <Text _dark={{ color: "white" }}
+              _light={{ color: "#3D3D3D" }}>/ 5.0</Text>
                     </Text>
                   ) : null}
                 </Text>
@@ -316,7 +344,7 @@ const DetailScreen = ({ route }) => {
             <Box >
             <MaterialCommunityIcons name="map-marker" color={"red"} size={25}/>
             </Box>
-            <Text ml={2} fontSize={20}>
+            <Text ml={2} fontSize={20} fontWeight={"bold"}>
               {address}
             </Text>
           </HStack>
@@ -324,11 +352,12 @@ const DetailScreen = ({ route }) => {
             h={0.5}
             w="83%"
             alignSelf="flex-end"
-            bg={"#A1917A"}
+            _dark={{ bg: "#1C3851" }} 
+            _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
             <Entypo name="old-phone" color={"#463C2E"} size={25} />
-            <Text ml={3} fontSize={20}>
+            <Text ml={3} fontSize={20} fontWeight={"bold"}>
               {phone}
             </Text>
           </HStack>
@@ -336,11 +365,12 @@ const DetailScreen = ({ route }) => {
             h={0.5}
             w="83%"
             alignSelf="flex-end"
-            bg={"#A1917A"}
+            _dark={{ bg: "#1C3851" }} 
+            _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
             <AntDesign name="rest" color={"#463C2E"} size={25} />
-            <Text ml={3} fontSize={20}>
+            <Text ml={3} fontSize={20} fontWeight={"bold"}>
               {time}
             </Text>
           </HStack>
@@ -348,12 +378,13 @@ const DetailScreen = ({ route }) => {
             h={0.5}
             w="83%"
             alignSelf="flex-end"
-            bg={"#A1917A"}
+            _dark={{ bg: "#1C3851" }} 
+            _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
             <MaterialIcons name="restaurant-menu" color={"#463C2E"} size={25} />
             <Pressable onPress={() => Linking.openURL(url)}>
-              <Text ml={3} fontSize={20}>
+              <Text ml={3} fontSize={20} fontWeight={"bold"}>
                 {menu}
               </Text>
             </Pressable>
@@ -362,7 +393,8 @@ const DetailScreen = ({ route }) => {
             h={0.5}
             w="83%"
             alignSelf="flex-end"
-            bg={"#A1917A"}
+            _dark={{ bg: "#1C3851" }} 
+            _light={{ bg: "#A1917A" }}
           ></Divider>
         </Box>
         <SegmentedControlTab
@@ -373,6 +405,7 @@ const DetailScreen = ({ route }) => {
             borderWidth: 1,
             backgroundColor: "#FFFAE1",
           }}
+          
           firstTabStyle={{ marginLeft: 40 }}
           lastTabStyle={{ marginRight: 40 }}
           tabTextStyle={{
