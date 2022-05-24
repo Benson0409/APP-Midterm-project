@@ -23,11 +23,14 @@ import {
   Divider,
   Column,
   Input,
+  useColorMode,
+  Icon,
 } from "native-base";
 import { opacity, red } from "react-native-reanimated/src/reanimated2/Colors";
 import { useDispatch, useSelector } from "react-redux";
 
 const DetailScreen = ({ route }) => {
+  const{colorMode} = useColorMode();
   const {
     star,
     name,
@@ -142,7 +145,7 @@ const DetailScreen = ({ route }) => {
               <Box  pt={6} ml={5}>
                     <AntDesign
                       name="message1"
-                      color={"#5B5449"}
+                      color={colorMode== "light" ? "#463C2E" : "#EDEDEF"}
                       size={30}
                     />
                 </Box>
@@ -177,13 +180,15 @@ const DetailScreen = ({ route }) => {
                     // /></TouchableOpacity>}
                     
                   />
+                 
+    
                 </Box>
                 <Box  pt={6} ml={2}>
                   <TouchableOpacity
                       onPress={() => Toast.show({ description: "已送出" })}>
                     <MaterialCommunityIcons
                       name="send"
-                      color={"#5B5449"}
+                      color={colorMode== "light" ? "#463C2E" : "#EDEDEF"}
                       size={30}
                     />
                   </TouchableOpacity>
@@ -356,7 +361,7 @@ const DetailScreen = ({ route }) => {
             _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <Entypo name="old-phone" color={"#463C2E"} size={25} />
+            <Entypo name="old-phone" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"}  size={25} />
             <Text ml={3} fontSize={20} fontWeight={"bold"}>
               {phone}
             </Text>
@@ -369,7 +374,7 @@ const DetailScreen = ({ route }) => {
             _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <AntDesign name="rest" color={"#463C2E"} size={25} />
+            <AntDesign name="rest" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={25} />
             <Text ml={3} fontSize={20} fontWeight={"bold"}>
               {time}
             </Text>
@@ -382,7 +387,7 @@ const DetailScreen = ({ route }) => {
             _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <MaterialIcons name="restaurant-menu" color={"#463C2E"} size={25} />
+            <MaterialIcons name="restaurant-menu" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={25} />
             <Pressable onPress={() => Linking.openURL(url)}>
               <Text ml={3} fontSize={20} fontWeight={"bold"}>
                 {menu}
@@ -397,31 +402,41 @@ const DetailScreen = ({ route }) => {
             _light={{ bg: "#A1917A" }}
           ></Divider>
         </Box>
+        <Box w={"100%"} alignSelf={"center"} mt={10}>
         <SegmentedControlTab
           values={["人氣推薦", "評論區"]}
-          tabStyle={{
-            marginTop: 30,
-            borderColor: "gray",
-            borderWidth: 1,
-            backgroundColor: "#FFFAE1",
-          }}
-          
-          firstTabStyle={{ marginLeft: 40 }}
-          lastTabStyle={{ marginRight: 40 }}
-          tabTextStyle={{
-            fontSize: 16,
-            padding: 1,
-            color: "black",
-          }}
+          // tabStyle={{
+          //   marginTop: 30,
+          //   borderColor: "gray",
+          //   borderWidth: 1,
+          //   backgroundColor: "#FFFAE1",
+           
+          // }}
+          // firstTabStyle={{ marginLeft: 40 }}
+          // lastTabStyle={{ marginRight: 40 }}
+          // tabTextStyle={{
+          //   fontSize: 16,
+          //   padding: 1,
+          //   color: "black",
+          // }}
+          // activeTabStyle={{
+          //   backgroundColor: "#463C2E",
+          // }}
+          // activeTabTextStyle={{ color: "white" }}
+          firstTabStyle={{ marginLeft: 25 }}
+          lastTabStyle={{ marginRight: 25 }}
+          tabStyle={{backgroundColor: colorMode=="dark"? "#485860": "#FFFAE1",  borderColor: "gray",borderWidth: 1.5}}
           activeTabStyle={{
-            backgroundColor: "#3F382E",
+               backgroundColor: colorMode=="dark"? "#1C3851": "#463C2E"
           }}
-          activeTabTextStyle={{ color: "white" }}
+          activeTabTextStyle={{color: colorMode=="dark"? "white": "white", fontSize: 16}}
+          tabTextStyle={{color: colorMode=="dark"? "white": "black", fontSize: 16}}
           selectedIndex={selectedIndex}
           onTabPress={(index) => setSelectedIndex(index)}
         />
 
         <SegmentedContent />
+        </Box>
       </Box>
     </ScrollView>
   );

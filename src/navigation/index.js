@@ -13,6 +13,7 @@ import {
   useColorMode,
   Image,
   AspectRatio,
+  HStack,
 } from "native-base";
 import { TouchableOpacity, activeOpacity, Platform } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
@@ -52,12 +53,15 @@ const Navigation = () => {
   const { colorMode } = useColorMode();
   const MyTheme = colorMode == "light" ? lightTheme : darkTheme;
   return (
+   
     <NavigationContainer theme={MyTheme}>
-      <StatusBar
+      <HStack  _dark={{ bg: "#1C3851" }} _light={{ bg:"#A1917A"}} px="3" py="5" w="100%" >
+       <StatusBar 
         barStyle={colorMode == "light" ? "dark-content" : "light-content"}
-        backgroundColor={colorMode == "light" ? "white" : "black"}
+        // backgroundColor={colorMode == "light" ? "#A1917A" : "#1C3851"}
       />
-      <MyTabs />
+    </HStack>
+    <MyTabs />
     </NavigationContainer>
   );
 };

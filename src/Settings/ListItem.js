@@ -17,6 +17,7 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 const ListItem = ({ title, navigation, destination, icon }) => {
+  const{colorMode} = useColorMode();
   if (icon == "icon1") {
     return (
       <Pressable
@@ -40,7 +41,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
           </Box>
         <HStack _dark={{}} _light={{}} py="5" mt={30}>
           <Box ml={5} mr={15} mt={0.5}>
-            <FontAwesome name="user-circle-o" color="#51483C" size={30} />
+            <FontAwesome name="user-circle-o" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={30} />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -55,7 +56,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       >
         <HStack _dark={{}} _light={{}} py="5" mt={5}>
           <Box ml={5} mr={15} mt={1}>
-            <FontAwesome5 name="user-edit" color="#51483C" size={25} />
+            <FontAwesome5 name="user-edit" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={25} />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -70,7 +71,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       >
         <HStack _dark={{}} _light={{}} py="5" mt={5}>
           <Box ml={5} mr={15} mt={0.5}>
-            <MaterialIcons name="text-fields" color="#51483C" size={30} />
+            <MaterialIcons name="text-fields" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={30} />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -87,7 +88,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
           <Box ml={5} mr={15} mt={0.5}>
             <MaterialCommunityIcons
               name="translate"
-              color="#51483C"
+              color={colorMode== "light" ? "#463C2E" : "#EDEDEF"}
               size={30}
             />
           </Box>
@@ -107,7 +108,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
         <Box ml={5} mr={15} mt={3}>
           <Entypo
             name="light-up"
-            color="#51483C"
+            color={colorMode== "light" ? "#463C2E" : "#EDEDEF"}
             size={30}
           />
         </Box>

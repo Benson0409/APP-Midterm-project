@@ -1,7 +1,6 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import { NativeBaseProvider } from "native-base";
+import { NativeBaseProvider,StatusBar } from "native-base";
 
 import Navigation from "./src/navigation";
 //5/17
@@ -11,15 +10,25 @@ import store from "./src/redux/store";
 export default function App() {
   return (
     //5/17
-    <Provider store={store}>
-      <SafeAreaProvider>
-        <SafeAreaView style={{ flex: 1 }}>
-          <NativeBaseProvider>
-            <Navigation />
-          </NativeBaseProvider>
-        </SafeAreaView>
-      </SafeAreaProvider>
-    </Provider>
+    // // <Provider store={store}>
+    // <SafeAreaProvider>
+    // //     <SafeAreaView style={{ flex: 1 }}>
+    //       <NativeBaseProvider>
+    //         <Navigation />
+    //       </NativeBaseProvider>
+    // //     </SafeAreaView>
+    // </SafeAreaProvider>
+    // // </Provider>
+
+    <SafeAreaProvider>
+    {/* <SafeAreaView style={{flex: 1}}> */}
+      <NativeBaseProvider>
+        <Navigation />
+      </NativeBaseProvider>
+    {/* </SafeAreaView> */}
+ </SafeAreaProvider>
+    
+    
   );
 }
 const styles = StyleSheet.create({

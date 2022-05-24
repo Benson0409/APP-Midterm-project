@@ -12,6 +12,9 @@ import {
   HStack,
   ScrollView,
   Linking,
+  NativeBaseProvider,
+  StatusBar,
+  useColorMode
 } from "native-base";
 import foodData from "../json/food.json";
 import HomeList from "../Home/HomeList";
@@ -21,8 +24,10 @@ import { selectLike } from "../redux/likeSlice";
 const HomeScreen = ({ navigation }) => {
   //5/17
   // const likeValue = useSelector(selectLike);
+  const{colorMode} = useColorMode();
   return (
-    <ScrollView>
+    
+    <ScrollView alwaysBounceVertical="false">
       <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
         <Box  _dark={{ bg: "#1C3851" }} _light={{ bg:"#A1917A"}} w={"100%"} h={140} borderBottomRadius={20} shadow={5}>
           <Box ml={27} mt={5}>
@@ -81,7 +86,7 @@ const HomeScreen = ({ navigation }) => {
           </Box>
         </Box>
         <HStack ml={35} mt={5}>
-          <MaterialIcons name="fastfood" color={"#DF9879"}  size={30} />
+          <MaterialIcons name="fastfood" color={colorMode== "light" ? "#FCAA87" : "#FFE3B3"}  size={30} />
           <Text fontSize={24} fontWeight={"bold"}>
             {foodData.title1}
           </Text>
@@ -93,7 +98,7 @@ const HomeScreen = ({ navigation }) => {
         />
 
         <HStack ml={35} mt={5}>
-          <MaterialCommunityIcons name="noodles" color={"#DF9879"} size={30} />
+          <MaterialCommunityIcons name="noodles" color={colorMode== "light" ? "#FCAA87" : "#FFE3B3"} size={30} />
           <Text fontSize={24} fontWeight={"bold"}>
             {foodData.title2}
             {/* 5/17 */}
@@ -107,7 +112,7 @@ const HomeScreen = ({ navigation }) => {
         />
 
         <HStack ml={35} mt={5}>
-          <Entypo name="cake" color={"#DF9879"} size={30} />
+          <Entypo name="cake" color={colorMode== "light" ? "#FCAA87" : "#FFE3B3"} size={30} />
           <Text fontSize={24} fontWeight={"bold"}>
             {foodData.title3}
           </Text>
@@ -119,7 +124,7 @@ const HomeScreen = ({ navigation }) => {
         />
 
         <HStack ml={35} mt={5}>
-          <Entypo name="drink" color={"#DF9879"} size={30} />
+          <Entypo name="drink" color={colorMode== "light" ? "#FCAA87" : "#FFE3B3"} size={30} />
           <Text fontSize={24} fontWeight={"bold"}>
             {foodData.title4}
           </Text>
@@ -131,6 +136,7 @@ const HomeScreen = ({ navigation }) => {
         />
       </Box>
     </ScrollView>
+    
   );
 };
 

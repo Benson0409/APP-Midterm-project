@@ -112,7 +112,7 @@ const HomeData = ({ Home, navigation }) => {
             height={30}
             w={100}
             _dark={{bg:"#7888A0"}}
-            _light={{bg:"#5B5449"}}
+            _light={{bg:"#463C2E"}}
             borderRadius={25}
             mt={5}
             mr={3}
