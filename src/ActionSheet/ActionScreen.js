@@ -7,6 +7,7 @@ import {
   Pressable,
   HStack,
   Divider,
+  useColorMode,
 } from "native-base";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
@@ -15,6 +16,7 @@ import Entypo from "react-native-vector-icons/Entypo";
 import AntDesign from "react-native-vector-icons/AntDesign";
 
 const ActionScreen = ({ navigation, onClose, site }) => {
+  const{colorMode} = useColorMode();
   const {
     name,
     type,
@@ -28,29 +30,32 @@ const ActionScreen = ({ navigation, onClose, site }) => {
   } = site;
 
   return (
-    <VStack h="350" w="100%" bg="white" borderTopRadius={20}>
-      <Box bg={"#5B5449"} h={120}>
+    <VStack h="380" w="100%" bg="#FFFCF4" borderTopRadius={20}>
+      <Box   _dark={{ bg: "#1C3851" }} 
+          _light={{ bg: "#463C2E" }} h={120} shadow={5}>
         <Pressable
           onPress={onClose}
           position="absolute"
           top={-30}
           right={8}
-          bg={"#FFFAE1"}
+          _dark={{ bg: "#485860" }} 
+          _light={{ bg: "#FFFAE1" }}
           borderRadius={100}
           w={60}
           h={60}
+          shadow={5}
         >
-          <Box alignSelf={"center"} mt={2}>
-            <FontAwesome5 name="walking" color="#5B5449" size={40} />
+          <Box alignSelf={"center"} mt={2} >
+            <FontAwesome5 name="walking" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={40} />
           </Box>
         </Pressable>
         <VStack ml={5}>
-          <Text fontSize={30} mt={5} color={"white"}>
+          <Text fontSize={30} mt={5} color={"white"} fontWeight={"bold"}>
             {name}
           </Text>
           <HStack>
             <Text fontSize={20} color={"#B8B8B8"} mr={2}>
-              <FontAwesome5 name="fish" color={"#2AA5D9"} size={20} /> {value}
+              <FontAwesome5 name="fish" color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={20} /> {value}
             </Text>
             <Text fontSize={20} color={"#B8B8B8"} mr={140}>
               {type}{" "}
@@ -61,22 +66,24 @@ const ActionScreen = ({ navigation, onClose, site }) => {
           </HStack>
         </VStack>
       </Box>
-      <Box>
+      <Box bg={"#FFFCF4"}>
         <HStack ml={5} mt={5}>
           <MaterialCommunityIcons name="map-marker" color={"red"} size={28} />
-          <Text fontSize={18}>{adr}</Text>
+          <Text fontSize={18} color={"black"}>{adr}</Text>
         </HStack>
-        <Divider mt={3} h={0.5} w="100%" bg={"#A1917A"}></Divider>
+        <Divider mt={3} h={0.5} w="100%"  _dark={{ bg: "#1C3851" }} 
+            _light={{ bg: "#A1917A" }}></Divider>
         <HStack ml={5} mt={5}>
-          <Entypo name="old-phone" color={"#5B5449"} size={28} />
-          <Text fontSize={20} ml={1}>
+          <Entypo name="old-phone" color={colorMode== "light" ? "#463C2E" : "#1C3851"} size={28} />
+          <Text fontSize={20} ml={1} color={"black"}>
             {phone}
           </Text>
         </HStack>
-        <Divider mt={3} h={0.5} w="100%" bg={"#A1917A"}></Divider>
+        <Divider mt={3} h={0.5} w="100%"  _dark={{ bg: "#1C3851" }} 
+            _light={{ bg: "#A1917A" }}></Divider>
         <HStack ml={5} mt={5}>
-          <AntDesign name="rest" color={"#5B5449"} size={28} />
-          <Text fontSize={20} ml={1}>
+          <AntDesign name="rest" color={colorMode== "light" ? "#463C2E" : "#1C3851"} size={28} />
+          <Text fontSize={20} ml={1} color={"black"}>
             {time}
           </Text>
         </HStack>
@@ -84,10 +91,12 @@ const ActionScreen = ({ navigation, onClose, site }) => {
           onPress={() => navigation.navigate("DetailScreen", site)}
           height={30}
           w={100}
-          bg="#5B5449"
+          _dark={{ bg: "#1C3851" }} 
+          _light={{ bg: "#463C2E" }}
           borderRadius={25}
           mt={5}
           alignSelf={"center"}
+          shadow={5}
         >
           <Text color={"white"} fontSize="14" pt={1} alignSelf={"center"}>
             詳細資訊

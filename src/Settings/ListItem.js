@@ -2,11 +2,13 @@ import React from "react";
 import {
   Text,
   HStack,
+  VStack,
   Pressable,
   Box,
   Center,
   useColorMode,
   Switch,
+  Image
 } from "native-base";
 import Entypo from "react-native-vector-icons/Entypo";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
@@ -15,6 +17,7 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 const ListItem = ({ title, navigation, destination, icon }) => {
+  const{colorMode} = useColorMode();
   if (icon == "icon1") {
     return (
       <Pressable
@@ -22,9 +25,23 @@ const ListItem = ({ title, navigation, destination, icon }) => {
           destination ? navigation.navigate(destination) : null;
         }}
       >
-        <HStack _dark={{}} _light={{}} py="5">
+        <Box alignSelf={"center"} mt={10}>
+        <VStack>
+        <Image
+          source={{
+          uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture2.png?raw=true",
+                  }}
+          alt="food"
+          w="100"
+          h="100"
+          borderLeftRadius={20}
+          />
+          <Text alignSelf={"center"} mt={2} fontSize={24} color={"white"} fontWeight={"bold"}>使用者</Text>
+          </VStack>
+          </Box>
+        <HStack _dark={{}} _light={{}} py="5" mt={30}>
           <Box ml={5} mr={15} mt={0.5}>
-            <FontAwesome name="user-circle-o" color="#FCAA87" size={30} />
+            <FontAwesome name="user-circle-o" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={30} />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -39,7 +56,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       >
         <HStack _dark={{}} _light={{}} py="5" mt={5}>
           <Box ml={5} mr={15} mt={1}>
-            <FontAwesome5 name="user-edit" color="#FCAA87" size={25} />
+            <FontAwesome5 name="user-edit" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={25} />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -54,7 +71,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       >
         <HStack _dark={{}} _light={{}} py="5" mt={5}>
           <Box ml={5} mr={15} mt={0.5}>
-            <MaterialIcons name="text-fields" color="#FCAA87" size={30} />
+            <MaterialIcons name="text-fields" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={30} />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -71,7 +88,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
           <Box ml={5} mr={15} mt={0.5}>
             <MaterialCommunityIcons
               name="translate"
-              color="#FCAA87"
+              color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}
               size={30}
             />
           </Box>
@@ -87,33 +104,36 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       //     destination ? navigation.navigate(destination) : null;
       //   }}
       // >
-      <HStack _dark={{}} _light={{}} py="5" mt={5}>
-        <Box ml={5} mr={15} pt={0.5}>
+      <HStack _dark={{}} _light={{}} py="5" mt={2}>
+        <Box ml={5} mr={15} mt={3}>
           <Entypo
             name="light-up"
-            color="#FCAA87"
+            color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}
             size={30}
           />
         </Box>
 
         <Box>
           <Center
-            // shadow={2}
+            shadow={5}
             borderRadius="50"
+            w={300}
+            h={60}
+            px="18"
+            py="3"
+            _dark={{
+              bg: "#1C3851",
+              borderColor: "blueGray.500",
+              borderWidth: 0.6,
+            }}
+            _light={{ bg: "#A1917A" }}
+            borderColor={"#A1917A"}
+            borderWidth={2}
+            borderRadius="20"
             alignSelf="center"
-            // px="18"
-            // py="3"
-            // _dark={{
-            //   bg: "black",
-            //   borderColor: "blueGray.500",
-            //   borderWidth: 0.6,
-            // }}
-            // _light={{ bg: "white" }}
-            // borderRadius="md"
-            // alignSelf="center"
           >
-            <HStack space={8} alignItems="center">
-              <Text fontSize="20">
+            <HStack space={20} >
+              <Text fontSize="20" color={"white"} fontWeight={"bold"}>
                 {colorMode == "light" ? "淺色模式" : "深色模式"}
               </Text>
               <Switch
@@ -122,10 +142,10 @@ const ListItem = ({ title, navigation, destination, icon }) => {
                 onToggle={toggleColorMode}
                 accessibilityLabel="display-mode"
                 accessibilityHint="light or dark mode"
-                offTrackColor="warning.400"
-                onTrackColor="warning.200"
-                onThumbColor="warning.400"
-                offThumbColor="indigo.50"
+                offTrackColor="white"
+                onTrackColor="white"
+                onThumbColor="#51483C"
+                offThumbColor="#7888A0"
               />
             </HStack>
           </Center>

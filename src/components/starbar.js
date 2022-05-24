@@ -1,79 +1,116 @@
 import React from "react";
 import {
-  StyleSheet,
-  ScrollView,
+  Box,
+  VStack,
+  Pressable,
   Text,
-  View,
+  AspectRatio,
   Image,
-  Button,
+  HStack,
+  ScrollView,
   Linking,
-} from "react-native";
+  useColorMode,
+} from "native-base";
 // import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 import foodData from "../json/food.json";
+
 const Starbar = (props) => {
+  const{colorMode} = useColorMode();
   if (props.star == 1) {
     return (
-      <View style={styles.starFlex}>
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
+      <Box flexDirection={"row"} mr={3} >
+        <FontAwesome5 name="fish" color={"#4BC5BD"} size={25} />
         <FontAwesome5 name="fish" color={"gray"} size={25}/>
         <FontAwesome5 name="fish" color={"gray"} size={25}/>
         <FontAwesome5 name="fish" color={"gray"} size={25}/>
         <FontAwesome5 name="fish" color={"gray"} size={25}/>
-      </View>
+      </Box>
     );
   } else if (props.star == 2) {
     return (
-      <View style={styles.starFlex}>
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-      </View>
+      <Box flexDirection={"row"} mr={3}>
+        <Box mr={0.5} >
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "gray" : "#B8B8B8"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "gray" : "#B8B8B8"} size={25} />
+        </Box>
+        <FontAwesome5 name="fish" color={colorMode== "light" ? "gray" : "#B8B8B8"} size={25}/>
+      </Box>
     );
   } else if (props.star == 3) {
     return (
-      <View style={styles.starFlex}>
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-      </View>
+      <Box flexDirection={"row"} mr={3}>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "gray" : "#B8B8B8"} size={25} />
+        </Box>
+        <FontAwesome5 name="fish" color={colorMode== "light" ? "gray" : "#B8B8B8"} size={25}/>
+      </Box>
     );
   } else if (props.star == 4) {
     return (
-      <View style={styles.starFlex}>
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-      </View>
+      <Box flexDirection={"row"} mr={3}>
+        <Box mr={0.5} >
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <FontAwesome5 name="fish" color={colorMode== "light" ? "gray" : "#B8B8B8"} size={25}/>
+      </Box>
     );
   } else if (props.star == 5) {
     return (
-      <View style={styles.starFlex}>
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-      </View>
+      <Box flexDirection={"row"} mr={3}>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <Box mr={0.5}>
+        <FontAwesome5 name="fish"  color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+        </Box>
+        <FontAwesome5 name="fish" color={colorMode== "light" ? "#396B99" : "#FFE3B3"} size={25} />
+      </Box>
     );
   } else {
     return null;
   }
 };
 
-const styles = StyleSheet.create({
-  starFlex: {
-    flexDirection: "row",
-    marginRight:5,
-  },
-});
+// const styles = StyleSheet.create({
+//   starFlex: {
+//     flexDirection: "row",
+//     marginRight:5,
+//   },
+// });
 
 export default Starbar;
