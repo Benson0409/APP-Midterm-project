@@ -10,16 +10,15 @@ const SettingsScreen = ({ navigation }) => {
       <Box
         _dark={{ bg: "#1C3851" }}
         _light={{ bg: "#A1917A" }}
+        position="absolute"
         w={400}
         h={400}
         borderRadius={400}
         shadow={8}
         top={-190}
         left={-5}
-        zIndex={1}
-        position="absolute"
       >
-        <Box position="absolute" zIndex={99}>
+        <Box position="absolute">
           <Image
             source={{
               uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture2.png?raw=true",
@@ -29,7 +28,6 @@ const SettingsScreen = ({ navigation }) => {
             h="100"
             borderLeftRadius={20}
             m={2}
-            position="relative"
           />
         </Box>
       </Box>
