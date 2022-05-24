@@ -32,7 +32,9 @@ const FavoriteScreen = ({ navigation }) => {
     //   renderItem={renderItem}
     //   keyExtractor={(item) => item.name}
     // />
-    <FavoriteList list={stores} navigation={navigation} />
+    <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }} h="100%">
+      <FavoriteList list={stores} navigation={navigation} />
+    </Box>
   );
 };
 

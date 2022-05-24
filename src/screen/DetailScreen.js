@@ -128,7 +128,7 @@ const DetailScreen = ({ route }) => {
                 elevation={8}
                 mb={5}
               >
-                <HStack mb={5}>
+                <HStack>
                   <Box
                     _dark={{ bg: "#485860" }}
                     _light={{ bg: "#FFFAE1" }}

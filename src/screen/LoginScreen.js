@@ -27,57 +27,58 @@ const LoginScreen = ({ navigation }) => {
   const { colorMode } = useColorMode();
 
   return (
-    <Center
-      w="100%"
-      _dark={{ bg: "#7888A0" }}
-      _light={{ bg: "#FFFCF4" }}
-      h="100%"
-    >
-      <VStack mt={-20}>
-        <Image
-          source={{
-            uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/無背景bear.png?raw=true",
-          }}
-          alt="food"
-          w="300"
-          h="300"
-        />
-        <Box shadow={5} mt={-8}>
-          <Input
-            variant="filled"
-            placeholder="電子郵件"
-            fontSize={20}
-            borderRadius={20}
-            mt={5}
-            mb={5}
-            _dark={{ bg: "#485860" }}
-            _light={{ bg: "#FFFAE1" }}
-            borderColor={"black"}
-            w={250}
-            letterSpacing={2}
-            shadow={5}
-            color={"#929292"}
-            alignSelf={"center"}
+    <ScrollView>
+      <Center
+        w="100%"
+        _dark={{ bg: "#7888A0" }}
+        _light={{ bg: "#FFFCF4" }}
+        h="100%"
+      >
+        <VStack>
+          <Image
+            source={{
+              uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/無背景bear.png?raw=true",
+            }}
+            alt="food"
+            w="300"
+            h="300"
           />
-        </Box>
-        <Box shadow={5}>
-          <Input
-            variant="filled"
-            placeholder="密碼"
-            fontSize={20}
-            borderRadius={20}
-            mt={5}
-            mb={5}
-            _dark={{ bg: "#485860" }}
-            _light={{ bg: "#FFFAE1" }}
-            borderColor={"black"}
-            w={250}
-            letterSpacing={2}
-            color={"#929292"}
-            alignSelf={"center"}
-          />
-        </Box>
-        {/* <Heading
+          <Box shadow={5} mt={-8}>
+            <Input
+              variant="filled"
+              placeholder="電子郵件"
+              fontSize={20}
+              borderRadius={20}
+              mt={5}
+              mb={5}
+              _dark={{ bg: "#485860" }}
+              _light={{ bg: "#FFFAE1" }}
+              borderColor={"black"}
+              w={250}
+              letterSpacing={2}
+              shadow={5}
+              color={"#929292"}
+              alignSelf={"center"}
+            />
+          </Box>
+          <Box shadow={5}>
+            <Input
+              variant="filled"
+              placeholder="密碼"
+              fontSize={20}
+              borderRadius={20}
+              mt={5}
+              mb={5}
+              _dark={{ bg: "#485860" }}
+              _light={{ bg: "#FFFAE1" }}
+              borderColor={"black"}
+              w={250}
+              letterSpacing={2}
+              color={"#929292"}
+              alignSelf={"center"}
+            />
+          </Box>
+          {/* <Heading
           mt="1"
           _dark={{
             color: "warmGray.200",
@@ -103,119 +104,120 @@ const LoginScreen = ({ navigation }) => {
           <FormControl bg={"#EDEDEF"} >
             <Input type="password" />
           </FormControl> */}
-        <Box mr={8}>
-          <Link
-            _text={{
-              fontSize: "14",
-              fontWeight: "500",
-            }}
-            alignSelf="flex-end"
-            _dark={{ color: "white" }}
-            _light={{ color: "#51483C" }}
-          >
-            忘記密碼
-          </Link>
-        </Box>
-        <Button
-          mt="2"
-          width="250"
-          alignSelf="center"
-          _dark={{ bg: "#1C3851" }}
-          _light={{ bg: "#A1917A" }}
-          borderRadius={20}
-          shadow={5}
-          colorScheme={"yellow"}
-        >
-          <Text
-            fontSize="20"
-            fontWeight="600"
-            _dark={{ color: "white" }}
-            _light={{ color: "white" }}
-          >
-            登入
-          </Text>
-        </Button>
-        <HStack mt="6" justifyContent="center">
-          <Text
-            fontSize="14"
-            _dark={{ color: "white" }}
-            _light={{ color: "#51483C" }}
-          >
-            尚未有帳號
-          </Text>
-          <Pressable
-            onPress={() => {
-              navigation.navigate("SignUpScreen");
-            }}
-          >
-            <Text
-              underline
+          <Box mr={8}>
+            <Link
+              _text={{
+                fontSize: "14",
+                fontWeight: "500",
+              }}
+              alignSelf="flex-end"
               _dark={{ color: "white" }}
               _light={{ color: "#51483C" }}
-              fontWeight={"bold"}
+            >
+              忘記密碼
+            </Link>
+          </Box>
+          <Button
+            mt="2"
+            width="250"
+            alignSelf="center"
+            _dark={{ bg: "#1C3851" }}
+            _light={{ bg: "#A1917A" }}
+            borderRadius={20}
+            shadow={5}
+            colorScheme={"yellow"}
+          >
+            <Text
+              fontSize="20"
+              fontWeight="600"
+              _dark={{ color: "white" }}
+              _light={{ color: "white" }}
+            >
+              登入
+            </Text>
+          </Button>
+          <HStack mt="6" justifyContent="center">
+            <Text
               fontSize="14"
+              _dark={{ color: "white" }}
+              _light={{ color: "#51483C" }}
+            >
+              尚未有帳號
+            </Text>
+            <Pressable
+              onPress={() => {
+                navigation.navigate("SignUpScreen");
+              }}
+            >
+              <Text
+                underline
+                _dark={{ color: "white" }}
+                _light={{ color: "#51483C" }}
+                fontWeight={"bold"}
+                fontSize="14"
+                ml={2}
+              >
+                註冊
+              </Text>
+            </Pressable>
+          </HStack>
+          <HStack mt="6" justifyContent="center">
+            <Divider
+              h={0.5}
+              w="10"
+              alignSelf="center"
+              _dark={{ bg: "#1C3851" }}
+              _light={{ bg: "#A1917A" }}
+              mr={2}
+            >
+              {" "}
+            </Divider>
+            <Text
+              fontSize="14"
+              color="#51483C"
+              _dark={{
+                color: "white",
+              }}
+            >
+              其他方式登錄
+            </Text>
+            <Divider
+              h={0.5}
+              w="10"
+              alignSelf="center"
+              _dark={{ bg: "#1C3851" }}
+              _light={{ bg: "#A1917A" }}
               ml={2}
             >
-              註冊
-            </Text>
-          </Pressable>
-        </HStack>
-        <HStack mt="6" justifyContent="center">
-          <Divider
-            h={0.5}
-            w="10"
-            alignSelf="center"
-            _dark={{ bg: "#1C3851" }}
-            _light={{ bg: "#A1917A" }}
-            mr={2}
-          >
-            {" "}
-          </Divider>
-          <Text
-            fontSize="14"
-            color="#51483C"
-            _dark={{
-              color: "white",
-            }}
-          >
-            其他方式登錄
-          </Text>
-          <Divider
-            h={0.5}
-            w="10"
-            alignSelf="center"
-            _dark={{ bg: "#1C3851" }}
-            _light={{ bg: "#A1917A" }}
-            ml={2}
-          >
-            {" "}
-          </Divider>
-        </HStack>
-        <HStack alignSelf="center" mt={3}>
-          <Box mr={10}>
-            <FontAwesome
-              name="google-plus-circle"
-              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
-              size={40}
-            />
-          </Box>
-          <Box>
-            <MaterialIcons
-              name="facebook"
-              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
-              size={40}
-            />
-          </Box>
-          <Box ml={10}>
-            <Entypo
-              name="instagram-with-circle"
-              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
-              size={40}
-            />
-          </Box>
-        </HStack>
-      </VStack>
-    </Center>
+              {" "}
+            </Divider>
+          </HStack>
+          <HStack alignSelf="center" mt={3} mb={2}>
+            <Box mr={10}>
+              <FontAwesome
+                name="google-plus-circle"
+                color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+                size={40}
+              />
+            </Box>
+            <Box>
+              <MaterialIcons
+                name="facebook"
+                color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+                size={40}
+              />
+            </Box>
+            <Box ml={10}>
+              <Entypo
+                name="instagram-with-circle"
+                color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+                size={40}
+              />
+            </Box>
+          </HStack>
+        </VStack>
+      </Center>
+    </ScrollView>
   );
 };
 

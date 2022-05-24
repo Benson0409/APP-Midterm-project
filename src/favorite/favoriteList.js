@@ -21,7 +21,13 @@ const FavoriteList = ({ list, navigation }) => {
   return (
     <FlatList
       ListHeaderComponent={
-        <Box bg={"#A1917A"} w={"100%"} h={100} borderBottomRadius={20}>
+        <Box
+          _dark={{ bg: "#1C3851" }}
+          _light={{ bg: "#A1917A" }}
+          w={"100%"}
+          h={100}
+          borderBottomRadius={20}
+        >
           <Box ml={27} mt={5}>
             {/* <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }} h={"100%"}> */}
             <Box mt={1} alignSelf={"center"}>

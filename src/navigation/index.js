@@ -54,7 +54,7 @@ const Navigation = () => {
   const MyTheme = colorMode == "light" ? lightTheme : darkTheme;
   return (
     <NavigationContainer theme={MyTheme}>
-      <HStack
+      {/* <HStack
         _dark={{ bg: "#1C3851" }}
         _light={{ bg: "#A1917A" }}
         px="3"
@@ -65,7 +65,7 @@ const Navigation = () => {
           barStyle={colorMode == "light" ? "dark-content" : "light-content"}
           // backgroundColor={colorMode == "light" ? "#A1917A" : "#1C3851"}
         />
-      </HStack>
+      </HStack> */}
       <MyTabs />
     </NavigationContainer>
   );
@@ -468,29 +468,17 @@ const FavoriteStack = () => {
         name="DetailScreen"
         component={DetailScreen}
         options={({ navigation, route }) => ({
-          // title: route.params.name,
+          title: route.params.name,
           // headerShown: false,
-          headerShadowVisible: false,
-          headerTintColor: colorMode == "light" ? "white" : "white",
+          // sheaderTintColor: colorMode == "light" ? "black" : "white",
           headerStyle: {
-            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+            backgroundColor: colorMode == "light" ? "#A1917A" : "#1C3851",
           },
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            color: "#A1917A",
+            color: colorMode == "light" ? "#A1917A" : "#1C3851",
           },
-          headerLeft: () => (
-            <TouchableOpacity>
-              <AntDesign
-                name="back"
-                color={colorMode == "light" ? "white" : "white"}
-                size={30}
-                activeOpacity={0.6}
-                onPress={() => navigation.goBack()}
-              />
-            </TouchableOpacity>
-          ),
           headerRight: () => (
             <TouchableOpacity onPress={() => setLike(!Like)}>
               {Like ? (
@@ -506,6 +494,17 @@ const FavoriteStack = () => {
                   size={25}
                 />
               )}
+            </TouchableOpacity>
+          ),
+          headerLeft: () => (
+            <TouchableOpacity>
+              <AntDesign
+                name="back"
+                color={colorMode == "light" ? "white" : "white"}
+                size={30}
+                activeOpacity={0.6}
+                onPress={() => navigation.goBack()}
+              />
             </TouchableOpacity>
           ),
         })}

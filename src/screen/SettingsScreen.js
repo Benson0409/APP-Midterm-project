@@ -1,23 +1,25 @@
 import React from "react";
-import { Box, Divider, Text, Image } from "native-base";
+import { Box, Divider, Text, Image, ScrollView } from "native-base";
 import ListItem from "../Settings/ListItem";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 const SettingsScreen = ({ navigation }) => {
   return (
+    // <ScrollView>
     <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }} h="100%">
       <Box
         _dark={{ bg: "#1C3851" }}
         _light={{ bg: "#A1917A" }}
-        position="absolute"
         w={400}
         h={400}
         borderRadius={400}
         shadow={8}
         top={-190}
         left={-5}
+        zIndex={1}
+        position="absolute"
       >
-        <Box position="absolute">
+        <Box position="absolute" zIndex={99}>
           <Image
             source={{
               uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture2.png?raw=true",
@@ -27,9 +29,11 @@ const SettingsScreen = ({ navigation }) => {
             h="100"
             borderLeftRadius={20}
             m={2}
+            position="relative"
           />
         </Box>
       </Box>
+
       <ListItem
         title="登入/註冊"
         navigation={navigation}
@@ -74,6 +78,7 @@ const SettingsScreen = ({ navigation }) => {
         icon="icon5"
       />
     </Box>
+    // {/* </ScrollView> */}
   );
 };
 
