@@ -124,7 +124,7 @@ const SectionScreen = ({
             </Text>
           </HStack>
         </VStack>
-      
+
         <VStack mt={10} alignSelf="center">
           <Pressable
             onPress={() => navigation.navigate("DetailScreen", section)}

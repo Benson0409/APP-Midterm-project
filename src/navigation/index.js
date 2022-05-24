@@ -53,15 +53,20 @@ const Navigation = () => {
   const { colorMode } = useColorMode();
   const MyTheme = colorMode == "light" ? lightTheme : darkTheme;
   return (
-   
     <NavigationContainer theme={MyTheme}>
-      <HStack  _dark={{ bg: "#1C3851" }} _light={{ bg:"#A1917A"}} px="3" py="5" w="100%" >
-       <StatusBar 
-        barStyle={colorMode == "light" ? "dark-content" : "light-content"}
-        // backgroundColor={colorMode == "light" ? "#A1917A" : "#1C3851"}
-      />
-    </HStack>
-    <MyTabs />
+      <HStack
+        _dark={{ bg: "#1C3851" }}
+        _light={{ bg: "#A1917A" }}
+        px="3"
+        py="5"
+        w="100%"
+      >
+        <StatusBar
+          barStyle={colorMode == "light" ? "dark-content" : "light-content"}
+          // backgroundColor={colorMode == "light" ? "#A1917A" : "#1C3851"}
+        />
+      </HStack>
+      <MyTabs />
     </NavigationContainer>
   );
 };

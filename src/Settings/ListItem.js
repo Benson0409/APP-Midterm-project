@@ -8,7 +8,7 @@ import {
   Center,
   useColorMode,
   Switch,
-  Image
+  Image,
 } from "native-base";
 import Entypo from "react-native-vector-icons/Entypo";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
@@ -17,7 +17,7 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 const ListItem = ({ title, navigation, destination, icon }) => {
-  const{colorMode} = useColorMode();
+  const { colorMode } = useColorMode();
   if (icon == "icon1") {
     return (
       <Pressable
@@ -26,22 +26,34 @@ const ListItem = ({ title, navigation, destination, icon }) => {
         }}
       >
         <Box alignSelf={"center"} mt={10}>
-        <VStack>
-        <Image
-          source={{
-          uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture2.png?raw=true",
-                  }}
-          alt="food"
-          w="100"
-          h="100"
-          borderLeftRadius={20}
-          />
-          <Text alignSelf={"center"} mt={2} fontSize={24} color={"white"} fontWeight={"bold"}>使用者</Text>
+          <VStack>
+            <Image
+              source={{
+                uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture2.png?raw=true",
+              }}
+              alt="food"
+              w="100"
+              h="100"
+              borderLeftRadius={20}
+            />
+            <Text
+              alignSelf={"center"}
+              mt={2}
+              fontSize={24}
+              color={"white"}
+              fontWeight={"bold"}
+            >
+              使用者
+            </Text>
           </VStack>
-          </Box>
+        </Box>
         <HStack _dark={{}} _light={{}} py="5" mt={30}>
           <Box ml={5} mr={15} mt={0.5}>
-            <FontAwesome name="user-circle-o" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={30} />
+            <FontAwesome
+              name="user-circle-o"
+              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+              size={30}
+            />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -56,7 +68,11 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       >
         <HStack _dark={{}} _light={{}} py="5" mt={5}>
           <Box ml={5} mr={15} mt={1}>
-            <FontAwesome5 name="user-edit" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={25} />
+            <FontAwesome5
+              name="user-edit"
+              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+              size={25}
+            />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -71,7 +87,11 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       >
         <HStack _dark={{}} _light={{}} py="5" mt={5}>
           <Box ml={5} mr={15} mt={0.5}>
-            <MaterialIcons name="text-fields" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={30} />
+            <MaterialIcons
+              name="text-fields"
+              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+              size={30}
+            />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -88,7 +108,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
           <Box ml={5} mr={15} mt={0.5}>
             <MaterialCommunityIcons
               name="translate"
-              color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}
+              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
               size={30}
             />
           </Box>
@@ -108,7 +128,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
         <Box ml={5} mr={15} mt={3}>
           <Entypo
             name="light-up"
-            color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}
+            color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
             size={30}
           />
         </Box>
@@ -116,7 +136,6 @@ const ListItem = ({ title, navigation, destination, icon }) => {
         <Box>
           <Center
             shadow={5}
-            borderRadius="50"
             w={300}
             h={60}
             px="18"
@@ -132,7 +151,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
             borderRadius="20"
             alignSelf="center"
           >
-            <HStack space={20} >
+            <HStack space={20}>
               <Text fontSize="20" color={"white"} fontWeight={"bold"}>
                 {colorMode == "light" ? "淺色模式" : "深色模式"}
               </Text>

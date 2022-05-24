@@ -133,9 +133,14 @@ const HomeData = ({ Home, navigation }) => {
               <Starbar star={Home.star} />
               <Text mt={0.5}>
                 {Home.star != null ? (
-                  <Text fontSize={15} >
-                    {Home.star}.0 <Text _dark={{ color: "white" }}
-              _light={{ color: "#3D3D3D" }}>/ 5.0</Text>
+                  <Text fontSize={15}>
+                    {Home.star}.0{" "}
+                    <Text
+                      _dark={{ color: "white" }}
+                      _light={{ color: "#3D3D3D" }}
+                    >
+                      / 5.0
+                    </Text>
                   </Text>
                 ) : null}
               </Text>
@@ -145,8 +150,8 @@ const HomeData = ({ Home, navigation }) => {
             onPress={() => navigation.navigate("DetailScreen", Home)}
             height={30}
             w={100}
-            _dark={{bg:"#7888A0"}}
-            _light={{bg:"#463C2E"}}
+            _dark={{ bg: "#7888A0" }}
+            _light={{ bg: "#463C2E" }}
             borderRadius={25}
             mt={5}
             mr={3}

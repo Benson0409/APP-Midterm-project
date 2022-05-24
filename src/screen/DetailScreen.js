@@ -30,7 +30,7 @@ import { opacity, red } from "react-native-reanimated/src/reanimated2/Colors";
 import { useDispatch, useSelector } from "react-redux";
 
 const DetailScreen = ({ route }) => {
-  const{colorMode} = useColorMode();
+  const { colorMode } = useColorMode();
   const {
     star,
     name,
@@ -60,7 +60,12 @@ const DetailScreen = ({ route }) => {
           <Center flex={1} _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
             {/* <Text mt={5}>快來留下評論吧</Text> */}
 
-            <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }} alignSelf={"center"} mt={5}>
+            <Box
+              _dark={{ bg: "#7888A0" }}
+              _light={{ bg: "#FFFCF4" }}
+              alignSelf={"center"}
+              mt={5}
+            >
               <Box
                 borderLeftRadius={20}
                 borderRightRadius={20}
@@ -70,10 +75,13 @@ const DetailScreen = ({ route }) => {
                 shadow={5}
                 elevation={8}
                 mb={5}
-                
               >
                 <HStack>
-                  <Box _dark={{ bg: "#485860" }} _light={{ bg: "#FFFAE1" }} borderLeftRadius={20}>
+                  <Box
+                    _dark={{ bg: "#485860" }}
+                    _light={{ bg: "#FFFAE1" }}
+                    borderLeftRadius={20}
+                  >
                     <Image
                       source={{
                         uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture1.png?raw=true",
@@ -87,7 +95,13 @@ const DetailScreen = ({ route }) => {
                       m={2}
                     />
                   </Box>
-                  <Box _dark={{ bg: "#485860" }} _light={{ bg: "#FFFAE1" }} w={200} p={2} borderRightRadius={20}>
+                  <Box
+                    _dark={{ bg: "#485860" }}
+                    _light={{ bg: "#FFFAE1" }}
+                    w={200}
+                    p={2}
+                    borderRightRadius={20}
+                  >
                     <Text fontSize={20} fontWeight={"bold"}>
                       簡柏松
                     </Text>
@@ -98,7 +112,12 @@ const DetailScreen = ({ route }) => {
                 </HStack>
               </Box>
             </Box>
-            <Box  _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }} alignSelf={"center"} mt={5}>
+            <Box
+              _dark={{ bg: "#7888A0" }}
+              _light={{ bg: "#FFFCF4" }}
+              alignSelf={"center"}
+              mt={5}
+            >
               <Box
                 borderLeftRadius={20}
                 borderRightRadius={20}
@@ -110,7 +129,11 @@ const DetailScreen = ({ route }) => {
                 mb={5}
               >
                 <HStack mb={5}>
-                  <Box _dark={{ bg: "#485860" }} _light={{ bg: "#FFFAE1" }} borderLeftRadius={20}>
+                  <Box
+                    _dark={{ bg: "#485860" }}
+                    _light={{ bg: "#FFFAE1" }}
+                    borderLeftRadius={20}
+                  >
                     <Image
                       source={{
                         uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture2.png?raw=true",
@@ -124,79 +147,85 @@ const DetailScreen = ({ route }) => {
                       m={2}
                     />
                   </Box>
-                  <Box _dark={{ bg: "#485860" }} _light={{ bg: "#FFFAE1" }} w={200} p={2} borderRightRadius={20}>
+                  <Box
+                    _dark={{ bg: "#485860" }}
+                    _light={{ bg: "#FFFAE1" }}
+                    w={200}
+                    p={2}
+                    borderRightRadius={20}
+                  >
                     <Text fontSize={20} fontWeight={"bold"}>
                       林毓庭
                     </Text>
-                    <Text fontSize={16}>水餃很Q彈而且肉汁味很香，飽滿又大顆，食材味道可以很清楚的表現。</Text>
+                    <Text fontSize={16}>
+                      水餃很Q彈而且肉汁味很香，飽滿又大顆，食材味道可以很清楚的表現。
+                    </Text>
                   </Box>
                 </HStack>
               </Box>
             </Box>
-            <Box w={"100%"} h={20} 
-             shadowColor={"#000"}
-             shadowOpacity={0.25}
-             shadowRadius={3.84}
-             shadow={5}
-             elevation={8}>
-            
-            <Box >
-              <HStack>
-              <Box  pt={6} ml={5}>
+            <Box
+              w={"100%"}
+              h={20}
+              shadowColor={"#000"}
+              shadowOpacity={0.25}
+              shadowRadius={3.84}
+              shadow={5}
+              elevation={8}
+            >
+              <Box>
+                <HStack>
+                  <Box pt={6} ml={5}>
                     <AntDesign
                       name="message1"
-                      color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}
+                      color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
                       size={30}
                     />
-                </Box>
-                <Box ml={2}>
-                  <Input
-                    variant="filled"
-                    placeholder="留下您的評論"
-                    fontSize={15}
-                    borderRadius={15}
-                    mt={5}
-                    mb={5}
-                    _dark={{
-                      bg: "#485860",
-                      borderColor: "white",
-                      borderWidth: 2,
-                    }}
-                    _light={{
-                      bg: "#FFFAE1",
-                      borderColor: "black",
-                      borderWidth: 0.6,
-                    }}
-                    w={280}
-                    letterSpacing={4}
-                    shadow={5}
-                    // elevation={5}
-                    
-                    // InputRightElement={<TouchableOpacity><MaterialCommunityIcons
-                    //   name="send"
-                    //   color={"#A1917A"}
-                    //   size={30}
-                      
-                    // /></TouchableOpacity>}
-                    
-                  />
-                 
-    
-                </Box>
-                <Box  pt={6} ml={2}>
-                  <TouchableOpacity
-                      onPress={() => Toast.show({ description: "已送出" })}>
-                    <MaterialCommunityIcons
-                      name="send"
-                      color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}
-                      size={30}
-                    />
-                  </TouchableOpacity>
-                </Box>
-              </HStack>
-            </Box>
+                  </Box>
+                  <Box ml={2}>
+                    <Input
+                      variant="filled"
+                      placeholder="留下您的評論"
+                      fontSize={15}
+                      borderRadius={15}
+                      mt={5}
+                      mb={5}
+                      _dark={{
+                        bg: "#485860",
+                        borderColor: "white",
+                        borderWidth: 2,
+                      }}
+                      _light={{
+                        bg: "#FFFAE1",
+                        borderColor: "black",
+                        borderWidth: 0.6,
+                      }}
+                      w={280}
+                      letterSpacing={4}
+                      shadow={5}
+                      // elevation={5}
 
-                    
+                      // InputRightElement={<TouchableOpacity><MaterialCommunityIcons
+                      //   name="send"
+                      //   color={"#A1917A"}
+                      //   size={30}
+
+                      // /></TouchableOpacity>}
+                    />
+                  </Box>
+                  <Box pt={6} ml={2}>
+                    <TouchableOpacity
+                      onPress={() => Toast.show({ description: "已送出" })}
+                    >
+                      <MaterialCommunityIcons
+                        name="send"
+                        color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+                        size={30}
+                      />
+                    </TouchableOpacity>
+                  </Box>
+                </HStack>
+              </Box>
             </Box>
           </Center>
         </ScrollView>
@@ -204,8 +233,12 @@ const DetailScreen = ({ route }) => {
     } else {
       return (
         <ScrollView flex={1}>
-          <Box _dark={{ bg: "#7888A0" }} 
-            _light={{ bg: "#FFFCF4" }}  alignSelf={"center"} mt={5}>
+          <Box
+            _dark={{ bg: "#7888A0" }}
+            _light={{ bg: "#FFFCF4" }}
+            alignSelf={"center"}
+            mt={5}
+          >
             <Box
               borderLeftRadius={20}
               borderRightRadius={20}
@@ -217,8 +250,13 @@ const DetailScreen = ({ route }) => {
               mb={5}
             >
               <HStack shadow={5}>
-                <Box _dark={{ bg: "#485860" }} 
-            _light={{ bg: "#FFFAE1" }}  w={200} p={2} borderLeftRadius={20} >
+                <Box
+                  _dark={{ bg: "#485860" }}
+                  _light={{ bg: "#FFFAE1" }}
+                  w={200}
+                  p={2}
+                  borderLeftRadius={20}
+                >
                   <Text fontSize={20} fontWeight={"bold"}>
                     {food1}
                   </Text>
@@ -230,7 +268,6 @@ const DetailScreen = ({ route }) => {
                   w="146"
                   h="146"
                   borderRightRadius={20}
-                  
                 />
               </HStack>
             </Box>
@@ -244,8 +281,13 @@ const DetailScreen = ({ route }) => {
               mb={5}
             >
               <HStack shadow={5}>
-                <Box _dark={{ bg: "#485860" }} 
-            _light={{ bg: "#FFFAE1" }} w={200} p={2} borderLeftRadius={20}>
+                <Box
+                  _dark={{ bg: "#485860" }}
+                  _light={{ bg: "#FFFAE1" }}
+                  w={200}
+                  p={2}
+                  borderLeftRadius={20}
+                >
                   <Text fontSize={20} fontWeight={"bold"}>
                     {food2}
                   </Text>
@@ -271,8 +313,13 @@ const DetailScreen = ({ route }) => {
               mb={5}
             >
               <HStack shadow={5}>
-                <Box _dark={{ bg: "#485860" }} 
-            _light={{ bg: "#FFFAE1" }} w={200} p={2} borderLeftRadius={20}>
+                <Box
+                  _dark={{ bg: "#485860" }}
+                  _light={{ bg: "#FFFAE1" }}
+                  w={200}
+                  p={2}
+                  borderLeftRadius={20}
+                >
                   <Text fontSize={20} fontWeight={"bold"}>
                     {food3}
                   </Text>
@@ -299,7 +346,7 @@ const DetailScreen = ({ route }) => {
         <Image source={{ uri: photo }} alt="store" w="100%" h="300" />
         <Center position="absolute" alignSelf={"center"} mt={250}>
           <Box
-            _dark={{ bg: "#485860" }} 
+            _dark={{ bg: "#485860" }}
             _light={{ bg: "#FFFAE1" }}
             shadow={5}
             w={300}
@@ -319,10 +366,11 @@ const DetailScreen = ({ route }) => {
           >
             <HStack mt={30} justifyContent="center">
               <Box>
-                <Text fontSize={24} 
-                fontWeight={"bold"}
-                _dark={{ color: "white" }} 
-                _light={{ color: "black" }}
+                <Text
+                  fontSize={24}
+                  fontWeight={"bold"}
+                  _dark={{ color: "white" }}
+                  _light={{ color: "black" }}
                 >
                   {name}
                 </Text>
@@ -333,10 +381,17 @@ const DetailScreen = ({ route }) => {
                 <Starbar star={star} />
                 <Text mt={0.5}>
                   {star != null ? (
-                    <Text  _dark={{ color: "white" }}
-                    _light={{ color: "black" }}>
-                      {star}.0 <Text _dark={{ color: "white" }}
-              _light={{ color: "#3D3D3D" }}>/ 5.0</Text>
+                    <Text
+                      _dark={{ color: "white" }}
+                      _light={{ color: "black" }}
+                    >
+                      {star}.0{" "}
+                      <Text
+                        _dark={{ color: "white" }}
+                        _light={{ color: "#3D3D3D" }}
+                      >
+                        / 5.0
+                      </Text>
                     </Text>
                   ) : null}
                 </Text>
@@ -346,8 +401,12 @@ const DetailScreen = ({ route }) => {
         </Center>
         <Box>
           <HStack ml={8} mb={3} mt={20}>
-            <Box >
-            <MaterialCommunityIcons name="map-marker" color={"red"} size={25}/>
+            <Box>
+              <MaterialCommunityIcons
+                name="map-marker"
+                color={"red"}
+                size={25}
+              />
             </Box>
             <Text ml={2} fontSize={20} fontWeight={"bold"}>
               {address}
@@ -357,11 +416,15 @@ const DetailScreen = ({ route }) => {
             h={0.5}
             w="83%"
             alignSelf="flex-end"
-            _dark={{ bg: "#1C3851" }} 
+            _dark={{ bg: "#1C3851" }}
             _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <Entypo name="old-phone" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}  size={25} />
+            <Entypo
+              name="old-phone"
+              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+              size={25}
+            />
             <Text ml={3} fontSize={20} fontWeight={"bold"}>
               {phone}
             </Text>
@@ -370,11 +433,15 @@ const DetailScreen = ({ route }) => {
             h={0.5}
             w="83%"
             alignSelf="flex-end"
-            _dark={{ bg: "#1C3851" }} 
+            _dark={{ bg: "#1C3851" }}
             _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <AntDesign name="rest" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={25} />
+            <AntDesign
+              name="rest"
+              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+              size={25}
+            />
             <Text ml={3} fontSize={20} fontWeight={"bold"}>
               {time}
             </Text>
@@ -383,11 +450,15 @@ const DetailScreen = ({ route }) => {
             h={0.5}
             w="83%"
             alignSelf="flex-end"
-            _dark={{ bg: "#1C3851" }} 
+            _dark={{ bg: "#1C3851" }}
             _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <MaterialIcons name="restaurant-menu" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={25} />
+            <MaterialIcons
+              name="restaurant-menu"
+              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+              size={25}
+            />
             <Pressable onPress={() => Linking.openURL(url)}>
               <Text ml={3} fontSize={20} fontWeight={"bold"}>
                 {menu}
@@ -398,44 +469,54 @@ const DetailScreen = ({ route }) => {
             h={0.5}
             w="83%"
             alignSelf="flex-end"
-            _dark={{ bg: "#1C3851" }} 
+            _dark={{ bg: "#1C3851" }}
             _light={{ bg: "#A1917A" }}
           ></Divider>
         </Box>
         <Box w={"100%"} alignSelf={"center"} mt={10}>
-        <SegmentedControlTab
-          values={["人氣推薦", "評論區"]}
-          // tabStyle={{
-          //   marginTop: 30,
-          //   borderColor: "gray",
-          //   borderWidth: 1,
-          //   backgroundColor: "#FFFAE1",
-           
-          // }}
-          // firstTabStyle={{ marginLeft: 40 }}
-          // lastTabStyle={{ marginRight: 40 }}
-          // tabTextStyle={{
-          //   fontSize: 16,
-          //   padding: 1,
-          //   color: "black",
-          // }}
-          // activeTabStyle={{
-          //   backgroundColor: "#463C2E",
-          // }}
-          // activeTabTextStyle={{ color: "white" }}
-          firstTabStyle={{ marginLeft: 25 }}
-          lastTabStyle={{ marginRight: 25 }}
-          tabStyle={{backgroundColor: colorMode=="dark"? "#485860": "#FFFAE1",  borderColor: "gray",borderWidth: 1.5}}
-          activeTabStyle={{
-               backgroundColor: colorMode=="dark"? "#1C3851": "#463C2E"
-          }}
-          activeTabTextStyle={{color: colorMode=="dark"? "white": "white", fontSize: 16}}
-          tabTextStyle={{color: colorMode=="dark"? "white": "black", fontSize: 16}}
-          selectedIndex={selectedIndex}
-          onTabPress={(index) => setSelectedIndex(index)}
-        />
+          <SegmentedControlTab
+            values={["人氣推薦", "評論區"]}
+            // tabStyle={{
+            //   marginTop: 30,
+            //   borderColor: "gray",
+            //   borderWidth: 1,
+            //   backgroundColor: "#FFFAE1",
 
-        <SegmentedContent />
+            // }}
+            // firstTabStyle={{ marginLeft: 40 }}
+            // lastTabStyle={{ marginRight: 40 }}
+            // tabTextStyle={{
+            //   fontSize: 16,
+            //   padding: 1,
+            //   color: "black",
+            // }}
+            // activeTabStyle={{
+            //   backgroundColor: "#463C2E",
+            // }}
+            // activeTabTextStyle={{ color: "white" }}
+            firstTabStyle={{ marginLeft: 25 }}
+            lastTabStyle={{ marginRight: 25 }}
+            tabStyle={{
+              backgroundColor: colorMode == "dark" ? "#485860" : "#FFFAE1",
+              borderColor: "gray",
+              borderWidth: 1.5,
+            }}
+            activeTabStyle={{
+              backgroundColor: colorMode == "dark" ? "#1C3851" : "#463C2E",
+            }}
+            activeTabTextStyle={{
+              color: colorMode == "dark" ? "white" : "white",
+              fontSize: 16,
+            }}
+            tabTextStyle={{
+              color: colorMode == "dark" ? "white" : "black",
+              fontSize: 16,
+            }}
+            selectedIndex={selectedIndex}
+            onTabPress={(index) => setSelectedIndex(index)}
+          />
+
+          <SegmentedContent />
         </Box>
       </Box>
     </ScrollView>

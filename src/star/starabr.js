@@ -18,10 +18,10 @@ const Starbar = (props) => {
     return (
       <View style={styles.starFlex}>
         <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
+        <FontAwesome5 name="fish" color={"gray"} size={25} />
+        <FontAwesome5 name="fish" color={"gray"} size={25} />
+        <FontAwesome5 name="fish" color={"gray"} size={25} />
+        <FontAwesome5 name="fish" color={"gray"} size={25} />
       </View>
     );
   } else if (props.star == 2) {
@@ -29,9 +29,9 @@ const Starbar = (props) => {
       <View style={styles.starFlex}>
         <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
         <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
+        <FontAwesome5 name="fish" color={"gray"} size={25} />
+        <FontAwesome5 name="fish" color={"gray"} size={25} />
+        <FontAwesome5 name="fish" color={"gray"} size={25} />
       </View>
     );
   } else if (props.star == 3) {
@@ -40,8 +40,8 @@ const Starbar = (props) => {
         <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
         <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
         <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
+        <FontAwesome5 name="fish" color={"gray"} size={25} />
+        <FontAwesome5 name="fish" color={"gray"} size={25} />
       </View>
     );
   } else if (props.star == 4) {
@@ -51,7 +51,7 @@ const Starbar = (props) => {
         <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
         <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
         <FontAwesome5 name="fish" color={"#155C7A"} size={25} />
-        <FontAwesome5 name="fish" color={"gray"} size={25}/>
+        <FontAwesome5 name="fish" color={"gray"} size={25} />
       </View>
     );
   } else if (props.star == 5) {
@@ -72,7 +72,7 @@ const Starbar = (props) => {
 const styles = StyleSheet.create({
   starFlex: {
     flexDirection: "row",
-    marginRight:5,
+    marginRight: 5,
   },
 });
 

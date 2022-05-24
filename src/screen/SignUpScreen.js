@@ -39,140 +39,143 @@ const SignUpScreen = () => {
   const emailRegex = /\w{3,}@[a-zA-Z_]+\.[a-zA-Z]{2,5}/;
   const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}$/;
   return (
-    <KeyboardAvoidingView keyboardVerticalOffset={Platform.select({ios: 0, android: -500})}
-    behavior={Platform.OS === "ios" ? "padding" : "height"}>
-    <ScrollView>
-    
-      <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }} h="100%">
-        <VStack space={2} mt={10} width="300" alignSelf="center" shadow={5}>
-          <FormControl mb={5} isRequired isInvalid={nameIsError}>
-            <FormControl.Label _text={formLabelStyle}>姓名</FormControl.Label>
-            <Input
-              placeholder="請填寫真實姓名"
-              fontSize={16}
-              variant="filled"
+    <KeyboardAvoidingView
+      keyboardVerticalOffset={Platform.select({ ios: 0, android: -500 })}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+    >
+      <ScrollView>
+        <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }} h="100%">
+          <VStack space={2} mt={10} width="300" alignSelf="center" shadow={5}>
+            <FormControl mb={5} isRequired isInvalid={nameIsError}>
+              <FormControl.Label _text={formLabelStyle}>姓名</FormControl.Label>
+              <Input
+                placeholder="請填寫真實姓名"
+                fontSize={16}
+                variant="filled"
+                borderRadius={20}
+                borderColor={"#51483C"}
+                _dark={{ bg: "#485860" }}
+                _light={{ bg: "#FFFAE1" }}
+                _focus={focusInputStyle}
+                value={name}
+                onChangeText={(text) => {
+                  setName(text);
+                  if (text.match(nameRegex)) setNameIsError(false);
+                  else setNameIsError(true);
+                }}
+              />
+              <FormControl.ErrorMessage
+                leftIcon={<WarningOutlineIcon size="xs" />}
+              >
+                必填
+              </FormControl.ErrorMessage>
+            </FormControl>
+            <FormControl mb={5} isRequired isInvalid={emailIsError}>
+              <FormControl.Label _text={formLabelStyle}>
+                電子郵件
+              </FormControl.Label>
+              <Input
+                fontSize={16}
+                placeholder="請填有效電子信箱"
+                variant="filled"
+                borderRadius={20}
+                borderColor={"#51483C"}
+                _dark={{ bg: "#485860" }}
+                _light={{ bg: "#FFFAE1" }}
+                _focus={focusInputStyle}
+                value={email}
+                onChangeText={(text) => {
+                  setEmail(text);
+                  if (text.match(emailRegex)) setEmailIsError(false);
+                  else setEmailIsError(true);
+                }}
+              />
+              <FormControl.ErrorMessage
+                leftIcon={<WarningOutlineIcon size="xs" />}
+              >
+                必填
+              </FormControl.ErrorMessage>
+            </FormControl>
+            <FormControl mb={5} isRequired isInvalid={passwordIsError}>
+              <FormControl.Label _text={formLabelStyle}>密碼</FormControl.Label>
+              <Input
+                fontSize={16}
+                placeholder="開頭必須大寫"
+                variant="filled"
+                borderRadius={20}
+                borderColor={"#51483C"}
+                _dark={{ bg: "#485860" }}
+                _light={{ bg: "#FFFAE1" }}
+                _focus={focusInputStyle}
+                value={password}
+                onChangeText={(text) => {
+                  setpassword(text);
+                  if (text.match(passwordRegex)) setpasswordIsError(false);
+                  else setpasswordIsError(true);
+                }}
+              />
+              <FormControl.ErrorMessage
+                leftIcon={<WarningOutlineIcon size="xs" />}
+              >
+                必填
+              </FormControl.ErrorMessage>
+            </FormControl>
+            <FormControl mb={5} isRequired>
+              <FormControl.Label _text={formLabelStyle}>住址</FormControl.Label>
+              <Input
+                fontSize={16}
+                placeholder="開頭必須大寫"
+                variant="filled"
+                borderRadius={20}
+                _dark={{ bg: "#485860" }}
+                _light={{ bg: "#FFFAE1" }}
+                borderColor={"#51483C"}
+                _focus={focusInputStyle}
+                value={adrs}
+                onChangeText={(text) => setAdrs(text)}
+              />
+            </FormControl>
+            <FormControl mb={5} isRequired>
+              <FormControl.Label _text={formLabelStyle}>
+                電話號碼
+              </FormControl.Label>
+              <Input
+                fontSize={16}
+                placeholder="請填手機號碼"
+                variant="filled"
+                borderRadius={20}
+                _dark={{ bg: "#485860" }}
+                _light={{ bg: "#FFFAE1" }}
+                borderColor={"#51483C"}
+                _focus={focusInputStyle}
+                value={tel}
+                onChangeText={(text) => setTel(text)}
+              />
+            </FormControl>
+            <Button
+              onPress={() => Toast.show({ description: "已提交" })}
+              mt="2"
+              width="150"
+              alignSelf="center"
+              _dark={{ bg: "#1C3851" }}
+              _light={{ bg: "#A1917A" }}
               borderRadius={20}
-              borderColor={"#51483C"}
-              _dark={{ bg: "#485860" }}
-              _light={{ bg: "#FFFAE1" }}
-              _focus={focusInputStyle}
-              value={name}
-              onChangeText={(text) => {
-                setName(text);
-                if (text.match(nameRegex)) setNameIsError(false);
-                else setNameIsError(true);
-              }}
-            />
-            <FormControl.ErrorMessage
-              leftIcon={<WarningOutlineIcon size="xs" />}
+              shadow={5}
+              colorScheme={"yellow"}
+              mb={10}
             >
-              必填
-            </FormControl.ErrorMessage>
-          </FormControl>
-          <FormControl mb={5} isRequired isInvalid={emailIsError}>
-            <FormControl.Label _text={formLabelStyle}>
-              電子郵件
-            </FormControl.Label>
-            <Input
-              fontSize={16}
-              placeholder="請填有效電子信箱"
-              variant="filled"
-              borderRadius={20}
-              borderColor={"#51483C"}
-              _dark={{ bg: "#485860" }}
-              _light={{ bg: "#FFFAE1" }}
-              _focus={focusInputStyle}
-              value={email}
-              onChangeText={(text) => {
-                setEmail(text);
-                if (text.match(emailRegex)) setEmailIsError(false);
-                else setEmailIsError(true);
-              }}
-            />
-            <FormControl.ErrorMessage
-              leftIcon={<WarningOutlineIcon size="xs" />}
-            >
-              必填
-            </FormControl.ErrorMessage>
-          </FormControl>
-          <FormControl mb={5} isRequired isInvalid={passwordIsError}>
-            <FormControl.Label _text={formLabelStyle}>密碼</FormControl.Label>
-            <Input
-              fontSize={16}
-              placeholder="開頭必須大寫"
-              variant="filled"
-              borderRadius={20}
-              borderColor={"#51483C"}
-              _dark={{ bg: "#485860" }}
-              _light={{ bg: "#FFFAE1" }}
-              _focus={focusInputStyle}
-              value={password}
-              onChangeText={(text) => {
-                setpassword(text);
-                if (text.match(passwordRegex)) setpasswordIsError(false);
-                else setpasswordIsError(true);
-              }}
-            />
-            <FormControl.ErrorMessage
-              leftIcon={<WarningOutlineIcon size="xs" />}
-            >
-              必填
-            </FormControl.ErrorMessage>
-          </FormControl>
-          <FormControl mb={5} isRequired>
-            <FormControl.Label _text={formLabelStyle}>住址</FormControl.Label>
-            <Input
-              fontSize={16}
-              placeholder="開頭必須大寫"
-              variant="filled"
-              borderRadius={20}
-              _dark={{ bg: "#485860" }}
-              _light={{ bg: "#FFFAE1" }}
-              borderColor={"#51483C"}
-              _focus={focusInputStyle}
-              value={adrs}
-              onChangeText={(text) => setAdrs(text)}
-            />
-          </FormControl>
-          <FormControl mb={5} isRequired>
-            <FormControl.Label _text={formLabelStyle}>
-              電話號碼
-            </FormControl.Label>
-            <Input
-              fontSize={16}
-              placeholder="請填手機號碼"
-              variant="filled"
-              borderRadius={20}
-              _dark={{ bg: "#485860" }}
-              _light={{ bg: "#FFFAE1" }}
-              borderColor={"#51483C"}
-              _focus={focusInputStyle}
-              value={tel}
-              onChangeText={(text) => setTel(text)}
-            />
-          </FormControl>
-          <Button 
-            onPress={() => Toast.show({ description: "已提交" })}
-            mt="2"
-            width="150"
-            alignSelf="center"
-            _dark={{ bg: "#1C3851" } }
-            _light={{ bg: "#A1917A" }}
-            borderRadius={20}
-            shadow={5}
-            colorScheme={"yellow"}
-            mb={10}
-          >
-            <Text  fontSize="16" fontWeight="600"
-            _dark={{ color: "white" }}
-            _light={{ color: "white" }}>
-              確認提交
-            </Text>
-          </Button>
-        </VStack>
-      </Box>
-      
-    </ScrollView>
+              <Text
+                fontSize="16"
+                fontWeight="600"
+                _dark={{ color: "white" }}
+                _light={{ color: "white" }}
+              >
+                確認提交
+              </Text>
+            </Button>
+          </VStack>
+        </Box>
+      </ScrollView>
     </KeyboardAvoidingView>
   );
 };

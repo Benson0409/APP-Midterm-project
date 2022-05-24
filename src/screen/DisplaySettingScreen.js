@@ -32,9 +32,9 @@ const DisplaySettingScreen = () => {
             onToggle={toggleColorMode}
             accessibilityLabel="display-mode"
             accessibilityHint="light or dark mode"
-            offTrackColor="indigo.300" 
-            onTrackColor="indigo.200" 
-            onThumbColor="indigo.500" 
+            offTrackColor="indigo.300"
+            onTrackColor="indigo.200"
+            onThumbColor="indigo.500"
             offThumbColor="indigo.50"
           />
         </HStack>

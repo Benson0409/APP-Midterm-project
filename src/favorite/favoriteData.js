@@ -59,7 +59,7 @@ const FavoriteData = ({ favorite, navigation }) => {
   return (
     <Box>
       <Pressable
-        onPress={() => navigation.navigate("DetailScreen", favorite)}
+        onPress={() => navigation.navigate("DetailScreen", favorite.name)}
         mt={5}
       >
         <Box
