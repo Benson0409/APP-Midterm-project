@@ -17,7 +17,7 @@ import {
 import { TouchableOpacity, activeOpacity, Platform } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 import { useDispatch, useSelector } from "react-redux";
-import { selectLike, detect } from "../redux/likeSlice";
+
 // import {
 //   AnimatedTabBarNavigator,
 //   DotSize, // optional
@@ -431,7 +431,7 @@ const SearchStack = () => {
                 />
               )}
             </TouchableOpacity>
-          )
+          ),
         })}
       />
     </Stack.Navigator>
@@ -439,6 +439,7 @@ const SearchStack = () => {
 };
 
 const FavoriteStack = () => {
+  const [Like, setLike] = useState(false);
   const { colorMode } = useColorMode();
   return (
     <Stack.Navigator>
@@ -453,6 +454,52 @@ const FavoriteStack = () => {
             fontSize: 14,
           },
         }}
+      />
+      <Stack.Screen
+        name="DetailScreen"
+        component={DetailScreen}
+        options={({ navigation, route }) => ({
+          // title: route.params.name,
+          // headerShown: false,
+          headerShadowVisible: false,
+          headerTintColor: colorMode == "light" ? "white" : "white",
+          headerStyle: {
+            backgroundColor: colorMode == "light" ? "#A1917A" : "black",
+          },
+          headerTitleStyle: {
+            fontWeight: "400",
+            fontSize: 20,
+            color: "#A1917A",
+          },
+          headerLeft: () => (
+            <TouchableOpacity>
+              <AntDesign
+                name="back"
+                color={colorMode == "light" ? "white" : "white"}
+                size={30}
+                activeOpacity={0.6}
+                onPress={() => navigation.goBack()}
+              />
+            </TouchableOpacity>
+          ),
+          headerRight: () => (
+            <TouchableOpacity onPress={() => setLike(!Like)}>
+              {Like ? (
+                <MaterialCommunityIcons
+                  name="cards-heart"
+                  color={"red"}
+                  size={25}
+                />
+              ) : (
+                <MaterialCommunityIcons
+                  name="heart-outline"
+                  color={"white"}
+                  size={25}
+                />
+              )}
+            </TouchableOpacity>
+          ),
+        })}
       />
     </Stack.Navigator>
   );

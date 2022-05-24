@@ -25,7 +25,7 @@ const HomeList = ({ list, navigation }) => {
       horizontal={true}
       data={list}
       renderItem={renderItem}
-      keyExtractor={(item) => item.photo}
+      keyExtractor={(list) => list.photo}
       showsHorizontalScrollIndicator={false}
     />
   );

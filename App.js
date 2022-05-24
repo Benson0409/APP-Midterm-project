@@ -6,12 +6,12 @@ import { NativeBaseProvider } from "native-base";
 import Navigation from "./src/navigation";
 //5/17
 import { Provider } from "react-redux";
-import store from "./src/redux/store";
+import { Stores } from "./src/redux/stores";
 
 export default function App() {
   return (
     //5/17
-    <Provider store={store}>
+    <Provider store={Stores}>
       <SafeAreaProvider>
         <SafeAreaView style={{ flex: 1 }}>
           <NativeBaseProvider>

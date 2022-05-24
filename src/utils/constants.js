@@ -1,0 +1,2 @@
+export const ADD_LIKE_STORE = "ADD_LIKE_STORE";
+export const REMOVE_LIKE_STORE = "REMOVE_LIKE_STORE";

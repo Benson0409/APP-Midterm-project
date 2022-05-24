@@ -19,15 +19,48 @@ import {
 } from "react-native";
 //5/17
 import { useDispatch } from "react-redux";
-import { increaseOne, decreaseOne } from "../redux/likeSlice";
 
+import { Stores } from "../redux/stores";
+import { addLikeStore, removeLikeStore } from "../redux/actions";
 const HomeData = ({ Home, navigation }) => {
   //5/17
   // Define a dispatch to send actions
-  // const dispatch = useDispatch();
+
+  const {
+    name,
+    address,
+    adr,
+    phone,
+    time,
+    photo,
+    star,
+    menu,
+    url,
+    title,
+    food1,
+    food1des,
+    food1img,
+    food2,
+    food2des,
+    food2img,
+    food3,
+    food3des,
+    food3img,
+  } = Home;
+
+  const dispatch = useDispatch();
   const [Like, setLike] = useState(false);
+  const toggleLike = () => {
+    if (Like == false) {
+      setLike(true);
+      dispatch(addLikeStore(Home));
+    } else {
+      setLike(false);
+      dispatch(removeLikeStore(Home));
+    }
+  };
   return (
-    <Box mx="auto" mb="8" mt={5} ml={8} mr={3} >
+    <Box mx="auto" mb="8" mt={5} ml={8} mr={3}>
       <VStack
         shadowColor={"#000"}
         shadowOpacity={0.25}
@@ -59,13 +92,14 @@ const HomeData = ({ Home, navigation }) => {
               marginTop={3}
             >
               <TouchableOpacity
-                onPress={() => {
-                  setLike(!Like);
-                  //5/17
-                  // dispatch(increaseOne());
-                }}
+                onPress={toggleLike}
+                // onPress={() => {
+                //   setLike(!Like);
+                //5/17
+                // dispatch(increaseOne());
+                // }}
               >
-                {Like ? (
+                {Like == true ? (
                   <MaterialCommunityIcons
                     name="cards-heart"
                     color={"#FF0C0C"}

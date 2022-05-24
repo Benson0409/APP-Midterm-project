@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import likeReducer from "./likeSlice";
+import likeReducer from "./_likeSlice";
 
 // Part2: Combine Reducers and Create a Store
 const store = configureStore({

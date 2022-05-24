@@ -15,8 +15,8 @@ import {
 import foodData from "../json/food.json";
 import HomeList from "../Home/HomeList";
 //5/17
-import { useSelector } from "react-redux";
-import { selectLike } from "../redux/likeSlice";
+// import { useSelector } from "react-redux";
+// import { selectLike } from "../redux/likeSlice";
 const HomeScreen = ({ navigation }) => {
   //5/17
   // const likeValue = useSelector(selectLike);
