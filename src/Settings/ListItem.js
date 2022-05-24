@@ -41,7 +41,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
           </Box>
         <HStack _dark={{}} _light={{}} py="5" mt={30}>
           <Box ml={5} mr={15} mt={0.5}>
-            <FontAwesome name="user-circle-o" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={30} />
+            <FontAwesome name="user-circle-o" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={30} />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -56,7 +56,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       >
         <HStack _dark={{}} _light={{}} py="5" mt={5}>
           <Box ml={5} mr={15} mt={1}>
-            <FontAwesome5 name="user-edit" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={25} />
+            <FontAwesome5 name="user-edit" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={25} />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -71,7 +71,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
       >
         <HStack _dark={{}} _light={{}} py="5" mt={5}>
           <Box ml={5} mr={15} mt={0.5}>
-            <MaterialIcons name="text-fields" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={30} />
+            <MaterialIcons name="text-fields" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={30} />
           </Box>
           <Text fontSize={20}>{title}</Text>
         </HStack>
@@ -88,7 +88,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
           <Box ml={5} mr={15} mt={0.5}>
             <MaterialCommunityIcons
               name="translate"
-              color={colorMode== "light" ? "#463C2E" : "#EDEDEF"}
+              color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}
               size={30}
             />
           </Box>
@@ -108,7 +108,7 @@ const ListItem = ({ title, navigation, destination, icon }) => {
         <Box ml={5} mr={15} mt={3}>
           <Entypo
             name="light-up"
-            color={colorMode== "light" ? "#463C2E" : "#EDEDEF"}
+            color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}
             size={30}
           />
         </Box>

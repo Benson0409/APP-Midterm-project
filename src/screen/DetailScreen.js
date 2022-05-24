@@ -145,7 +145,7 @@ const DetailScreen = ({ route }) => {
               <Box  pt={6} ml={5}>
                     <AntDesign
                       name="message1"
-                      color={colorMode== "light" ? "#463C2E" : "#EDEDEF"}
+                      color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}
                       size={30}
                     />
                 </Box>
@@ -188,7 +188,7 @@ const DetailScreen = ({ route }) => {
                       onPress={() => Toast.show({ description: "已送出" })}>
                     <MaterialCommunityIcons
                       name="send"
-                      color={colorMode== "light" ? "#463C2E" : "#EDEDEF"}
+                      color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}
                       size={30}
                     />
                   </TouchableOpacity>
@@ -361,7 +361,7 @@ const DetailScreen = ({ route }) => {
             _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <Entypo name="old-phone" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"}  size={25} />
+            <Entypo name="old-phone" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"}  size={25} />
             <Text ml={3} fontSize={20} fontWeight={"bold"}>
               {phone}
             </Text>
@@ -374,7 +374,7 @@ const DetailScreen = ({ route }) => {
             _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <AntDesign name="rest" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={25} />
+            <AntDesign name="rest" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={25} />
             <Text ml={3} fontSize={20} fontWeight={"bold"}>
               {time}
             </Text>
@@ -387,7 +387,7 @@ const DetailScreen = ({ route }) => {
             _light={{ bg: "#A1917A" }}
           ></Divider>
           <HStack ml={8} mb={3} mt={5}>
-            <MaterialIcons name="restaurant-menu" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={25} />
+            <MaterialIcons name="restaurant-menu" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={25} />
             <Pressable onPress={() => Linking.openURL(url)}>
               <Text ml={3} fontSize={20} fontWeight={"bold"}>
                 {menu}

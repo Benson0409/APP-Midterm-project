@@ -174,13 +174,13 @@ const LoginScreen = ({ navigation }) => {
           </HStack>
           <HStack alignSelf="center" mt={3}>
           <Box mr={10}>
-            <FontAwesome name="google-plus-circle" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={40} />
+            <FontAwesome name="google-plus-circle" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={40} />
           </Box>
           <Box >
-            <MaterialIcons name="facebook" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={40} />
+            <MaterialIcons name="facebook" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={40} />
           </Box>
           <Box ml={10}>
-            <Entypo name="instagram-with-circle" color={colorMode== "light" ? "#463C2E" : "#EDEDEF"} size={40} />
+            <Entypo name="instagram-with-circle" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={40} />
           </Box>
           </HStack>
       </VStack>

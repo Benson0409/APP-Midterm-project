@@ -46,7 +46,7 @@ const ActionScreen = ({ navigation, onClose, site }) => {
           shadow={5}
         >
           <Box alignSelf={"center"} mt={2} >
-            <FontAwesome5 name="walking" color={colorMode== "light" ? "#463C2E" : "white"} size={40} />
+            <FontAwesome5 name="walking" color={colorMode== "light" ? "#463C2E" : "#FFE3B3"} size={40} />
           </Box>
         </Pressable>
         <VStack ml={5}>
