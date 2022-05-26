@@ -43,8 +43,8 @@ const SignUpScreen = () => {
       keyboardVerticalOffset={Platform.select({ ios: 0, android: -500 })}
       behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
-      <ScrollView>
-        <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }} h="100%">
+      <ScrollView _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
+        <Box  h="100%">
           <VStack space={2} mt={10} width="300" alignSelf="center" shadow={5}>
             <FormControl mb={5} isRequired isInvalid={nameIsError}>
               <FormControl.Label _text={formLabelStyle}>姓名</FormControl.Label>
@@ -124,7 +124,7 @@ const SignUpScreen = () => {
               <FormControl.Label _text={formLabelStyle}>住址</FormControl.Label>
               <Input
                 fontSize={16}
-                placeholder="開頭必須大寫"
+                placeholder="非必填"
                 variant="filled"
                 borderRadius={20}
                 _dark={{ bg: "#485860" }}

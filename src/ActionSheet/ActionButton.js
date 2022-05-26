@@ -1,17 +1,19 @@
 import React from "react";
-import { Center, Pressable, Actionsheet, useDisclose } from "native-base";
+import { Center, Pressable, Actionsheet, useDisclose,useColorMode } from "native-base";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import ActionScreen from "./ActionScreen";
 import { Marker } from "react-native-maps";
 const ActionButton = (props) => {
   const { isOpen, onOpen, onClose } = useDisclose();
   const { navigation, zoomRatio, site } = props;
-
+  const{colorMode} = useColorMode();
   return (
     <>
       <Pressable onPress={onOpen}>
         <Center
-          bg="#155C7A"
+          
+          _dark={{ bg: "#155C7A" }} 
+          _light={{ bg: "#463C2E" }}
           borderRadius={80}
           p={2 * zoomRatio}
           borderWidth={1 * zoomRatio}

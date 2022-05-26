@@ -156,7 +156,7 @@
     {
       "name": "三隻貓頭鷹",
       "adr": "台北市大安區和平東路二段96巷15弄38號",
-      "address": "大安區和平東路二段96巷15弄38號",
+      "address": "大安區和平東路二段96巷15弄",
       "phone": "02 2377-0995",
       "time": "11:00 ~ 21:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/三隻貓頭鷹.jpg?raw=true",
@@ -177,7 +177,7 @@
     {
       "name": "Stoppage 補時",
       "adr": "台北市大安區和平東路二段96巷15弄30號",
-      "address": "大安區和平東路二段96巷15弄30號",
+      "address": "大安區和平東路二段96巷15弄",
       "phone": "02 2736-6506",
       "time": "11:00 ~ 22:00",
       "photo": "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/補時.png?raw=true",

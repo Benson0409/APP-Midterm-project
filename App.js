@@ -13,11 +13,11 @@ export default function App() {
 
     <Provider store={Stores}>
       <SafeAreaProvider>
-        <SafeAreaView style={{ flex: 1 }}>
+        {/* <SafeAreaView style={{ flex: 1 }}> */}
           <NativeBaseProvider>
             <Navigation />
           </NativeBaseProvider>
-        </SafeAreaView>
+        {/* </SafeAreaView> */}
       </SafeAreaProvider>
     </Provider>
   );

@@ -18,10 +18,10 @@ const SettingsScreen = ({ navigation }) => {
         top={-190}
         left={-5}
       >
-        <Box position="absolute">
+        {/* <Box position="absolute">
           <Image
             source={{
-              uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/PeoplePicture2.png?raw=true",
+              uri: "https://github.com/Benson0409/APP-Midterm-project/blob/master/img/使用者大頭貼.jpg?raw=true",
             }}
             alt="food"
             w="100"
@@ -29,7 +29,7 @@ const SettingsScreen = ({ navigation }) => {
             borderLeftRadius={20}
             m={2}
           />
-        </Box>
+        </Box> */}
       </Box>
 
       <ListItem

@@ -56,10 +56,8 @@ const DetailScreen = ({ route }) => {
   const SegmentedContent = () => {
     if (selectedIndex == 1) {
       return (
-        <ScrollView>
-          <Center flex={1} _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
-            {/* <Text mt={5}>快來留下評論吧</Text> */}
-
+        <ScrollView _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
+          <Center flex={1} >
             <Box
               _dark={{ bg: "#7888A0" }}
               _light={{ bg: "#FFFCF4" }}
@@ -197,8 +195,8 @@ const DetailScreen = ({ route }) => {
                       }}
                       _light={{
                         bg: "#FFFAE1",
-                        borderColor: "black",
-                        borderWidth: 0.6,
+                        borderColor: "#463C2E",
+                        borderWidth: 1,
                       }}
                       w={280}
                       letterSpacing={4}
@@ -232,10 +230,10 @@ const DetailScreen = ({ route }) => {
       );
     } else {
       return (
-        <ScrollView flex={1}>
+        <ScrollView flex={1} 
+        _dark={{ bg: "#7888A0" }}
+        _light={{ bg: "#FFFCF4" }}>
           <Box
-            _dark={{ bg: "#7888A0" }}
-            _light={{ bg: "#FFFCF4" }}
             alignSelf={"center"}
             mt={5}
           >
@@ -341,8 +339,8 @@ const DetailScreen = ({ route }) => {
   };
 
   return (
-    <ScrollView>
-      <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
+    <ScrollView _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
+      <Box >
         <Image source={{ uri: photo }} alt="store" w="100%" h="300" />
         <Center position="absolute" alignSelf={"center"} mt={250}>
           <Box

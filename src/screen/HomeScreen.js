@@ -26,13 +26,13 @@ const HomeScreen = ({ navigation }) => {
   // const likeValue = useSelector(selectLike);
   const { colorMode } = useColorMode();
   return (
-    <ScrollView alwaysBounceVertical="false">
-      <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
+    <ScrollView alwaysBounceVertical="false" _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
+      
         <Box
           _dark={{ bg: "#1C3851" }}
           _light={{ bg: "#A1917A" }}
           w={"100%"}
-          h={140}
+          h={120}
           borderBottomRadius={20}
           shadow={5}
         >
@@ -48,7 +48,7 @@ const HomeScreen = ({ navigation }) => {
                 _dark={{ bg: "#7888A0" }}
                 _light={{ bg: "#FFFAE1" }}
                 borderRadius={50}
-                mt={5}
+                mt={4}
                 mr={3}
                 shadow={5}
               >
@@ -68,7 +68,7 @@ const HomeScreen = ({ navigation }) => {
                 _dark={{ bg: "#7888A0" }}
                 _light={{ bg: "#FFFAE1" }}
                 borderRadius={50}
-                mt={5}
+                mt={4}
                 mr={3}
                 shadow={5}
               >
@@ -88,7 +88,7 @@ const HomeScreen = ({ navigation }) => {
                 _dark={{ bg: "#7888A0" }}
                 _light={{ bg: "#FFFAE1" }}
                 borderRadius={50}
-                mt={5}
+                mt={4}
                 mr={3}
                 shadow={5}
               >
@@ -170,7 +170,7 @@ const HomeScreen = ({ navigation }) => {
           list={foodData.data4}
           navigation={navigation}
         />
-      </Box>
+      
     </ScrollView>
   );
 };
