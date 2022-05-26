@@ -33,7 +33,25 @@ const FavoriteScreen = ({ navigation }) => {
     //   keyExtractor={(item) => item.name}
     // />
     <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }} h="100%">
-      <FavoriteList list={stores} navigation={navigation} />
+      <Box
+        _dark={{ bg: "#1C3851" }}
+        _light={{ bg: "#A1917A" }}
+        w={"100%"}
+        h={90}
+        borderBottomRadius={20}
+      >
+        <Box>
+          {/* <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }} h={"100%"}> */}
+          <Box mt={1} alignSelf={"center"}>
+            <Text fontSize={30} fontWeight="bold" color={"white"} pt={5}>
+              您最愛的商家
+            </Text>
+          </Box>
+        </Box>
+      </Box>
+      <Box>
+        <FavoriteList list={stores} navigation={navigation} />
+      </Box>
     </Box>
   );
 };
