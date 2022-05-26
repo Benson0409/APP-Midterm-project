@@ -90,7 +90,7 @@ const FavoriteData = ({ favorite, navigation }) => {
                 <Text fontWeight={"bold"} fontSize={20} pl={2} mt={2}>
                   {favorite.name}
                 </Text>
-                <Pressable onPress={removeLike}>
+                <Pressable onPress={removeLike} mt={2} position="absolute" ml={220}>
                   {Like == true ? (
                     <MaterialCommunityIcons
                       name="cards-heart"

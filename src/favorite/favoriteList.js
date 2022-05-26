@@ -25,10 +25,10 @@ const FavoriteList = ({ list, navigation }) => {
           _dark={{ bg: "#1C3851" }}
           _light={{ bg: "#A1917A" }}
           w={"100%"}
-          h={100}
+          h={90}
           borderBottomRadius={20}
         >
-          <Box ml={27} mt={5}>
+          <Box>
             {/* <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }} h={"100%"}> */}
             <Box mt={1} alignSelf={"center"}>
               <Text fontSize={30} fontWeight="bold" color={"white"} pt={5}>

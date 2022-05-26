@@ -54,7 +54,7 @@ const Navigation = () => {
   const MyTheme = colorMode == "light" ? lightTheme : darkTheme;
   return (
     <NavigationContainer theme={MyTheme}>
-      {/* <HStack
+      <HStack
         _dark={{ bg: "#1C3851" }}
         _light={{ bg: "#A1917A" }}
         px="3"
@@ -65,7 +65,7 @@ const Navigation = () => {
           barStyle={colorMode == "light" ? "dark-content" : "light-content"}
           // backgroundColor={colorMode == "light" ? "#A1917A" : "#1C3851"}
         />
-      </HStack> */}
+      </HStack>
       <MyTabs />
     </NavigationContainer>
   );
@@ -78,9 +78,9 @@ const MyTabs = () => {
   return (
     <Tab.Navigator
       initialRouteName="HomeStack"
-      activeColor="#463C2E"
-      inactiveColor="white"
-      barStyle={{ backgroundColor: "#A1917A" }}
+      activeColor={colorMode == "light" ? "#463C2E" : "white"}
+      inactiveColor={colorMode == "light" ? "white" : "#7888A0"}
+      barStyle={{backgroundColor: colorMode == "light" ? "#A1917A" : "#1C3851",}}
       screenOptions={{
         tabBarInactiveTintColor: colorMode == "light" ? "white" : "#7888A0",
         tabBarActiveTintColor: colorMode == "light" ? "#463C2E" : "white",
@@ -89,8 +89,8 @@ const MyTabs = () => {
         },
         tabBarLabelStyle: {
           fontWeight: "bold",
-          fontSize: 15,
-          bottom: 4,
+          fontSize: 16,
+          // bottom: 4,
         },
       }}
     >
@@ -100,7 +100,6 @@ const MyTabs = () => {
         options={{
           headerShown: false,
           title: "首頁",
-
           fontWeight: "bold",
           tabBarIcon: ({ color, focused, size }) => (
             <AntDesign name="home" color={color} size={26} />

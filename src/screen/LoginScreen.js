@@ -27,11 +27,11 @@ const LoginScreen = ({ navigation }) => {
   const { colorMode } = useColorMode();
 
   return (
-    <ScrollView>
+    <ScrollView 
+    _dark={{ bg: "#7888A0" }}
+    _light={{ bg: "#FFFCF4" }}>
       <Center
         w="100%"
-        _dark={{ bg: "#7888A0" }}
-        _light={{ bg: "#FFFCF4" }}
         h="100%"
       >
         <VStack>

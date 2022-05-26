@@ -61,7 +61,9 @@ const HomeData = ({ Home, navigation }) => {
     }
   };
   return (
+    
     <Box mx="auto" mb="8" mt={5} ml={8} mr={3}>
+      
       <VStack
         shadowColor={"#000"}
         shadowOpacity={0.25}

@@ -14,6 +14,8 @@ import {
   Divider,
   Heading,
   Icon,
+  useColorMode,
+  TouchableOpacity,
 } from "native-base";
 import foodData from "../json/food.json";
 import SearchList from "../Search/SearchList";
@@ -23,7 +25,9 @@ import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
 import * as Device from "expo-device";
 import { Platform } from "react-native";
-
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
+import Entypo from "react-native-vector-icons/Entypo";
+import AntDesign from "react-native-vector-icons/AntDesign";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import lightMap from "../mapStyle/standardMap.json";
@@ -32,7 +36,7 @@ import ActionButton from "../ActionSheet/ActionButton";
 import mapJson from "../json/map.json";
 const SearchScreen = ({ navigation }) => {
   const [msg, setMsg] = useState("Waiting...");
-
+  const { colorMode } = useColorMode();
   const [onCurrentLocation, setOnCurrentLocation] = useState(false);
 
   const [region, setRegion] = useState({
@@ -95,7 +99,42 @@ const SearchScreen = ({ navigation }) => {
   }, []);
 
   return (
-    <Box flex={1}>
+    <Box flex={1} bg={"white"}>
+      <Box _dark={{ bg: "#1C3851" }}
+          _light={{ bg: "#A1917A" }} h={90} w={"100%"}  borderBottomRadius={20}
+          shadow={8}>
+          <HStack mt={2}>
+          <Box pt={6} ml={5} mr={3}>
+                    <AntDesign
+                      name="search1"
+                      color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+                      size={30}
+                    />
+                  </Box>
+                    <Input
+                      variant="filled"
+                      placeholder="搜尋國北附近美食"
+                      fontSize={15}
+                      borderRadius={15}
+                      mt={5}
+                      mb={5}
+                      _dark={{
+                        bg: "#485860",
+                        borderColor: "white",
+                        borderWidth: 2,
+                      }}
+                      _light={{
+                        bg: "#FFFAE1",
+                        borderColor: "#463C2E",
+                        borderWidth: 2,
+                      }}
+                      w={280}
+                      letterSpacing={2}
+                      shadow={5}
+                    />
+                </HStack>
+      
+          </Box>
       <MapView
         // region={region}
         initialRegion={region}
