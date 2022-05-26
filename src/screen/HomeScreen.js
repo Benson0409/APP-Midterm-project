@@ -105,7 +105,7 @@ const HomeScreen = ({ navigation }) => {
           </HStack>
         </Box>
       </Box>
-      <ScrollView alwaysBounceVertical="false" mt={20}>
+      <ScrollView alwaysBounceVertical="false" mt={150}>
         <Box _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
           <HStack ml={35} mt={5}>
             <MaterialIcons

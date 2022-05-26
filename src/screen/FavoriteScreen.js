@@ -39,6 +39,7 @@ const FavoriteScreen = ({ navigation }) => {
         w={"100%"}
         h={90}
         borderBottomRadius={20}
+        shadow={5}
       >
         <Box>
           {/* <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }} h={"100%"}> */}

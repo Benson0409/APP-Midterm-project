@@ -70,6 +70,7 @@ const FavoriteData = ({ favorite, navigation }) => {
           alignSelf={"center"}
           borderRadius={20}
           shadow={5}
+          mb={1}
         >
           <HStack>
             <Box>
