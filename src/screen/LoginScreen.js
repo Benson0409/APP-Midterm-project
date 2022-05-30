@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Platform } from "react-native";
+import React, { useState } from "react";
+
 import Entypo from "react-native-vector-icons/Entypo";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
@@ -21,19 +21,16 @@ import {
   Image,
   Divider,
 } from "native-base";
+
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
+import SpinnerBtn from "./SpinnerButton";
 
 const LoginScreen = ({ navigation }) => {
   const { colorMode } = useColorMode();
 
   return (
-    <ScrollView 
-    _dark={{ bg: "#7888A0" }}
-    _light={{ bg: "#FFFCF4" }}>
-      <Center
-        w="100%"
-        h="100%"
-      >
+    <ScrollView _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
+      <Center w="100%" h="100%">
         <VStack>
           <Image
             source={{
@@ -117,7 +114,24 @@ const LoginScreen = ({ navigation }) => {
               忘記密碼
             </Link>
           </Box>
-          <Button
+          <Box
+            mt="2"
+            width="250"
+            alignSelf="center"
+            _dark={{ bg: "#1C3851" }}
+            _light={{ bg: "#A1917A" }}
+            // borderRadius={20}
+            shadow={5}
+            h="150"
+          >
+            <SpinnerBtn
+              title="Hi"
+              backgroundColor="#4AAF4C"
+              onPress={() => console.log("Pressed!!")}
+            />
+          </Box>
+
+          {/* <Button
             mt="2"
             width="250"
             alignSelf="center"
@@ -135,7 +149,7 @@ const LoginScreen = ({ navigation }) => {
             >
               登入
             </Text>
-          </Button>
+          </Button> */}
           <HStack mt="6" justifyContent="center">
             <Text
               fontSize="14"

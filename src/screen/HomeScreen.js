@@ -31,7 +31,7 @@ const HomeScreen = ({ navigation }) => {
         _dark={{ bg: "#1C3851" }}
         _light={{ bg: "#A1917A" }}
         w={"100%"}
-        h={140}
+        h={150}
         borderBottomRadius={20}
         shadow={5}
         position="absolute"
