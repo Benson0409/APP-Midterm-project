@@ -100,41 +100,46 @@ const SearchScreen = ({ navigation }) => {
 
   return (
     <Box flex={1} bg={"white"}>
-      <Box _dark={{ bg: "#1C3851" }}
-          _light={{ bg: "#A1917A" }} h={90} w={"100%"}  borderBottomRadius={20}
-          shadow={8}>
-          <HStack mt={2}>
+      <Box
+        _dark={{ bg: "#1C3851" }}
+        _light={{ bg: "#A1917A" }}
+        h={90}
+        w={"100%"}
+        borderBottomRadius={20}
+        shadow={8}
+      >
+        <HStack mt={2}>
           <Box pt={6} ml={5} mr={3}>
-                    <AntDesign
-                      name="search1"
-                      color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
-                      size={30}
-                    />
-                  </Box>
-                    <Input
-                      variant="filled"
-                      placeholder="搜尋國北附近美食"
-                      fontSize={15}
-                      borderRadius={15}
-                      mt={5}
-                      mb={5}
-                      _dark={{
-                        bg: "#485860",
-                        borderColor: "white",
-                        borderWidth: 2,
-                      }}
-                      _light={{
-                        bg: "#FFFAE1",
-                        borderColor: "#463C2E",
-                        borderWidth: 2,
-                      }}
-                      w={280}
-                      letterSpacing={2}
-                      shadow={5}
-                    />
-                </HStack>
-      
+            <AntDesign
+              name="search1"
+              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+              size={30}
+            />
           </Box>
+          <Input
+            variant="filled"
+            placeholder="搜尋國北附近美食"
+            fontSize={15}
+            borderRadius={15}
+            mt={5}
+            mb={5}
+            _dark={{
+              bg: "#485860",
+              borderColor: "white",
+              borderWidth: 2,
+              placeholderTextColor: "white",
+            }}
+            _light={{
+              bg: "#FFFAE1",
+              borderColor: "#463C2E",
+              borderWidth: 2,
+            }}
+            w={280}
+            letterSpacing={2}
+            shadow={5}
+          />
+        </HStack>
+      </Box>
       <MapView
         // region={region}
         initialRegion={region}
