@@ -114,22 +114,12 @@ const LoginScreen = ({ navigation }) => {
               忘記密碼
             </Link>
           </Box>
-          <Box
-            mt="2"
-            width="250"
-            alignSelf="center"
-            _dark={{ bg: "#1C3851" }}
-            _light={{ bg: "#A1917A" }}
-            // borderRadius={20}
-            shadow={5}
-            h="150"
-          >
-            <SpinnerBtn
-              title="Hi"
-              backgroundColor="#4AAF4C"
-              onPress={() => console.log("Pressed!!")}
-            />
-          </Box>
+
+          <SpinnerBtn
+            title="Hi"
+            backgroundColor="#4AAF4C"
+            onPress={() => console.log("Pressed!!")}
+          />
 
           {/* <Button
             mt="2"

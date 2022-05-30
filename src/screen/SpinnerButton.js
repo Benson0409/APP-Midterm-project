@@ -7,7 +7,7 @@ import {
   UIManager,
 } from "react-native";
 
-import { Button } from "native-base";
+import { Box, Button, Text } from "native-base";
 
 if (
   Platform.OS === "android" &&
@@ -32,17 +32,30 @@ const SpinnerBtn = ({ title, backgroundColor, onPress }) => {
   const renderButton = () => {
     console.log(`button width = ${width}, button height = ${height}`);
     return (
-      <View style={loading ? styles.containerStyle : null}>
+      <Box style={loading ? styles.containerStyle : styles.containerStyle}>
         <Button
-          title={loading ? { title } : "  "}
-          backgroundColor={backgroundColor}
+          //   title={loading ? "  " : title}
+          borderRadius={20}
+          //   shadow={5}
+          _dark={{ bg: "#1C3851" }}
+          _light={{ bg: "#A1917A" }}
           onPress={() => onPressBtn()}
           buttonStyle={[
             { borderRadius: loading ? 30 : null },
             { width, height },
           ]}
-        />
-      </View>
+          w="250"
+        >
+          <Text
+            fontSize="20"
+            fontWeight="600"
+            _dark={{ color: "white" }}
+            _light={{ color: "white" }}
+          >
+            {loading ? "" : "登入"}
+          </Text>
+        </Button>
+      </Box>
     );
   };
 
@@ -52,7 +65,7 @@ const SpinnerBtn = ({ title, backgroundColor, onPress }) => {
         <ActivityIndicator
           size="small"
           color="white"
-          style={{ position: "absolute", top: 0, left: 20, right: 20 }}
+          style={{ position: "absolute", top: 15, left: 20, right: 20 }}
         />
       );
     }
@@ -71,8 +84,8 @@ const styles = {
     alignItems: "center",
   },
   formStyle: {
-    // flex: 1,
-    // marginTop: 10,
+    flex: 1,
+    marginTop: 10,
   },
 };
 
