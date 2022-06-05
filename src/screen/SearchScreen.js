@@ -127,7 +127,7 @@ const SearchScreen = ({ navigation }) => {
               bg: "#485860",
               borderColor: "white",
               borderWidth: 2,
-              placeholderTextColor: "white",
+              placeholderTextColor: "#929292",
             }}
             _light={{
               bg: "#FFFAE1",

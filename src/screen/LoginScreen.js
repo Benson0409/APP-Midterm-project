@@ -48,7 +48,7 @@ const LoginScreen = ({ navigation }) => {
               borderRadius={20}
               mt={5}
               mb={5}
-              _dark={{ bg: "#485860", placeholderTextColor: "white" }}
+              _dark={{ bg: "#485860", placeholderTextColor: "#929292" }}
               _light={{ bg: "#FFFAE1", placeholderTextColor: "#929292" }}
               borderColor={"black"}
               w={250}
@@ -66,7 +66,7 @@ const LoginScreen = ({ navigation }) => {
               borderRadius={20}
               mt={5}
               mb={5}
-              _dark={{ bg: "#485860", placeholderTextColor: "white" }}
+              _dark={{ bg: "#485860", placeholderTextColor: "#929292" }}
               _light={{ bg: "#FFFAE1", placeholderTextColor: "#929292" }}
               borderColor={"black"}
               w={250}

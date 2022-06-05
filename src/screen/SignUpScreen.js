@@ -62,8 +62,8 @@ const SignUpScreen = () => {
                 variant="filled"
                 borderRadius={20}
                 borderColor={"#51483C"}
-                _dark={{ bg: "#485860" }}
-                _light={{ bg: "#FFFAE1" }}
+                _dark={{ bg: "#485860", placeholderTextColor: "#929292" }}
+                _light={{ bg: "#FFFAE1", placeholderTextColor: "#929292" }}
                 _focus={focusInputStyle}
                 value={name}
                 onChangeText={(text) => {
@@ -88,8 +88,8 @@ const SignUpScreen = () => {
                 variant="filled"
                 borderRadius={20}
                 borderColor={"#51483C"}
-                _dark={{ bg: "#485860" }}
-                _light={{ bg: "#FFFAE1" }}
+                _dark={{ bg: "#485860", placeholderTextColor: "#929292" }}
+                _light={{ bg: "#FFFAE1", placeholderTextColor: "#929292" }}
                 _focus={focusInputStyle}
                 value={email}
                 onChangeText={(text) => {
@@ -112,8 +112,8 @@ const SignUpScreen = () => {
                 variant="filled"
                 borderRadius={20}
                 borderColor={"#51483C"}
-                _dark={{ bg: "#485860" }}
-                _light={{ bg: "#FFFAE1" }}
+                _dark={{ bg: "#485860", placeholderTextColor: "#929292" }}
+                _light={{ bg: "#FFFAE1", placeholderTextColor: "#929292" }}
                 _focus={focusInputStyle}
                 value={password}
                 onChangeText={(text) => {
@@ -135,8 +135,8 @@ const SignUpScreen = () => {
                 placeholder="非必填"
                 variant="filled"
                 borderRadius={20}
-                _dark={{ bg: "#485860" }}
-                _light={{ bg: "#FFFAE1" }}
+                _dark={{ bg: "#485860", placeholderTextColor: "#929292" }}
+                _light={{ bg: "#FFFAE1", placeholderTextColor: "#929292" }}
                 borderColor={"#51483C"}
                 _focus={focusInputStyle}
                 value={adrs}
@@ -152,8 +152,8 @@ const SignUpScreen = () => {
                 placeholder="請填手機號碼"
                 variant="filled"
                 borderRadius={20}
-                _dark={{ bg: "#485860" }}
-                _light={{ bg: "#FFFAE1" }}
+                _dark={{ bg: "#485860", placeholderTextColor: "#929292" }}
+                _light={{ bg: "#FFFAE1", placeholderTextColor: "#929292" }}
                 borderColor={"#51483C"}
                 _focus={focusInputStyle}
                 value={tel}
