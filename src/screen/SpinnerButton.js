@@ -16,7 +16,7 @@ if (
   UIManager.setLayoutAnimationEnabledExperimental(true);
 }
 
-const SpinnerBtn = ({ title, backgroundColor, onPress }) => {
+const SpinnerBtn = ({ title, backgroundColor, onPress, wide }) => {
   const [loading, setLoading] = useState(false);
   const [width, setWidth] = useState(null);
   const [height, setHeight] = useState(null);
@@ -44,7 +44,7 @@ const SpinnerBtn = ({ title, backgroundColor, onPress }) => {
             { borderRadius: loading ? 30 : null },
             { width, height },
           ]}
-          w="250"
+          w={wide}
         >
           <Text
             fontSize="20"
@@ -52,7 +52,7 @@ const SpinnerBtn = ({ title, backgroundColor, onPress }) => {
             _dark={{ color: "white" }}
             _light={{ color: "white" }}
           >
-            {loading ? "" : "登入"}
+            {loading ? "" : title}
           </Text>
         </Button>
       </Box>

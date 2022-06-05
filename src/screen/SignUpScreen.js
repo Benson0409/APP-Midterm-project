@@ -13,6 +13,7 @@ import {
   Toast,
   Box,
 } from "native-base";
+import SpinnerBtn from "./SpinnerButton";
 
 const SignUpScreen = () => {
   const [name, setName] = useState("");
@@ -44,8 +45,15 @@ const SignUpScreen = () => {
       behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
       <ScrollView _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
-        <Box  h="100%">
-          <VStack space={2} mt={10} width="300" alignSelf="center" shadow={5}>
+        <Box h="100%">
+          <VStack
+            space={2}
+            mt={10}
+            width="300"
+            alignSelf="center"
+            shadow={5}
+            mb="5"
+          >
             <FormControl mb={5} isRequired isInvalid={nameIsError}>
               <FormControl.Label _text={formLabelStyle}>姓名</FormControl.Label>
               <Input
@@ -120,7 +128,7 @@ const SignUpScreen = () => {
                 必填
               </FormControl.ErrorMessage>
             </FormControl>
-            <FormControl mb={5} isRequired>
+            <FormControl mb={5}>
               <FormControl.Label _text={formLabelStyle}>住址</FormControl.Label>
               <Input
                 fontSize={16}
@@ -135,7 +143,7 @@ const SignUpScreen = () => {
                 onChangeText={(text) => setAdrs(text)}
               />
             </FormControl>
-            <FormControl mb={5} isRequired>
+            <FormControl mb={5}>
               <FormControl.Label _text={formLabelStyle}>
                 電話號碼
               </FormControl.Label>
@@ -152,7 +160,14 @@ const SignUpScreen = () => {
                 onChangeText={(text) => setTel(text)}
               />
             </FormControl>
-            <Button
+
+            <SpinnerBtn
+              title="確認提交"
+              backgroundColor="#4AAF4C"
+              onPress={() => console.log("Pressed!!")}
+              wide="150"
+            />
+            {/* <Button
               onPress={() => Toast.show({ description: "已提交" })}
               mt="2"
               width="150"
@@ -172,7 +187,7 @@ const SignUpScreen = () => {
               >
                 確認提交
               </Text>
-            </Button>
+            </Button> */}
           </VStack>
         </Box>
       </ScrollView>

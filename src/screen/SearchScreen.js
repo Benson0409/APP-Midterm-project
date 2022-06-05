@@ -131,7 +131,7 @@ const SearchScreen = ({ navigation }) => {
             }}
             _light={{
               bg: "#FFFAE1",
-              borderColor: "#463C2E",
+              borderColor: "#929292",
               borderWidth: 2,
             }}
             w={280}

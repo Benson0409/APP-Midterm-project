@@ -49,7 +49,7 @@ const LoginScreen = ({ navigation }) => {
               mt={5}
               mb={5}
               _dark={{ bg: "#485860", placeholderTextColor: "white" }}
-              _light={{ bg: "#FFFAE1", placeholderTextColor: "white" }}
+              _light={{ bg: "#FFFAE1", placeholderTextColor: "#929292" }}
               borderColor={"black"}
               w={250}
               letterSpacing={2}
@@ -67,7 +67,7 @@ const LoginScreen = ({ navigation }) => {
               mt={5}
               mb={5}
               _dark={{ bg: "#485860", placeholderTextColor: "white" }}
-              _light={{ bg: "#FFFAE1", placeholderTextColor: "white" }}
+              _light={{ bg: "#FFFAE1", placeholderTextColor: "#929292" }}
               borderColor={"black"}
               w={250}
               letterSpacing={2}
@@ -116,9 +116,10 @@ const LoginScreen = ({ navigation }) => {
           </Box>
 
           <SpinnerBtn
-            title="Hi"
+            title="登錄"
             backgroundColor="#4AAF4C"
             onPress={() => console.log("Pressed!!")}
+            wide="250"
           />
 
           {/* <Button
