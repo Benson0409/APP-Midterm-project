@@ -31,7 +31,7 @@ import Animated, {
 import { StyleSheet, ActivityIndicator } from "react-native";
 
 const AnimatedButton = Animated.createAnimatedComponent(Button);
-const AnimationBtn = ({ title }) => {
+const AnimationButton = ({ title }) => {
   const { colorMode } = useColorMode();
   const [loginRequest, setLoginRequest] = useState(false);
 
@@ -93,6 +93,7 @@ const AnimationBtn = ({ title }) => {
   return (
     <AnimatedButton
       mt="5"
+      
       alignSelf={"center"}
       colorScheme={colorMode == "light" ? "yellow" : "info"}
       borderRadius={loginRequest ? 48 : null}
@@ -108,8 +109,7 @@ const AnimationBtn = ({ title }) => {
       ) : (
         <Box>
         <Text 
-        pr={110}
-        fontSize={20}
+        fontSize={16}
         color={"white"}
         >{title}</Text>
         </Box>
@@ -121,7 +121,6 @@ const AnimationBtn = ({ title }) => {
 
 const styles = StyleSheet.create({
   spinner: {
-    marginRight:5,
     height: 20,
     width: 20,
     borderRadius: 30,
@@ -134,4 +133,4 @@ const styles = StyleSheet.create({
     alignSelf:"center",
   },
 });
-export default AnimationBtn;
+export default AnimationButton;

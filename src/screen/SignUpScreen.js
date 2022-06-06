@@ -14,7 +14,7 @@ import {
   Box,
 } from "native-base";
 import SpinnerBtn from "./SpinnerButton";
-
+import AnimationButton from "./AnimationButton";
 const SignUpScreen = () => {
   const [name, setName] = useState("");
   const [nameIsError, setNameIsError] = useState(true);
@@ -161,12 +161,14 @@ const SignUpScreen = () => {
               />
             </FormControl>
 
-            <SpinnerBtn
+            {/* <SpinnerBtn
               title="確認提交"
               backgroundColor="#4AAF4C"
               onPress={() => console.log("Pressed!!")}
               wide="150"
-            />
+            /> */}
+             <AnimationButton 
+            title="確認提交" />
             {/* <Button
               onPress={() => Toast.show({ description: "已提交" })}
               mt="2"

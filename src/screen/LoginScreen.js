@@ -124,7 +124,8 @@ const LoginScreen = ({ navigation }) => {
             onPress={() => console.log("Pressed!!")}
             wide="250"
           /> */}
-          <AnimationBtn title="登錄" />
+          <AnimationBtn 
+          title="登錄" />
 
           {/* <Button
             mt="2"
