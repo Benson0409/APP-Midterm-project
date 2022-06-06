@@ -14,6 +14,7 @@ import {
   Image,
   AspectRatio,
   HStack,
+  KeyboardAvoidingView
 } from "native-base";
 import { TouchableOpacity, activeOpacity, Platform } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
@@ -53,6 +54,11 @@ const Navigation = () => {
   const { colorMode } = useColorMode();
   const MyTheme = colorMode == "light" ? lightTheme : darkTheme;
   return (
+    <KeyboardAvoidingView
+      keyboardVerticalOffset={Platform.select({ios: 0, android: -500})}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      flex={1}
+    >
     <NavigationContainer theme={MyTheme}>
       <HStack
         _dark={{ bg: "#1C3851" }}
@@ -68,6 +74,7 @@ const Navigation = () => {
       </HStack>
       <MyTabs />
     </NavigationContainer>
+    </KeyboardAvoidingView>
   );
 };
 
