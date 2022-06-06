@@ -23,8 +23,8 @@ const SpinnerBtn = ({ title, backgroundColor, onPress, wide }) => {
 
   const onPressBtn = () => {
     LayoutAnimation.easeInEaseOut();
-    setWidth(width === null ? 60 : null);
-    setHeight(height === null ? 60 : null);
+    setWidth(width === null ? { wide } : null);
+    setHeight(height === null ? { wide } : null);
     setLoading(loading === false ? true : false);
     onPress();
   };
@@ -42,9 +42,11 @@ const SpinnerBtn = ({ title, backgroundColor, onPress, wide }) => {
           onPress={() => onPressBtn()}
           buttonStyle={[
             { borderRadius: loading ? 30 : null },
-            { width, height },
+            // { width, height },
+            { width: loading ? 250 : null },
           ]}
-          w={wide}
+          // w={wide}
+          // {...(loading ? null : { wide })}
         >
           <Text
             fontSize="20"
