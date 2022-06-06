@@ -22,8 +22,11 @@ import {
   Divider,
 } from "native-base";
 
+import { StyleSheet } from "react-native";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 import SpinnerBtn from "./SpinnerButton";
+import AnimationBtn from "./AnimationBtn";
+// const AnimatedButton = Animated.createAnimatedComponent(Button);
 
 const LoginScreen = ({ navigation }) => {
   const { colorMode } = useColorMode();
@@ -115,12 +118,13 @@ const LoginScreen = ({ navigation }) => {
             </Link>
           </Box>
 
-          <SpinnerBtn
+          {/* <SpinnerBtn
             title="登錄"
             backgroundColor="#4AAF4C"
             onPress={() => console.log("Pressed!!")}
             wide="250"
-          />
+          /> */}
+          <AnimationBtn title="登錄" />
 
           {/* <Button
             mt="2"

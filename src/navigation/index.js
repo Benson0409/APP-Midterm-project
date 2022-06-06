@@ -14,7 +14,7 @@ import {
   Image,
   AspectRatio,
   HStack,
-  KeyboardAvoidingView
+  KeyboardAvoidingView,
 } from "native-base";
 import { TouchableOpacity, activeOpacity, Platform } from "react-native";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
@@ -55,25 +55,25 @@ const Navigation = () => {
   const MyTheme = colorMode == "light" ? lightTheme : darkTheme;
   return (
     <KeyboardAvoidingView
-      keyboardVerticalOffset={Platform.select({ios: 0, android: -500})}
+      keyboardVerticalOffset={Platform.select({ ios: 0, android: -500 })}
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       flex={1}
     >
-    <NavigationContainer theme={MyTheme}>
-      <HStack
-        _dark={{ bg: "#1C3851" }}
-        _light={{ bg: "#A1917A" }}
-        px="3"
-        py="5"
-        w="100%"
-      >
-        <StatusBar
-          barStyle={colorMode == "light" ? "dark-content" : "light-content"}
-          // backgroundColor={colorMode == "light" ? "#A1917A" : "#1C3851"}
-        />
-      </HStack>
-      <MyTabs />
-    </NavigationContainer>
+      <NavigationContainer theme={MyTheme}>
+        <HStack
+          _dark={{ bg: "#1C3851" }}
+          _light={{ bg: "#A1917A" }}
+          px="3"
+          py="5"
+          w="100%"
+        >
+          <StatusBar
+            barStyle={colorMode == "light" ? "dark-content" : "light-content"}
+            // backgroundColor={colorMode == "light" ? "#A1917A" : "#1C3851"}
+          />
+        </HStack>
+        <MyTabs />
+      </NavigationContainer>
     </KeyboardAvoidingView>
   );
 };
@@ -87,7 +87,9 @@ const MyTabs = () => {
       initialRouteName="HomeStack"
       activeColor={colorMode == "light" ? "#463C2E" : "white"}
       inactiveColor={colorMode == "light" ? "white" : "#7888A0"}
-      barStyle={{backgroundColor: colorMode == "light" ? "#A1917A" : "#1C3851",}}
+      barStyle={{
+        backgroundColor: colorMode == "light" ? "#A1917A" : "#1C3851",
+      }}
       screenOptions={{
         tabBarInactiveTintColor: colorMode == "light" ? "white" : "#7888A0",
         tabBarActiveTintColor: colorMode == "light" ? "#463C2E" : "white",
