@@ -458,7 +458,7 @@ const DetailScreen = ({ route }) => {
               size={25}
             />
             <Pressable onPress={() => Linking.openURL(url)}>
-              <Text ml={3} fontSize={20} fontWeight={"bold"}>
+              <Text ml={3} fontSize={20} fontWeight={"bold"} underline>
                 {menu}
               </Text>
             </Pressable>

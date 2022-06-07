@@ -105,13 +105,13 @@ const SearchScreen = ({ navigation }) => {
         _light={{ bg: "#A1917A" }}
         h={90}
         w={"100%"}
-        borderBottomRadius={20}
+        borderBottomRadius={5}
         shadow={8}
       >
         <HStack mt={2}>
           <Box pt={6} ml={5} mr={3}>
-            <AntDesign
-              name="search1"
+            <FontAwesome
+              name="search"
               color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
               size={30}
             />

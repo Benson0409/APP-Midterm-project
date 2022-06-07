@@ -1,7 +1,9 @@
 import React from "react";
+import { Linking, TouchableOpacity } from "react-native";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Entypo from "react-native-vector-icons/Entypo";
+import Fontisto from "react-native-vector-icons/Fontisto";
 import {
   Box,
   VStack,
@@ -11,7 +13,6 @@ import {
   Image,
   HStack,
   ScrollView,
-  Linking,
   NativeBaseProvider,
   StatusBar,
   useColorMode,
@@ -32,23 +33,33 @@ const HomeScreen = ({ navigation }) => {
         _light={{ bg: "#A1917A" }}
         w={"100%"}
         h={150}
-        borderBottomRadius={20}
+        borderBottomRadius={5}
         shadow={5}
         position="absolute"
       >
-        <Box ml={27} mt={5}>
-          <Text color={"white"} fontSize={24} fontWeight={"bold"}>
+        <Box ml={27} mt={6}>
+          <HStack>
+          <Text color={"white"} fontSize={24} fontWeight={"bold"} mr={2}>
             歡迎來到國北生活圈
           </Text>
+          <Box mt={1}>
+          <Fontisto
+              name="paw"
+              color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
+              size={25}
+            />
+            </Box>
+            </HStack>
 
-          <HStack>
+          <HStack >
             <Pressable
+              onPress={() => Linking.openURL(foodData.instagram)}
               height={30}
               w={100}
               _dark={{ bg: "#7888A0" }}
               _light={{ bg: "#FFFAE1" }}
               borderRadius={50}
-              mt={5}
+              mt={8}
               mr={3}
               shadow={5}
             >
@@ -63,12 +74,13 @@ const HomeScreen = ({ navigation }) => {
               </Text>
             </Pressable>
             <Pressable
+              onPress={() => Linking.openURL(foodData.ticket)}
               height={30}
               w={100}
               _dark={{ bg: "#7888A0" }}
               _light={{ bg: "#FFFAE1" }}
               borderRadius={50}
-              mt={5}
+              mt={8}
               mr={3}
               shadow={5}
             >
@@ -83,12 +95,13 @@ const HomeScreen = ({ navigation }) => {
               </Text>
             </Pressable>
             <Pressable
+              onPress={() => Linking.openURL(foodData.joinus)}
               height={30}
               w={100}
               _dark={{ bg: "#7888A0" }}
               _light={{ bg: "#FFFAE1" }}
               borderRadius={50}
-              mt={5}
+              mt={8}
               mr={3}
               shadow={5}
             >

@@ -38,13 +38,13 @@ const FavoriteScreen = ({ navigation }) => {
         _light={{ bg: "#A1917A" }}
         w={"100%"}
         h={90}
-        borderBottomRadius={20}
+        borderBottomRadius={5}
         shadow={5}
       >
         <Box>
           {/* <Box _dark={{ bg: "#3F382E" }} _light={{ bg: "#FFFAE1" }} h={"100%"}> */}
-          <Box mt={1} alignSelf={"center"}>
-            <Text fontSize={30} fontWeight="bold" color={"white"} pt={5}>
+          <Box mt={3} alignSelf={"center"}>
+            <Text fontSize={24} fontWeight="bold" color={"white"} pt={5}>
               您最愛的商家
             </Text>
           </Box>

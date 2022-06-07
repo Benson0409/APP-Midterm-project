@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import AntDesign from "react-native-vector-icons/AntDesign";
 import Feather from "react-native-vector-icons/Feather";
+import Ionicons from "react-native-vector-icons/Ionicons";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import {
@@ -46,9 +47,9 @@ import foodData from "../json/food.json";
 // const dispatch = useDispatch();
 
 const Stack = createNativeStackNavigator();
-const Tab = createBottomTabNavigator();
+// const Tab = createBottomTabNavigator();
 // const Tab = AnimatedTabBarNavigator();
-// const Tab = createMaterialBottomTabNavigator();
+const Tab = createMaterialBottomTabNavigator();
 
 const Navigation = () => {
   const { colorMode } = useColorMode();
@@ -98,7 +99,7 @@ const MyTabs = () => {
         },
         tabBarLabelStyle: {
           fontWeight: "bold",
-          fontSize: 16,
+          fontSize: 15,
           // bottom: 4,
         },
       }}
@@ -111,7 +112,7 @@ const MyTabs = () => {
           title: "首頁",
           fontWeight: "bold",
           tabBarIcon: ({ color, focused, size }) => (
-            <AntDesign name="home" color={color} size={26} />
+            <Ionicons name="home" color={color} size={26} />
           ),
         }}
       />
@@ -419,7 +420,7 @@ const SearchStack = () => {
           headerTitleStyle: {
             fontWeight: "400",
             fontSize: 20,
-            color: "#1C3851",
+            color: colorMode == "light" ? "#A1917A" : "#1C3851",
           },
           headerLeft: () => (
             <TouchableOpacity>

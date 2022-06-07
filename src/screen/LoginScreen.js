@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Linking, TouchableOpacity } from "react-native";
 import Entypo from "react-native-vector-icons/Entypo";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
@@ -204,25 +204,31 @@ const LoginScreen = ({ navigation }) => {
           </HStack>
           <HStack alignSelf="center" mt={3} mb={2}>
             <Box mr={10}>
+              <Pressable onPress={() => Linking.openURL('https://myaccount.google.com')}>
               <FontAwesome
                 name="google-plus-circle"
                 color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
                 size={40}
               />
+              </Pressable>
             </Box>
             <Box>
+              <Pressable onPress={() => Linking.openURL('https://www.facebook.com')}>
               <MaterialIcons
                 name="facebook"
                 color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
                 size={40}
               />
+              </Pressable>
             </Box>
             <Box ml={10}>
+            <Pressable onPress={() => Linking.openURL('https://www.instagram.com')}>
               <Entypo
                 name="instagram-with-circle"
                 color={colorMode == "light" ? "#463C2E" : "#FFE3B3"}
                 size={40}
               />
+              </Pressable>
             </Box>
           </HStack>
         </VStack>
