@@ -127,12 +127,13 @@ const SearchScreen = ({ navigation }) => {
               bg: "#485860",
               borderColor: "white",
               borderWidth: 2,
-              placeholderTextColor: "#929292",
+              placeholderTextColor: "#FFE3B3",
             }}
             _light={{
               bg: "#FFFAE1",
               borderColor: "#929292",
               borderWidth: 2,
+              placeholderTextColor: "#463C2E",
             }}
             w={280}
             letterSpacing={2}

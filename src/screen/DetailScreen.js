@@ -192,11 +192,13 @@ const DetailScreen = ({ route }) => {
                         bg: "#485860",
                         borderColor: "white",
                         borderWidth: 2,
+                        placeholderTextColor: "#FFE3B3",
                       }}
                       _light={{
                         bg: "#FFFAE1",
                         borderColor: "#463C2E",
                         borderWidth: 1,
+                        placeholderTextColor: "#463C2E",
                       }}
                       w={280}
                       letterSpacing={4}

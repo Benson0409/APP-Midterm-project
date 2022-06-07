@@ -40,10 +40,6 @@ const SignUpScreen = () => {
   const emailRegex = /\w{3,}@[a-zA-Z_]+\.[a-zA-Z]{2,5}/;
   const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}$/;
   return (
-    <KeyboardAvoidingView
-      keyboardVerticalOffset={Platform.select({ ios: 0, android: -500 })}
-      behavior={Platform.OS === "ios" ? "padding" : "height"}
-    >
       <ScrollView _dark={{ bg: "#7888A0" }} _light={{ bg: "#FFFCF4" }}>
         <Box h="100%">
           <VStack
@@ -193,7 +189,6 @@ const SignUpScreen = () => {
           </VStack>
         </Box>
       </ScrollView>
-    </KeyboardAvoidingView>
   );
 };
 
